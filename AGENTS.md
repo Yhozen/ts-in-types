@@ -19,6 +19,21 @@ then `vendor/go-in-types/docs/PLAN.md`, `DESIGN.md` and `LESSONS.md`.
   `tsgo`; `scripts/tsgo-ir.ts` builds the IR). TypeScript-specific harness
   logic that doesn't belong in the engine lives here.
 
+## Scripts (stage 3)
+
+- `node scripts/oracle.ts [--verify]`: `oracle/expected/<lib>/<input>.out`
+  and `oracle/manifest.json` from native tsc (format in `scripts/inputs.ts`).
+- `node scripts/ref.ts [--lib L] [--only S] [--jobs N] [--image]`: the
+  inputs on the go-in-types reference, compared with the oracle. The engine
+  is `$GO_IN_TYPES` or the submodule (`scripts/engine.ts`); the IR is
+  rebuilt when stale. Use `GO_IN_TYPES=<go-in-types worktree>` while
+  working on engine fixes.
+- `node scripts/boot.ts`: boot images `image/<lib>.json` (git-ignored);
+  rebuild after the IR changes (a stale image fails to restore).
+- `node scripts/profile.ts` then `vp check --fix`: `docs/PROFILE.md` tables
+  and `oracle/profile.json`.
+- Jobs: ~6–8 worker threads; other agents share the machine.
+
 ## Rules
 
 - Conventional Commits; end messages with

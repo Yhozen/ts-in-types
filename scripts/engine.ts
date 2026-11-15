@@ -6,10 +6,12 @@
 //   git -c protocol.file.allow=always submodule update --init --recursive
 //   (vendor/go-in-types and its vendor/typescript; see AGENTS.md)
 // The engine has no node_modules of its own: its src/ref imports only node
-// builtins. The IR is built on first use (needs Go) with the engine's
-// overlay/gen.ts + scripts/tsgo-ir.ts, or rebuilt with `--rebuild-ir`.
+// builtins. The IR is built (needs Go) with the engine's overlay/gen.ts +
+// scripts/tsgo-ir.ts when it is missing or older than any file under the
+// engine's overlay/ or frontend/ or scripts/tsgo-ir.ts; `--rebuild-ir`
+// forces it.
 import { execFileSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { root } from "./inputs.ts";
@@ -25,9 +27,23 @@ export type Machine = Interp.Machine;
 export const engineDir = resolve(process.env.GO_IN_TYPES ?? join(root, "vendor/go-in-types"));
 export const progPath = join(engineDir, ".run/tsgo/prog.json");
 
-/** Builds the tsgo IR if it is missing (or always, with `rebuild`). */
+function newestInput(): number {
+  let t = statSync(join(engineDir, "scripts/tsgo-ir.ts")).mtimeMs;
+  const walk = (d: string) => {
+    for (const e of readdirSync(d, { withFileTypes: true })) {
+      const p = join(d, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (!p.endsWith(".json")) t = Math.max(t, statSync(p).mtimeMs);
+    }
+  };
+  walk(join(engineDir, "overlay"));
+  walk(join(engineDir, "frontend"));
+  return t;
+}
+
+/** Builds the tsgo IR if it is missing or stale (or always, with `rebuild`). */
 export function ensureProg(rebuild = false): string {
-  if (rebuild || !existsSync(progPath)) {
+  if (rebuild || !existsSync(progPath) || statSync(progPath).mtimeMs < newestInput()) {
     if (!existsSync(join(engineDir, "src/ref/interp.ts")))
       throw new Error(
         `no go-in-types engine at ${engineDir} (init the submodule or set GO_IN_TYPES)`,

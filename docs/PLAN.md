@@ -30,6 +30,19 @@ here.
 5. Profile (`docs/PROFILE.md`): ops by phase/package/function, from the
    image, over all inputs; median and max; what to optimise first.
 
+**Result (2026-11-15): gates A and B passed.** Oracle: 656 checks from
+native tsc 7.0.2 (`scripts/oracle.ts`, `--verify` reproduces them; 161
+exit 0, 495 exit 1). Gate A (`scripts/ref.ts`, fresh): 656/656 exact with
+no engine fixes. Boot image: go-in-types branch `stage3-engine` adds the
+harness entries `boot` + `checkWarm` and `Machine.callEntry`; native
+parity 656/656 with and without `--warm`. Images (`scripts/boot.ts`):
+3.4 MB (mini), 6.1 MB (es5). Gate B (`scripts/ref.ts --image`): 656/656.
+The one-liner: fresh 1,351,479 ops (mini) / 21,880,822 (es5), package init
+1,003,846 of each; from the image 96,689 / 116,638 (stage 0's warm SSA
+count: 161,615 / 190,063 with option parsing). Median check from the
+image 202k (mini) / 226k (es5), max 245M. Profile and the comparison with
+stage 0: `docs/PROFILE.md`.
+
 ## Stage 6 (later)
 
 Image build in types, `TS<>` hover/CLI, fuel pool seeded by a hash of the
