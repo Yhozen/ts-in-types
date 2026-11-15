@@ -9,7 +9,9 @@
     "test": "vp test",
     "typecheck": "tsrs --noEmit --fast",
     "check": "vp check && tsrs --noEmit --fast",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "oracle": "node scripts/oracle.ts",
+    "ref": "node scripts/ref.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
