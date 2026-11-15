@@ -8,6 +8,9 @@
 // (scripts/gen-utf8.ts; BMP and plane 1, other code points become U+FFFD),
 // which the checker only loads when a non-ASCII character appears.
 //
+// A declaration file: under skipLibCheck the checker never checks these
+// generic declarations against the big tables (6.7 s as a .ts file).
+//
 // Both loops are tail-recursive with a fuel string: 900 steps per inner
 // loop (under the checker's 1,000 tail-call limit), then an outer loop
 // starts the next 900, so any length works.

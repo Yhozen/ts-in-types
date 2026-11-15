@@ -9,7 +9,7 @@
 // command line parsed, the lib parsed and bound, one warm-up check done; a
 // reference snapshot turned into a type-level state, image/start.<lib>.d.ts)
 // and calls the harness's `checkWarm(main)` with main.ts's text as UTF-8
-// bytes (src/utf8.ts).
+// bytes (src/utf8.d.ts).
 //
 // Hovers: TS<> and TSMini<> run to the end in one alias, refuelling the
 // checker's instantiation budget before every chunk (src/hover.ts). CLI
@@ -23,9 +23,9 @@ import type { GChunk, GDone, GErr, GExit, GOut } from "../image/tsgo.d.ts";
 import type { Start as StartEs5 } from "../image/start.es5.d.ts";
 import type { Start as StartMini } from "../image/start.mini.d.ts";
 import type { Exec } from "./hover.ts";
-import type { FromUtf8, Utf8 } from "./utf8.ts";
+import type { FromUtf8, Utf8 } from "./utf8.d.ts";
 
-export type { FromUtf8, Utf8 } from "./utf8.ts";
+export type { FromUtf8, Utf8 } from "./utf8.d.ts";
 
 /** A lib mode: "es5" (TypeScript 7.0.2's lib.es5.d.ts) or "mini" (an 11-line stand-in). */
 export type TSLib = "es5" | "mini";
