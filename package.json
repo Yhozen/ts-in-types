@@ -18,7 +18,8 @@
     "keep": "node scripts/keep.ts",
     "hover": "node scripts/hover.ts",
     "gen:hover": "node scripts/gen-hover.ts",
-    "gate:types": "node scripts/types-gate.ts"
+    "gate:types": "node scripts/types-gate.ts",
+    "tsc": "node scripts/tsc.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

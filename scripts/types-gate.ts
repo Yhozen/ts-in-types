@@ -119,7 +119,7 @@ export function cliText(dir: string, source: string, lib: Lib, chunks: number, w
   return { text: lines.join("\n") + "\n", firstStmt, probeLine, outLine };
 }
 
-function writeProject(dir: string, text: string): void {
+export function writeProject(dir: string, text: string): void {
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "run.ts"), text);
   writeFileSync(
@@ -147,7 +147,7 @@ function writeProject(dir: string, text: string): void {
 
 // ---------------------------------------------------------------- tsrs
 
-interface TsrsRun {
+export interface TsrsRun {
   out: string;
   wall: number;
   peak: number;
@@ -155,7 +155,7 @@ interface TsrsRun {
 }
 
 /** `tsrs --noEmit -p dir` in a heavy slot, with a timeout counted from when the slot is held. */
-function runTsrs(dir: string, timeoutSec: number): Promise<TsrsRun> {
+export function runTsrs(dir: string, timeoutSec: number): Promise<TsrsRun> {
   const t0 = performance.now();
   return new Promise((done, fail) => {
     const p = spawn(
@@ -208,7 +208,7 @@ interface Diag {
   message: string;
 }
 /** run.ts diagnostics (a message may span lines). */
-function diagnostics(out: string): Diag[] {
+export function diagnostics(out: string): Diag[] {
   const ds: Diag[] = [];
   let cur: Diag | null = null;
   for (const l of out.split("\n")) {
@@ -224,7 +224,7 @@ function diagnostics(out: string): Diag[] {
   }
   return ds;
 }
-const instCount = (out: string) => Number(/Instantiations:\s+(\d+)/.exec(out)?.[1] ?? NaN);
+export const instCount = (out: string) => Number(/Instantiations:\s+(\d+)/.exec(out)?.[1] ?? NaN);
 const assignMsg = /^Type '([\s\S]*)' is not assignable to type '"probe"'\.$/;
 
 /** A printed type literal (string, number, tuple of those) back to plain values (latin1 strings). */
