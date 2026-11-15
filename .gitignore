@@ -1,0 +1,9 @@
+node_modules
+*.log
+.env*
+.vite
+coverage
+*.tsbuildinfo
+.run
+overlay/*.json
+overlay/*.go.mod

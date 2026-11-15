@@ -1,0 +1,3 @@
+[submodule "vendor/go-in-types"]
+	path = vendor/go-in-types
+	url = ../go-in-types

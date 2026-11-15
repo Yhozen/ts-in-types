@@ -1,0 +1,5 @@
+* text=auto eol=lf
+pnpm-lock.yaml linguist-generated=true -diff
+oracle/inputs/** -text
+oracle/expected/** linguist-generated=true -text
+oracle/lib.*.d.ts -text

@@ -1,0 +1,35 @@
+{
+  "name": "ts-in-types",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The real TypeScript 7 compiler (Go) running inside the TypeScript type checker, on go-in-types.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "vp test",
+    "typecheck": "tsrs --noEmit --fast",
+    "check": "vp check && tsrs --noEmit --fast",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsrs": "0.23.0-ts7.1.0-beta",
+    "typescript": "7.0.2",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=26",
+      "onFail": "error"
+    }
+  },
+  "engines": {
+    "node": ">=26"
+  }
+}
