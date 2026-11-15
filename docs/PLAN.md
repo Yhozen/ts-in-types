@@ -43,7 +43,19 @@ count: 161,615 / 190,063 with option parsing). Median check from the
 image 202k (mini) / 226k (es5), max 245M. Profile and the comparison with
 stage 0: `docs/PROFILE.md`.
 
-## Stage 6 (later)
+## Stage 6: TypeScript 7 in types
 
 Image build in types, `TS<>` hover/CLI, fuel pool seeded by a hash of the
-source, tiered gates, demo files, README.
+source, tiered gates, demo files, README. Done; it needs go-in-types branch
+`stage6-engine` (entry-call start states, the "e" exit continuation,
+`slices.overlaps`/`maps.clone`, a lenient heap codec, float map keys).
+
+- Build (`vp run build`): IR 16,982 funcs; keep list 5,679 (from the
+  reference over all 656 checks, ~16 s); program 36.6 MB + entries 6.4 MB
+  - runtime 5.1 MB; `start.mini.d.ts` 4.4 MB (7,814 objects),
+    `start.es5.d.ts` 10.0 MB (9,429); UTF-8 tables 8.4 MB. Emit ~1 s, starts
+    ~1 s each, boot ~8 s.
+- CLI one-liner: mini 38 chunks / 5.5M instantiations, es5 49 / 7.2M;
+  ~0.9 s of checking, ~1.1 GB peak.
+- Hover: HOVER_LINE
+- Gate: GATE_LINE

@@ -34,6 +34,31 @@ then `vendor/go-in-types/docs/PLAN.md`, `DESIGN.md` and `LESSONS.md`.
   and `oracle/profile.json`.
 - Jobs: ~6–8 worker threads; other agents share the machine.
 
+## Scripts (stage 6: the compiler in types)
+
+- `vp run build` (`scripts/build.ts`): `image/` (git-ignored): the IR and
+  boot images when stale, the keep list (`scripts/keep.ts`, image/keep.txt:
+  functions the reference runs over all 656 checks), the emitted program
+  `image/tsgo.d.ts` + runtime `image/rt/`, the start states
+  `image/start.<lib>.d.ts` (`Start<Src extends string>`, codec-state
+  `callState`) and the UTF-8 tables `image/utf8.gen.d.ts`; sizes and times
+  in `image/build.json`. Rebuild after any engine or IR change. It needs
+  go-in-types branch `stage6-engine` (point `GO_IN_TYPES` at it) until the
+  `vendor/go-in-types` submodule moves there.
+- `src/index.ts` (`TS`, `TSMini`, `TSStart`, `TSStep`, `TSOutput`,
+  `TSResult`), `src/hover.ts` (fuel-pool start from a hash of the source;
+  tables `src/hover.gen.ts`, `scripts/gen-hover.ts`), `src/utf8.d.ts` (a
+  declaration file on purpose: as a `.ts` its generic declarations cost
+  ~7 s of checking against the big tables).
+- `vp run gate:types` (`scripts/types-gate.ts`): smoke (10 inputs × 2
+  libs), `--tier 20`, `--full --resume --doc` (`docs/GATE.md`, then
+  `vp check --fix`); at most 2 jobs; results in `.run/gate/results.json`.
+- `node scripts/hover.ts <file> <Type>...` (one `tsrs --lsp` session,
+  TSRS_FAST=1, in a heavy slot); `node scripts/tsc.ts "source"` (CLI form).
+- `examples/` has its own tsconfig (it loads the image); keep it out of
+  the root project.
+- tsrs runs only through the engine's `scripts/heavy.sh`, with timeouts.
+
 ## Rules
 
 - Conventional Commits; end messages with
