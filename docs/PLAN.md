@@ -50,12 +50,25 @@ source, tiered gates, demo files, README. Done; it needs go-in-types branch
 `stage6-engine` (entry-call start states, the "e" exit continuation,
 `slices.overlaps`/`maps.clone`, a lenient heap codec, float map keys).
 
-- Build (`vp run build`): IR 16,982 funcs; keep list 5,679 (from the
-  reference over all 656 checks, ~16 s); program 36.6 MB + entries 6.4 MB
-  - runtime 5.1 MB; `start.mini.d.ts` 4.4 MB (7,814 objects),
-    `start.es5.d.ts` 10.0 MB (9,429); UTF-8 tables 8.4 MB. Emit ~1 s, starts
-    ~1 s each, boot ~8 s.
-- CLI one-liner: mini 38 chunks / 5.5M instantiations, es5 49 / 7.2M;
-  ~0.9 s of checking, ~1.1 GB peak.
-- Hover: HOVER_LINE
-- Gate: GATE_LINE
+- Build (`vp run build`): IR 16,984 funcs; keep list 5,679 (from the
+  reference over all 656 checks, ~16 s); program 36.7 MB, entries 6.4 MB,
+  runtime 5.1 MB; `start.mini.d.ts` 4.4 MB (7,814 objects),
+  `start.es5.d.ts` 10.0 MB (9,429); UTF-8 tables 8.4 MB. Emit ~2 s, starts
+  ~1 s, boot ~8 s.
+- CLI one-liner: 7.0M instantiations (es5), ~1.2 s of checking, ~1.1 GB
+  peak.
+- Hover (`scripts/hover.ts`, fresh session): the one-liner takes 5.5 s and
+  1.26 GB with es5, 4.7 s and 1.23 GB with mini. The 9 demo names in one
+  session take 0.2–1.8 s each (one outlier at 17 s under load) and reach
+  1.84 GB after all of them.
+- Gate (`--full`, 1,529 s with 2 jobs): 640 / 656 (97.6%). All 16 failures
+  are TS2589 count: one chunk needs more than 5M instantiations. With
+  go-in-types before the stage 5 polish merge it was 642 / 656. That run
+  had 10 TS2589 depth failures (deferred tuples), which the merge's
+  `R.TPush` constructors fixed, and the same change made 12 other checks
+  fail on count. The extremes `template-cross-product` and
+  `deep-recursion` fail either way.
+- Known limit: a related location in `lib.es5.d.ts` (a spelling suggestion
+  for a lib member) makes the scanner spend ~0.5M instantiations per
+  character of the lib's trivia, because every `text[pos:]` is a new
+  230 KB string.
