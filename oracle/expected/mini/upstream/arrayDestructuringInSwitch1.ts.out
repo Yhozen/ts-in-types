@@ -1,0 +1,7 @@
+main.ts(8,7): error TS2693: 'Array' only refers to a type, but is being used as a value here.
+main.ts(9,12): error TS2339: Property '0' does not exist on type 'Expression'.
+main.ts(12,25): error TS2339: Property 'every' does not exist on type 'any[]'.
+main.ts(12,32): error TS7006: Parameter 'child' implicitly has an 'any' type.
+main.ts(18,19): error TS2304: Cannot find name 'Error'.
+
+[exit 1]

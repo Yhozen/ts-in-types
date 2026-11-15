@@ -1,0 +1,3 @@
+main.ts(7,4): error TS2339: Property 'hidden' does not exist on type 'typeof NS'.
+
+[exit 1]

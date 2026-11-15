@@ -1,0 +1,6 @@
+main.ts(1,10): error TS2304: Cannot find name 'Uppercase'.
+main.ts(2,10): error TS2304: Cannot find name 'Lowercase'.
+main.ts(3,10): error TS2304: Cannot find name 'Capitalize'.
+main.ts(4,10): error TS2304: Cannot find name 'Uncapitalize'.
+
+[exit 1]

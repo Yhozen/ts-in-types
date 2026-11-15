@@ -1,0 +1,5 @@
+main.ts(3,3): error TS2540: Cannot assign to 'a' because it is a read-only property.
+main.ts(6,1): error TS2542: Index signature in type 'readonly number[]' only permits reading.
+main.ts(7,7): error TS4104: The type 'readonly number[]' is 'readonly' and cannot be assigned to the mutable type 'number[]'.
+
+[exit 1]

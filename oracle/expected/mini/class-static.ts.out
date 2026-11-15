@@ -1,0 +1,4 @@
+main.ts(4,24): error TS2576: Property 'count' does not exist on type 'C'. Did you mean to access the static member 'C.count' instead?
+main.ts(7,9): error TS2576: Property 'inc' does not exist on type 'C'. Did you mean to access the static member 'C.inc' instead?
+
+[exit 1]

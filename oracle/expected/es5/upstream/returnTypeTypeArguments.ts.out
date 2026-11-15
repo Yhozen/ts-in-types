@@ -1,0 +1,54 @@
+main.ts(5,5): error TS2564: Property 'value' has no initializer and is not definitely assigned in the constructor.
+main.ts(8,5): error TS2564: Property 'value' has no initializer and is not definitely assigned in the constructor.
+main.ts(9,5): error TS2564: Property 'id' has no initializer and is not definitely assigned in the constructor.
+main.ts(12,5): error TS2564: Property 'value' has no initializer and is not definitely assigned in the constructor.
+main.ts(13,5): error TS2564: Property 'id' has no initializer and is not definitely assigned in the constructor.
+main.ts(14,5): error TS2564: Property 'name' has no initializer and is not definitely assigned in the constructor.
+main.ts(17,16): error TS2314: Generic type 'One<T>' requires 1 type argument(s).
+main.ts(18,16): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(19,16): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(21,16): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(22,16): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(23,16): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(26,11): error TS2314: Generic type 'One<T>' requires 1 type argument(s).
+main.ts(27,11): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(28,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(30,11): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(31,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(32,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(36,11): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(37,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(39,11): error TS2314: Generic type 'Two<T, U>' requires 2 type argument(s).
+main.ts(40,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(41,11): error TS2314: Generic type 'Three<T, U, V>' requires 3 type argument(s).
+main.ts(50,5): error TS2564: Property 'value' has no initializer and is not definitely assigned in the constructor.
+main.ts(55,5): error TS2564: Property 'p1' has no initializer and is not definitely assigned in the constructor.
+main.ts(55,15): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(56,5): error TS2564: Property 'p2' has no initializer and is not definitely assigned in the constructor.
+main.ts(56,26): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(57,5): error TS2564: Property 'p3' has no initializer and is not definitely assigned in the constructor.
+main.ts(57,9): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(58,5): error TS2564: Property 'p4' has no initializer and is not definitely assigned in the constructor.
+main.ts(58,11): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(59,9): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(60,5): error TS2564: Property 'p6' has no initializer and is not definitely assigned in the constructor.
+main.ts(60,15): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(61,5): error TS2564: Property 'p7' has no initializer and is not definitely assigned in the constructor.
+main.ts(61,26): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(62,5): error TS2564: Property 'p8' has no initializer and is not definitely assigned in the constructor.
+main.ts(62,9): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(63,5): error TS2564: Property 'p9' has no initializer and is not definitely assigned in the constructor.
+main.ts(63,11): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(64,9): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(68,15): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(69,26): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(70,9): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(71,11): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(72,9): error TS2314: Generic type 'X<T>' requires 1 type argument(s).
+main.ts(73,15): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(74,26): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(75,9): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(76,11): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+main.ts(77,9): error TS2314: Generic type 'Y<T>' requires 1 type argument(s).
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(5,1): error TS2364: The left-hand side of an assignment expression must be a variable or a property access.
+main.ts(5,2): error TS2695: Left side of comma operator is unused and has no side effects.
+
+[exit 1]

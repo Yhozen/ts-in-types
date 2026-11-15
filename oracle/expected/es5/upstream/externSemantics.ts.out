@@ -1,0 +1,5 @@
+main.ts(5,15): error TS1039: Initializers are not allowed in ambient contexts.
+main.ts(6,13): error TS7005: Variable 'v' implicitly has an 'any' type.
+main.ts(7,22): error TS1039: Initializers are not allowed in ambient contexts.
+
+[exit 1]

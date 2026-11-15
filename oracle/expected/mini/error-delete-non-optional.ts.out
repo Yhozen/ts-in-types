@@ -1,0 +1,3 @@
+main.ts(3,8): error TS2790: The operand of a 'delete' operator must be optional.
+
+[exit 1]

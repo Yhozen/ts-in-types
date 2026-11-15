@@ -1,0 +1,9 @@
+main.ts(17,12): error TS2322: Type '(x: string) => void' is not assignable to type 'ConstructableA | IDirectiveLinkFn<number> | IDirectivePrePost<number>'.
+  Type '(x: string) => void' is not assignable to type 'IDirectiveLinkFn<number>'.
+    Types of parameters 'x' and 'scope' are incompatible.
+      Type 'number' is not assignable to type 'string'.
+main.ts(19,12): error TS2322: Type 'typeof ctor' is not assignable to type 'ConstructableA | IDirectiveLinkFn<number> | IDirectivePrePost<number>'.
+  Type 'typeof ctor' is not assignable to type 'ConstructableA'.
+    Property 'somePropA' is missing in type 'ctor' but required in type '{ somePropA: any; }'.
+
+[exit 1]

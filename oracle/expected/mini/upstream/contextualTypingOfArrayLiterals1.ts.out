@@ -1,0 +1,4 @@
+main.ts(6,17): error TS2304: Cannot find name 'Date'.
+main.ts(9,18): error TS2304: Cannot find name 'Date'.
+
+[exit 1]

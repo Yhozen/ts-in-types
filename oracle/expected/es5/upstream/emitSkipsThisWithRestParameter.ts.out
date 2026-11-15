@@ -1,0 +1,4 @@
+main.ts(6,31): error TS2345: Argument of type 'any[]' is not assignable to parameter of type '[base: any, ...args: any[]]'.
+  Source provides no match for required element at position 0 in target.
+
+[exit 1]

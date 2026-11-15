@@ -1,0 +1,5 @@
+main.ts(1,23): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+main.ts(2,13): error TS7023: 'm' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
+main.ts(2,31): error TS2339: Property 'nope' does not exist on type '{ m(): any; }'.
+
+[exit 1]

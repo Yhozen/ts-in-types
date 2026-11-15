@@ -1,0 +1,3 @@
+main.ts(9,33): error TS2339: Property 'size' does not exist on type '{ kind: "rect"; w: number; h: number; }'.
+
+[exit 1]

@@ -1,0 +1,3 @@
+main.ts(5,12): error TS2339: Property 'a' does not exist on type 'B'.
+
+[exit 1]

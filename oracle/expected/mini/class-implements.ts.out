@@ -1,0 +1,4 @@
+main.ts(3,3): error TS2416: Property 'a' in type 'C' is not assignable to the same property in base type 'I'.
+  Type 'string' is not assignable to type 'number'.
+
+[exit 1]

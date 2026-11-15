@@ -1,0 +1,3 @@
+main.ts(4,46): error TS2693: 'String' only refers to a type, but is being used as a value here.
+
+[exit 1]

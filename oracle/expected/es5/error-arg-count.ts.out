@@ -1,0 +1,4 @@
+main.ts(2,1): error TS2554: Expected 1-2 arguments, but got 0.
+main.ts(3,11): error TS2554: Expected 1-2 arguments, but got 3.
+
+[exit 1]

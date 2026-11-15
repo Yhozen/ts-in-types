@@ -1,0 +1,4 @@
+main.ts(4,34): error TS2353: Object literal may only specify known properties, and 'email' does not exist in type 'P'.
+main.ts(5,20): error TS2344: Type '"nope"' does not satisfy the constraint 'keyof U'.
+
+[exit 1]

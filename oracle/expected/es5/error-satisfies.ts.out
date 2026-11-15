@@ -1,0 +1,4 @@
+main.ts(2,46): error TS2353: Object literal may only specify known properties, and 'blue' does not exist in type 'Colors'.
+main.ts(3,24): error TS2741: Property 'green' is missing in type '{ red: string; }' but required in type 'Colors'.
+
+[exit 1]

@@ -1,0 +1,5 @@
+main.ts(5,7): error TS2322: Type '199' is not assignable to type '200'.
+main.ts(8,7): error TS2322: Type '"not done"' is not assignable to type '"done"'.
+main.ts(9,38): error TS2589: Type instantiation is excessively deep and possibly infinite.
+
+[exit 1]

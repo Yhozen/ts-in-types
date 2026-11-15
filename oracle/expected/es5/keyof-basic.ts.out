@@ -1,0 +1,3 @@
+main.ts(3,7): error TS2322: Type '"nmae"' is not assignable to type 'keyof P'.
+
+[exit 1]

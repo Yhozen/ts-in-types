@@ -1,0 +1,4 @@
+main.ts(9,48): error TS2322: Type '(p2: number) => undefined' is not assignable to type '(x: number) => string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+[exit 1]

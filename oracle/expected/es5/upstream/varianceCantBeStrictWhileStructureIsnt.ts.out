@@ -1,0 +1,16 @@
+main.ts(21,1): error TS2322: Type 'Foo<"">' is not assignable to type 'Foo<string>'.
+  Type 'string' is not assignable to type '""'.
+main.ts(24,1): error TS2322: Type 'Bar<"">' is not assignable to type 'Bar<string>'.
+  Type 'string' is not assignable to type '""'.
+main.ts(27,1): error TS2322: Type 'Bar<"">' is not assignable to type 'Foo<string>'.
+  Types of property 'member' are incompatible.
+    Type '(cb: "") => void' is not assignable to type '(cb: string) => void'.
+      Types of parameters 'cb' and 'cb' are incompatible.
+        Type 'string' is not assignable to type '""'.
+main.ts(30,1): error TS2322: Type 'Foo<"">' is not assignable to type 'Bar<string>'.
+  Types of property 'member' are incompatible.
+    Type '(cb: "") => void' is not assignable to type '(cb: string) => void'.
+      Types of parameters 'cb' and 'cb' are incompatible.
+        Type 'string' is not assignable to type '""'.
+
+[exit 1]

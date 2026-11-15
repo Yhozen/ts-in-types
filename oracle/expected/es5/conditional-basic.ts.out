@@ -1,0 +1,3 @@
+main.ts(2,7): error TS2322: Type '"no"' is not assignable to type '"yes"'.
+
+[exit 1]

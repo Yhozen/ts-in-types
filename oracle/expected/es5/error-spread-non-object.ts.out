@@ -1,0 +1,4 @@
+main.ts(1,13): error TS2698: Spread types may only be created from object types.
+main.ts(2,15): error TS2461: Type '1' is not an array type.
+
+[exit 1]

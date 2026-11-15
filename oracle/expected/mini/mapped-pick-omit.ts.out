@@ -1,0 +1,5 @@
+main.ts(2,10): error TS2304: Cannot find name 'Pick'.
+main.ts(3,10): error TS2304: Cannot find name 'Omit'.
+main.ts(5,12): error TS2304: Cannot find name 'Pick'.
+
+[exit 1]

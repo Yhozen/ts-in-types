@@ -1,0 +1,6 @@
+main.ts(5,10): error TS7010: 'foo1', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(6,10): error TS7010: 'foo1', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(8,12): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Date'.
+main.ts(15,12): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Date'.
+
+[exit 1]

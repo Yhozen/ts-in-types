@@ -1,0 +1,6 @@
+main.ts(5,73): error TS2339: Property 'toFixed' does not exist on type 'number'.
+main.ts(8,5): error TS2564: Property 'foo' has no initializer and is not definitely assigned in the constructor.
+main.ts(11,5): error TS2564: Property 'bar' has no initializer and is not definitely assigned in the constructor.
+main.ts(14,5): error TS2564: Property 'baz' has no initializer and is not definitely assigned in the constructor.
+
+[exit 1]

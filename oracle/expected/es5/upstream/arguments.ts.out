@@ -1,0 +1,8 @@
+main.ts(9,8): error TS2304: Cannot find name 'arguments'.
+main.ts(12,25): error TS2304: Cannot find name 'arguments'.
+main.ts(13,23): error TS2304: Cannot find name 'arguments'.
+main.ts(14,19): error TS2304: Cannot find name 'arguments'.
+main.ts(15,23): error TS2304: Cannot find name 'arguments'.
+main.ts(16,34): error TS2304: Cannot find name 'arguments'.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(2,1): error TS18048: 'a' is possibly 'undefined'.
+main.ts(4,1): error TS2721: Cannot invoke an object which is possibly 'null'.
+
+[exit 1]

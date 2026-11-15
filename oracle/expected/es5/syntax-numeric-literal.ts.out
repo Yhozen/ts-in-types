@@ -1,0 +1,6 @@
+main.ts(1,13): error TS1177: Binary digit expected.
+main.ts(2,13): error TS6189: Multiple consecutive numeric separators are not permitted.
+main.ts(3,11): error TS1489: Decimals with leading zeros are not allowed.
+main.ts(4,13): error TS1124: Digit expected.
+
+[exit 1]

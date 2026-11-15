@@ -1,0 +1,5 @@
+main.ts(2,3): error TS1107: Jump target cannot cross function boundary.
+main.ts(3,3): error TS1107: Jump target cannot cross function boundary.
+main.ts(4,21): error TS1107: Jump target cannot cross function boundary.
+
+[exit 1]

@@ -1,0 +1,3 @@
+main.ts(1,15): error TS2304: Cannot find name 'Record'.
+
+[exit 1]

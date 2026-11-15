@@ -1,0 +1,4 @@
+main.ts(1,10): error TS2304: Cannot find name 'Partial'.
+main.ts(3,10): error TS2304: Cannot find name 'Required'.
+
+[exit 1]

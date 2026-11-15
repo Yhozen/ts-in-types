@@ -1,0 +1,4 @@
+main.ts(1,13): error TS1005: ')' expected.
+main.ts(2,15): error TS1500: Duplicate regular expression flag.
+
+[exit 1]

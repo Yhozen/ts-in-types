@@ -1,0 +1,5 @@
+main.ts(1,1): error TS1044: 'public' modifier cannot appear on a module or namespace element.
+main.ts(2,1): error TS1242: 'abstract' modifier can only appear on a class, method, or property declaration.
+main.ts(3,18): error TS1028: Accessibility modifier already seen.
+
+[exit 1]

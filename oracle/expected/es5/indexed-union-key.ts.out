@@ -1,0 +1,3 @@
+main.ts(3,7): error TS2322: Type 'boolean' is not assignable to type 'V'.
+
+[exit 1]

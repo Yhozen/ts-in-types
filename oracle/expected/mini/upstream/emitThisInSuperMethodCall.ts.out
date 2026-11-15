@@ -1,0 +1,5 @@
+main.ts(13,17): error TS2660: 'super' can only be referenced in members of derived classes or object literal expressions.
+main.ts(20,17): error TS2660: 'super' can only be referenced in members of derived classes or object literal expressions.
+main.ts(26,13): error TS2660: 'super' can only be referenced in members of derived classes or object literal expressions.
+
+[exit 1]

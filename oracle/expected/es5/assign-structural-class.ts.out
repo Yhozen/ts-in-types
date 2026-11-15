@@ -1,0 +1,4 @@
+main.ts(5,7): error TS2322: Type 'C' is not assignable to type 'A'.
+  Property 'x' is private in type 'C' but not in type 'A'.
+
+[exit 1]

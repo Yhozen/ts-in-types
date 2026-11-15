@@ -1,0 +1,4 @@
+main.ts(4,7): error TS2515: Non-abstract class 'Sq' does not implement inherited abstract member area from class 'Shape'.
+main.ts(5,1): error TS2511: Cannot create an instance of an abstract class.
+
+[exit 1]

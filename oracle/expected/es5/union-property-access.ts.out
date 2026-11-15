@@ -1,0 +1,4 @@
+main.ts(5,3): error TS2339: Property 'a' does not exist on type 'A | B'.
+  Property 'a' does not exist on type 'B'.
+
+[exit 1]

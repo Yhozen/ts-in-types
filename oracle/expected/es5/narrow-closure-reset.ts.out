@@ -1,0 +1,4 @@
+main.ts(3,23): error TS2339: Property 'length' does not exist on type 'string | number'.
+  Property 'length' does not exist on type 'number'.
+
+[exit 1]

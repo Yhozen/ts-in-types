@@ -1,0 +1,4 @@
+main.ts(3,27): error TS2304: Cannot find name 'Math'.
+main.ts(6,3): error TS2339: Property 'z' does not exist on type 'Point'.
+
+[exit 1]

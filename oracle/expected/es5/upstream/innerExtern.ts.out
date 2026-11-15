@@ -1,0 +1,3 @@
+main.ts(7,20): error TS7005: Variable 'Elephant' implicitly has an 'any' type.
+
+[exit 1]

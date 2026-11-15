@@ -1,0 +1,5 @@
+main.ts(5,1): error TS2693: 'String' only refers to a type, but is being used as a value here.
+main.ts(6,1): error TS2693: 'String' only refers to a type, but is being used as a value here.
+main.ts(7,1): error TS2693: 'String' only refers to a type, but is being used as a value here.
+
+[exit 1]

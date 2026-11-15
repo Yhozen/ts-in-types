@@ -1,0 +1,4 @@
+main.ts(80,20): error TS2339: Property 'slice' does not exist on type 'string[]'.
+main.ts(83,16): error TS2339: Property 'slice' does not exist on type 'string[]'.
+
+[exit 1]

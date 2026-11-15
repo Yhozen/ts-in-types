@@ -1,0 +1,10 @@
+main.ts(5,11): error TS7053: Element implicitly has an 'any' type because expression of type '12' can't be used to index type 'IArguments'.
+  Property '12' does not exist on type 'IArguments'.
+main.ts(9,8): error TS2304: Cannot find name 'arguments'.
+main.ts(12,25): error TS2304: Cannot find name 'arguments'.
+main.ts(13,23): error TS2304: Cannot find name 'arguments'.
+main.ts(14,19): error TS2304: Cannot find name 'arguments'.
+main.ts(15,23): error TS2304: Cannot find name 'arguments'.
+main.ts(16,34): error TS2304: Cannot find name 'arguments'.
+
+[exit 1]

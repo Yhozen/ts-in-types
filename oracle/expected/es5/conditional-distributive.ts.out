@@ -1,0 +1,6 @@
+main.ts(3,7): error TS2322: Type '(string | number)[]' is not assignable to type 'A'.
+  Type '(string | number)[]' is not assignable to type 'string[]'.
+    Type 'string | number' is not assignable to type 'string'.
+      Type 'number' is not assignable to type 'string'.
+
+[exit 1]

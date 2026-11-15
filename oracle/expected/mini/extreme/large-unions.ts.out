@@ -1,0 +1,6 @@
+main.ts(4,7): error TS2322: Type '"m300"' is not assignable to type 'Big'.
+main.ts(6,32): error TS2353: Object literal may only specify known properties, and 'v41' does not exist in type '{ kind: "k42"; v42: number; }'.
+main.ts(7,117): error TS2339: Property 'v1' does not exist on type '{ kind: "k1"; v1: number; } | { kind: "k2"; v2: number; } | { kind: "k3"; v3: number; } | { kind: "k4"; v4: number; } | { kind: "k5"; v5: number; } | { kind: "k6"; v6: number; } | { kind: "k7"; v7: number; } | { kind: "k8"; v8: number; } | ... 89 more ... | { ...; }'.
+  Property 'v1' does not exist on type '{ kind: "k2"; v2: number; }'.
+
+[exit 1]

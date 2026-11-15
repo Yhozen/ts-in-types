@@ -1,0 +1,4 @@
+main.ts(2,19): error TS2353: Object literal may only specify known properties, and 'c' does not exist in type 'Weak'.
+main.ts(4,7): error TS2559: Type '{ c: number; }' has no properties in common with type 'Weak'.
+
+[exit 1]

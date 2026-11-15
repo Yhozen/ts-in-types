@@ -1,0 +1,4 @@
+main.ts(1,17): error TS2585: 'Symbol' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the 'lib' compiler option to es2015 or later.
+main.ts(2,5): error TS2322: Type 'symbol' is not assignable to type 'number'.
+
+[exit 1]

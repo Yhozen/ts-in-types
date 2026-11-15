@@ -1,0 +1,4 @@
+main.ts(2,3): error TS2339: Property 'b' does not exist on type '{ a: number; }'.
+main.ts(3,7): error TS2339: Property 'nope' does not exist on type '"str"'.
+
+[exit 1]

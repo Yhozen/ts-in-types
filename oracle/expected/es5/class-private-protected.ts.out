@@ -1,0 +1,5 @@
+main.ts(7,21): error TS2341: Property 'a' is private and only accessible within class 'A'.
+main.ts(10,3): error TS2341: Property 'a' is private and only accessible within class 'A'.
+main.ts(10,8): error TS2445: Property 'b' is protected and only accessible within class 'A' and its subclasses.
+
+[exit 1]

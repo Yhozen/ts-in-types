@@ -1,0 +1,7 @@
+main.ts(5,13): error TS2564: Property 'name' has no initializer and is not definitely assigned in the constructor.
+main.ts(21,9): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+main.ts(26,13): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+main.ts(28,15): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+main.ts(33,13): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+
+[exit 1]

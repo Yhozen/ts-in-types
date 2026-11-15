@@ -1,0 +1,6 @@
+main.ts(1,7): error TS1389: 'class' is not allowed as a variable declaration name.
+main.ts(1,13): error TS1005: '{' expected.
+main.ts(2,1): error TS1440: Variable declaration not allowed at this location.
+main.ts(2,14): error TS1003: Identifier expected.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(1,6): error TS2456: Type alias 'A' circularly references itself.
+main.ts(2,6): error TS2456: Type alias 'B' circularly references itself.
+
+[exit 1]

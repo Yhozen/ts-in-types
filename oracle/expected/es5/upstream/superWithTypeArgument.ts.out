@@ -1,0 +1,3 @@
+main.ts(10,14): error TS2754: 'super' may not use type arguments.
+
+[exit 1]

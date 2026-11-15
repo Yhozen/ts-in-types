@@ -1,0 +1,7 @@
+main.ts(1,10): error TS2304: Cannot find name 'Exclude'.
+main.ts(2,10): error TS2304: Cannot find name 'Extract'.
+main.ts(3,10): error TS2304: Cannot find name 'NonNullable'.
+main.ts(4,10): error TS2304: Cannot find name 'ReturnType'.
+main.ts(5,10): error TS2304: Cannot find name 'Parameters'.
+
+[exit 1]

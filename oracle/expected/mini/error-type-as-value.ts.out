@@ -1,0 +1,4 @@
+main.ts(3,11): error TS2693: 'I' only refers to a type, but is being used as a value here.
+main.ts(4,11): error TS2693: 'T' only refers to a type, but is being used as a value here.
+
+[exit 1]

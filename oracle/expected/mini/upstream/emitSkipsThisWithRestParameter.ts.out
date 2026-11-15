@@ -1,0 +1,4 @@
+main.ts(6,19): error TS2339: Property 'apply' does not exist on type '(base: any, ...args: any[]) => any'.
+main.ts(6,40): error TS2339: Property 'concat' does not exist on type 'any[]'.
+
+[exit 1]

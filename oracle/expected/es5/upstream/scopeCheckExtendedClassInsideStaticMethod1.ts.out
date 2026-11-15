@@ -1,0 +1,8 @@
+main.ts(5,19): error TS7008: Member 'v' implicitly has an 'any' type.
+main.ts(5,29): error TS7008: Member 'p' implicitly has an 'any' type.
+main.ts(5,39): error TS7008: Member 's' implicitly has an 'any' type.
+main.ts(8,7): error TS2304: Cannot find name 'v'.
+main.ts(9,12): error TS2339: Property 'p' does not exist on type 'typeof D'.
+main.ts(10,7): error TS2662: Cannot find name 's'. Did you mean the static member 'D.s'?
+
+[exit 1]

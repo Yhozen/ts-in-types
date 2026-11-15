@@ -1,0 +1,4 @@
+main.ts(25,13): error TS2331: 'this' cannot be referenced in a module or namespace body.
+main.ts(25,13): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+
+[exit 1]

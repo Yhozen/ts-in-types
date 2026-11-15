@@ -1,0 +1,4 @@
+main.ts(7,19): error TS7006: Parameter 'callback' implicitly has an 'any' type.
+main.ts(19,19): error TS7006: Parameter 'callback' implicitly has an 'any' type.
+
+[exit 1]

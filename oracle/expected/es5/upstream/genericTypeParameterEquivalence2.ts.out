@@ -1,0 +1,8 @@
+main.ts(8,32): error TS2345: Argument of type 'A' is not assignable to parameter of type '[a: A]'.
+main.ts(21,9): error TS7034: Variable 'ret' implicitly has type 'any[]' in some locations where its type cannot be determined.
+main.ts(28,12): error TS7005: Variable 'ret' implicitly has an 'any[]' type.
+main.ts(56,20): error TS2345: Argument of type '<A>(ar: A[]) => number' is not assignable to parameter of type '(b: unknown) => number'.
+  Types of parameters 'ar' and 'b' are incompatible.
+    Type 'unknown' is not assignable to type 'unknown[]'.
+
+[exit 1]

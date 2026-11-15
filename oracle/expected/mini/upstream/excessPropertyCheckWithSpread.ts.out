@@ -1,0 +1,4 @@
+main.ts(5,25): error TS2842: 'number' is an unused renaming of 'a'. Did you intend to use it as a type annotation?
+main.ts(5,25): error TS7031: Binding element 'number' implicitly has an 'any' type.
+
+[exit 1]

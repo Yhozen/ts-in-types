@@ -1,0 +1,8 @@
+main.ts(12,19): error TS2304: Cannot find name 'Required'.
+main.ts(12,28): error TS2304: Cannot find name 'Pick'.
+main.ts(12,52): error TS2304: Cannot find name 'Omit'.
+main.ts(20,24): error TS2304: Cannot find name 'Required'.
+main.ts(20,33): error TS2304: Cannot find name 'Pick'.
+main.ts(20,62): error TS2304: Cannot find name 'Omit'.
+
+[exit 1]

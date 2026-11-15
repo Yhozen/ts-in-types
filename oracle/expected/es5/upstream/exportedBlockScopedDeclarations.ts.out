@@ -1,0 +1,18 @@
+main.ts(6,7): error TS7022: 'foo' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(6,13): error TS2448: Block-scoped variable 'foo' used before its declaration.
+main.ts(7,14): error TS7022: 'bar' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(7,20): error TS2448: Block-scoped variable 'bar' used before its declaration.
+main.ts(9,9): error TS7022: 'bar' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(9,15): error TS2448: Block-scoped variable 'bar' used before its declaration.
+main.ts(12,16): error TS7022: 'bar' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(12,22): error TS2448: Block-scoped variable 'bar' used before its declaration.
+main.ts(15,5): error TS7022: 'foo1' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(15,12): error TS2448: Block-scoped variable 'foo1' used before its declaration.
+main.ts(16,12): error TS7022: 'bar1' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(16,19): error TS2448: Block-scoped variable 'bar1' used before its declaration.
+main.ts(18,7): error TS7022: 'bar1' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(18,14): error TS2448: Block-scoped variable 'bar1' used before its declaration.
+main.ts(21,14): error TS7022: 'bar1' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+main.ts(21,21): error TS2448: Block-scoped variable 'bar1' used before its declaration.
+
+[exit 1]

@@ -1,0 +1,3 @@
+main.ts(3,7): error TS2540: Cannot assign to 'c' because it is a read-only property.
+
+[exit 1]

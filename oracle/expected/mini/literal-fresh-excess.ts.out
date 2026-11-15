@@ -1,0 +1,3 @@
+main.ts(2,26): error TS2353: Object literal may only specify known properties, and 'b' does not exist in type 'A'.
+
+[exit 1]

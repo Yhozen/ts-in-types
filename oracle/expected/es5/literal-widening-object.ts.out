@@ -1,0 +1,6 @@
+main.ts(3,7): error TS2322: Type '{ kind: string; r: number; }' is not assignable to type 'Shape'.
+  Type '{ kind: string; r: number; }' is not assignable to type '{ kind: "circle"; r: number; }'.
+    Types of property 'kind' are incompatible.
+      Type 'string' is not assignable to type '"circle"'.
+
+[exit 1]

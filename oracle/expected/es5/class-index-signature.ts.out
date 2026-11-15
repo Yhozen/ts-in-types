@@ -1,0 +1,3 @@
+main.ts(4,3): error TS2411: Property 'name' of type 'string' is not assignable to 'string' index type 'number'.
+
+[exit 1]

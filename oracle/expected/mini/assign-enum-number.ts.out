@@ -1,0 +1,4 @@
+main.ts(4,1): error TS2322: Type '42' is not assignable to type 'E'.
+main.ts(5,7): error TS2322: Type 'E' is not assignable to type 'string'.
+
+[exit 1]

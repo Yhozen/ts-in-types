@@ -1,0 +1,3 @@
+main.ts(4,46): error TS2353: Object literal may only specify known properties, and 'name' does not exist in type '{ id: number; }'.
+
+[exit 1]

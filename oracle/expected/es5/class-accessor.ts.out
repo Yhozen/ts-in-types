@@ -1,0 +1,4 @@
+main.ts(8,1): error TS2322: Type 'string' is not assignable to type 'number'.
+main.ts(9,3): error TS2540: Cannot assign to 'ro' because it is a read-only property.
+
+[exit 1]

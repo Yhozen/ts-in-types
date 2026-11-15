@@ -1,0 +1,4 @@
+main.ts(2,7): error TS2322: Type '{ a: (string | number | { b: null; })[]; c: undefined; }' is not assignable to type 'Json'.
+  Type '{ a: (string | number | { b: null; })[]; c: undefined; }' is not assignable to type 'null'.
+
+[exit 1]

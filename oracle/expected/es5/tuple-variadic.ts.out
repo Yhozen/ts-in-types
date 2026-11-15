@@ -1,0 +1,4 @@
+main.ts(2,7): error TS2322: Type '[1, 2, 3, number]' is not assignable to type '[1, 2, 3]'.
+  Source has 4 element(s) but target allows only 3.
+
+[exit 1]

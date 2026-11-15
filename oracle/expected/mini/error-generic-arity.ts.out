@@ -1,0 +1,5 @@
+main.ts(2,10): error TS2314: Generic type 'Box' requires 1 type argument(s).
+main.ts(3,10): error TS2314: Generic type 'Box' requires 1 type argument(s).
+main.ts(5,3): error TS2558: Expected 1 type arguments, but got 2.
+
+[exit 1]

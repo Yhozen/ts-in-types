@@ -1,0 +1,4 @@
+main.ts(9,7): error TS2322: Type 'typeof A' is not assignable to type 'new () => A'.
+  Property 'prop' is missing in type 'A' but required in type 'A'.
+
+[exit 1]

@@ -1,0 +1,8 @@
+main.ts(5,39): error TS2872: This kind of expression is always truthy.
+main.ts(5,51): error TS2339: Property 'length' does not exist on type 'string'.
+main.ts(7,27): error TS2339: Property 'length' does not exist on type 'string'.
+main.ts(7,47): error TS7006: Parameter 's' implicitly has an 'any' type.
+main.ts(9,27): error TS2339: Property 'length' does not exist on type 'string'.
+main.ts(10,62): error TS2339: Property 'length' does not exist on type 'string'.
+
+[exit 1]

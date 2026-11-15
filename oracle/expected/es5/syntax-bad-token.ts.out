@@ -1,0 +1,6 @@
+main.ts(1,13): error TS1005: ',' expected.
+main.ts(1,16): error TS1146: Declaration expected.
+main.ts(2,1): error TS1440: Variable declaration not allowed at this location.
+main.ts(2,5): error TS1127: Invalid character.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(14,11): error TS2820: Type '"hdpvd"' is not assignable to type '"bluray" | "hddvd"'. Did you mean '"hddvd"'?
+main.ts(19,11): error TS2820: Type '"hdpvd"' is not assignable to type '"bluray" | "hddvd"'. Did you mean '"hddvd"'?
+
+[exit 1]

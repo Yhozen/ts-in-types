@@ -1,0 +1,22 @@
+main.ts(16,13): error TS7005: Variable 'declaredVar' implicitly has an 'any' type.
+main.ts(17,13): error TS7005: Variable 'declareVar2' implicitly has an 'any' type.
+main.ts(19,13): error TS7005: Variable 'declaredVar3' implicitly has an 'any' type.
+main.ts(25,1): error TS2454: Variable 'complicatedArrayVar' is used before being assigned.
+main.ts(68,16): error TS7005: Variable 'a' implicitly has an 'any' type.
+main.ts(68,36): error TS7005: Variable 'b' implicitly has an 'any' type.
+main.ts(74,22): error TS7006: Parameter 'b' implicitly has an 'any' type.
+main.ts(79,22): error TS7006: Parameter 'b' implicitly has an 'any' type.
+main.ts(83,17): error TS7005: Variable 'd1' implicitly has an 'any' type.
+main.ts(83,21): error TS7005: Variable 'd2' implicitly has an 'any' type.
+main.ts(85,17): error TS7005: Variable 'v1' implicitly has an 'any' type.
+main.ts(86,16): error TS7005: Variable 'mE' implicitly has an 'any' type.
+main.ts(87,24): error TS7005: Variable 'd1E' implicitly has an 'any' type.
+main.ts(87,29): error TS7005: Variable 'd2E' implicitly has an 'any' type.
+main.ts(88,16): error TS7005: Variable 'b2E' implicitly has an 'any' type.
+main.ts(89,24): error TS7005: Variable 'v1E' implicitly has an 'any' type.
+main.ts(95,13): error TS7005: Variable 'da1' implicitly has an 'any' type.
+main.ts(95,18): error TS7005: Variable 'da2' implicitly has an 'any' type.
+main.ts(97,13): error TS7005: Variable 'dv1' implicitly has an 'any' type.
+main.ts(102,14): error TS7006: Parameter 'a2' implicitly has an 'any' type.
+
+[exit 1]

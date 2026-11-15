@@ -1,0 +1,4 @@
+main.ts(2,26): error TS1061: Enum member must have initializer.
+main.ts(3,19): error TS1061: Enum member must have initializer.
+
+[exit 1]

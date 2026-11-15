@@ -1,0 +1,10 @@
+main.ts(5,4): error TS1184: Modifiers cannot appear here.
+main.ts(5,21): error TS2393: Duplicate function implementation.
+main.ts(5,25): error TS1183: An implementation cannot be declared in ambient contexts.
+main.ts(6,4): error TS1184: Modifiers cannot appear here.
+main.ts(6,20): error TS2393: Duplicate function implementation.
+main.ts(7,4): error TS1184: Modifiers cannot appear here.
+main.ts(7,28): error TS2393: Duplicate function implementation.
+main.ts(7,32): error TS1183: An implementation cannot be declared in ambient contexts.
+
+[exit 1]

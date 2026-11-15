@@ -1,0 +1,5 @@
+main.ts(2,7): error TS2322: Type '(a: string) => void' is not assignable to type 'F'.
+  Types of parameters 'a' and 'a' are incompatible.
+    Type 'number' is not assignable to type 'string'.
+
+[exit 1]

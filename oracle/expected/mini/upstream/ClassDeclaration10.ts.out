@@ -1,0 +1,5 @@
+main.ts(6,4): error TS2390: Constructor implementation is missing.
+main.ts(7,4): error TS2391: Function implementation is missing or not immediately following the declaration.
+main.ts(7,4): error TS7010: 'foo', which lacks return-type annotation, implicitly has an 'any' return type.
+
+[exit 1]

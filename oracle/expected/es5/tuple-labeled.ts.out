@@ -1,0 +1,5 @@
+main.ts(2,7): error TS2322: Type '[number]' is not assignable to type 'Range'.
+  Source has 1 element(s) but target requires 2.
+main.ts(4,9): error TS2554: Expected 2 arguments, but got 3.
+
+[exit 1]

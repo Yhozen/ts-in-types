@@ -1,0 +1,4 @@
+main.ts(2,7): error TS2322: Type 'Dir.Down' is not assignable to type 'Dir.Up'.
+main.ts(4,7): error TS2322: Type '"UP"' is not assignable to type 'Dir'.
+
+[exit 1]

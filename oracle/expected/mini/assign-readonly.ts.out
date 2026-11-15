@@ -1,0 +1,7 @@
+main.ts(3,3): error TS2540: Cannot assign to 'a' because it is a read-only property.
+main.ts(6,1): error TS7053: Element implicitly has an 'any' type because expression of type '0' can't be used to index type 'readonly number[]'.
+  Property '0' does not exist on type 'readonly number[]'.
+main.ts(7,7): error TS4104: The type 'readonly number[]' is 'readonly' and cannot be assigned to the mutable type 'number[]'.
+  Property 'length' is missing in type 'readonly number[]' but required in type 'number[]'.
+
+[exit 1]

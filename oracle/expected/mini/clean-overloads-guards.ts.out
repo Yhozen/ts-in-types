@@ -1,0 +1,4 @@
+main.ts(4,36): error TS2339: Property 'length' does not exist on type 'string'.
+main.ts(4,45): error TS2693: 'String' only refers to a type, but is being used as a value here.
+
+[exit 1]

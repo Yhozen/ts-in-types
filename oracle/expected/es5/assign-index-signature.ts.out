@@ -1,0 +1,4 @@
+main.ts(2,25): error TS2322: Type 'string' is not assignable to type 'number'.
+main.ts(4,42): error TS2411: Property 'name' of type 'string' is not assignable to 'string' index type 'number'.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(13,32): error TS2339: Property 'map' does not exist on type 'string[]'.
+main.ts(13,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+
+[exit 1]

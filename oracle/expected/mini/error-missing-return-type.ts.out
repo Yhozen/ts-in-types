@@ -1,0 +1,4 @@
+main.ts(1,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+main.ts(2,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(2,7): error TS2322: Type '2' is not assignable to type '1'.
+main.ts(3,7): error TS2322: Type '"x"' is not assignable to type 'never'.
+
+[exit 1]

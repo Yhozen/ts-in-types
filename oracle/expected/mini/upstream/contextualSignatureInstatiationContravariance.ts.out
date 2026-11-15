@@ -1,0 +1,8 @@
+main.ts(5,20): error TS7008: Member 'x' implicitly has an 'any' type.
+main.ts(6,36): error TS7008: Member 'y' implicitly has an 'any' type.
+main.ts(7,37): error TS7008: Member 'y2' implicitly has an 'any' type.
+main.ts(12,1): error TS2322: Type '<T extends Animal>(x: T, y: T) => void' is not assignable to type '(g: Giraffe, e: Elephant) => void'.
+  Types of parameters 'y' and 'e' are incompatible.
+    Property 'y' is missing in type 'Elephant' but required in type 'Giraffe'.
+
+[exit 1]

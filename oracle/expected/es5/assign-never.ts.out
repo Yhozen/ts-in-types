@@ -1,0 +1,3 @@
+main.ts(3,7): error TS2322: Type '"a"' is not assignable to type 'never'.
+
+[exit 1]

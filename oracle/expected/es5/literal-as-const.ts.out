@@ -1,0 +1,4 @@
+main.ts(2,3): error TS2339: Property 'push' does not exist on type 'readonly [1, 2, 3]'.
+main.ts(4,3): error TS2540: Cannot assign to 'x' because it is a read-only property.
+
+[exit 1]

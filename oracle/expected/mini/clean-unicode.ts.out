@@ -1,0 +1,4 @@
+main.ts(3,25): error TS2339: Property 'length' does not exist on type '"αβγ"'.
+main.ts(3,40): error TS2339: Property 'length' does not exist on type '"😀 ok"'.
+
+[exit 1]

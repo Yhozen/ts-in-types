@@ -1,0 +1,28 @@
+main.ts(5,5): error TS2564: Property 'n' has no initializer and is not definitely assigned in the constructor.
+main.ts(11,5): error TS2416: Property 'n' in type 'Derived' is not assignable to the same property in base type 'Base'.
+  Type 'string | Derived' is not assignable to type 'string | Base'.
+    Type 'Derived' is not assignable to type 'string | Base'.
+      Type 'Derived' is not assignable to type 'Base'.
+        The types returned by 'fn()' are incompatible between these types.
+          Type 'string | number' is not assignable to type 'number'.
+            Type 'string' is not assignable to type 'number'.
+main.ts(11,5): error TS2564: Property 'n' has no initializer and is not definitely assigned in the constructor.
+main.ts(11,5): error TS2612: Property 'n' will overwrite the base property in 'Base'. If this is intentional, add an initializer. Otherwise, add a 'declare' modifier or remove the redundant declaration.
+main.ts(12,5): error TS2416: Property 'fn' in type 'Derived' is not assignable to the same property in base type 'Base'.
+  Type '() => string | number' is not assignable to type '() => number'.
+    Type 'string | number' is not assignable to type 'number'.
+      Type 'string' is not assignable to type 'number'.
+main.ts(17,5): error TS2416: Property 'n' in type 'DerivedInterface' is not assignable to the same property in base type 'Base'.
+  Type 'string | DerivedInterface' is not assignable to type 'string | Base'.
+    Type 'DerivedInterface' is not assignable to type 'string | Base'.
+      Type 'DerivedInterface' is not assignable to type 'Base'.
+        The types returned by 'fn()' are incompatible between these types.
+          Type 'string | number' is not assignable to type 'number'.
+            Type 'string' is not assignable to type 'number'.
+main.ts(17,5): error TS2564: Property 'n' has no initializer and is not definitely assigned in the constructor.
+main.ts(18,5): error TS2416: Property 'fn' in type 'DerivedInterface' is not assignable to the same property in base type 'Base'.
+  Type '() => string | number' is not assignable to type '() => number'.
+    Type 'string | number' is not assignable to type 'number'.
+      Type 'string' is not assignable to type 'number'.
+
+[exit 1]

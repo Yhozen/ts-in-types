@@ -1,0 +1,4 @@
+main.ts(5,5): error TS17009: 'super' must be called before accessing 'this' in the constructor of a derived class.
+main.ts(6,11): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+
+[exit 1]

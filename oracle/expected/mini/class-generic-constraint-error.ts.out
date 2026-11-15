@@ -1,0 +1,4 @@
+main.ts(2,15): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+main.ts(3,20): error TS2344: Type 'number' does not satisfy the constraint 'string'.
+
+[exit 1]

@@ -1,0 +1,8 @@
+main.ts(5,10): error TS7010: 'foo1', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(5,25): error TS2304: Cannot find name 'Date'.
+main.ts(6,10): error TS7010: 'foo1', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(8,6): error TS2304: Cannot find name 'Date'.
+main.ts(12,25): error TS2304: Cannot find name 'Date'.
+main.ts(15,6): error TS2304: Cannot find name 'Date'.
+
+[exit 1]

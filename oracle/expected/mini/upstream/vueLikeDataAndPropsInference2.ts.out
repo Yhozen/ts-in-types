@@ -1,0 +1,8 @@
+main.ts(8,36): error TS2304: Cannot find name 'Readonly'.
+main.ts(16,32): error TS2304: Cannot find name 'Record'.
+main.ts(20,13): error TS2304: Cannot find name 'Record'.
+main.ts(28,5): error TS2304: Cannot find name 'ThisType'.
+main.ts(28,21): error TS2304: Cannot find name 'Readonly'.
+main.ts(46,18): error TS2339: Property 'bar' does not exist on type '{ foo(newVal: string, oldVal: string): void; }'.
+
+[exit 1]

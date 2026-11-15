@@ -1,0 +1,7 @@
+main.ts(2,21): error TS2416: Property 'm' in type 'B' is not assignable to the same property in base type 'A'.
+  Type '(x: string) => void' is not assignable to type '(x: number) => void'.
+    Types of parameters 'x' and 'x' are incompatible.
+      Type 'number' is not assignable to type 'string'.
+main.ts(3,30): error TS4113: This member cannot have an 'override' modifier because it is not declared in the base class 'A'.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(3,7): error TS2322: Type '{ a: number; }' is not assignable to type 'A & B'.
+  Property 'b' is missing in type '{ a: number; }' but required in type 'B'.
+
+[exit 1]

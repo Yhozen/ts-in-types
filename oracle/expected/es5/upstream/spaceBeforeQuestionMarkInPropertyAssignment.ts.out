@@ -1,0 +1,3 @@
+main.ts(4,12): error TS1162: An object member cannot be declared optional.
+
+[exit 1]

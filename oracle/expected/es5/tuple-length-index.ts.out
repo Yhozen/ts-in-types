@@ -1,0 +1,5 @@
+main.ts(2,7): error TS2322: Type '2' is not assignable to type '3'.
+main.ts(3,3): error TS2493: Tuple type '[number, string]' of length '2' has no element at index '2'.
+main.ts(4,7): error TS2322: Type 'string' is not assignable to type 'number'.
+
+[exit 1]

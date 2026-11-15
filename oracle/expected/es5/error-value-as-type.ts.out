@@ -1,0 +1,4 @@
+main.ts(2,8): error TS2749: 'v' refers to a value, but is being used as a type here. Did you mean 'typeof v'?
+main.ts(4,8): error TS2749: 'fn' refers to a value, but is being used as a type here. Did you mean 'typeof fn'?
+
+[exit 1]

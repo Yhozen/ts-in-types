@@ -1,0 +1,6 @@
+main.ts(4,7): error TS2322: Type 'string' is not assignable to type 'number'.
+main.ts(5,3): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'boolean' is not assignable to parameter of type 'number'.
+
+[exit 1]

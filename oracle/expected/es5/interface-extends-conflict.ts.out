@@ -1,0 +1,4 @@
+main.ts(3,11): error TS2320: Interface 'C' cannot simultaneously extend types 'A' and 'B'.
+  Named property 'v' of types 'A' and 'B' are not identical.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(5,1): error TS2454: Variable 'f' is used before being assigned.
+main.ts(5,3): error TS2339: Property 'arguments' does not exist on type 'new () => void'.
+
+[exit 1]

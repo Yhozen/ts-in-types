@@ -1,0 +1,5 @@
+main.ts(4,7): error TS2322: Type '[string, number, string]' is not assignable to type 'T'.
+  Type at position 2 in source is not compatible with type at position 2 in target.
+    Type 'string' is not assignable to type 'boolean'.
+
+[exit 1]

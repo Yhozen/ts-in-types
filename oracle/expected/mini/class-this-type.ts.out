@@ -1,0 +1,3 @@
+main.ts(6,23): error TS2339: Property 'nope' does not exist on type 'Sub'.
+
+[exit 1]

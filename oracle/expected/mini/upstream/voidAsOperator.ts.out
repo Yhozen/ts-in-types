@@ -1,0 +1,4 @@
+main.ts(4,6): error TS2873: This kind of expression is always falsy.
+main.ts(9,6): error TS2873: This kind of expression is always falsy.
+
+[exit 1]

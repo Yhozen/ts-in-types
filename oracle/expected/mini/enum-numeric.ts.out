@@ -1,0 +1,3 @@
+main.ts(5,7): error TS2339: Property 'Purple' does not exist on type 'typeof Color'.
+
+[exit 1]

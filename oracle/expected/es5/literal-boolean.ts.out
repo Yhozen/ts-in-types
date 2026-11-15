@@ -1,0 +1,4 @@
+main.ts(1,7): error TS2322: Type 'false' is not assignable to type 'true'.
+main.ts(3,7): error TS2322: Type 'true' is not assignable to type 'false'.
+
+[exit 1]

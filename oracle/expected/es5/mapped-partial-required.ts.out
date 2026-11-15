@@ -1,0 +1,3 @@
+main.ts(4,7): error TS2741: Property 'b' is missing in type '{ a: number; }' but required in type 'Required<Partial<{ a: number; b: string; }>>'.
+
+[exit 1]

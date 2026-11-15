@@ -1,0 +1,5 @@
+main.ts(3,5): error TS2322: Type '(e: Click) => void' is not assignable to type '(e: Ev) => void'.
+  Types of parameters 'e' and 'e' are incompatible.
+    Property 'x' is missing in type 'Ev' but required in type 'Click'.
+
+[exit 1]

@@ -1,0 +1,6 @@
+main.ts(1,19): error TS1117: An object literal cannot have multiple properties with the same name.
+main.ts(2,15): error TS2300: Duplicate identifier 'x'.
+main.ts(2,26): error TS2300: Duplicate identifier 'x'.
+main.ts(2,26): error TS2717: Subsequent property declarations must have the same type.  Property 'x' must be of type 'number', but here has type 'string'.
+
+[exit 1]

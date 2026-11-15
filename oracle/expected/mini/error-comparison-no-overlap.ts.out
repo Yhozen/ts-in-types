@@ -1,0 +1,4 @@
+main.ts(2,5): error TS2367: This comparison appears to be unintentional because the types '"x"' and '"z"' have no overlap.
+main.ts(4,5): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+
+[exit 1]

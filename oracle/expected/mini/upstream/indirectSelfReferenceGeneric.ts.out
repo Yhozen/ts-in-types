@@ -1,0 +1,5 @@
+main.ts(4,7): error TS2506: 'a' is referenced directly or indirectly in its own base expression.
+main.ts(4,20): error TS2449: Class 'b' used before its declaration.
+main.ts(5,7): error TS2506: 'b' is referenced directly or indirectly in its own base expression.
+
+[exit 1]

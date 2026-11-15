@@ -1,0 +1,4 @@
+main.ts(4,11): error TS1042: 'public' modifier cannot be used here.
+main.ts(4,11): error TS1184: Modifiers cannot appear here.
+
+[exit 1]

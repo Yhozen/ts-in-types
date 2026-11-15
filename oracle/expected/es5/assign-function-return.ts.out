@@ -1,0 +1,4 @@
+main.ts(2,3): error TS2322: Type 'string' is not assignable to type 'number'.
+main.ts(4,31): error TS2322: Type 'number' is not assignable to type 'string'.
+
+[exit 1]

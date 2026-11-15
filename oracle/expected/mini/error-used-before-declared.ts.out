@@ -1,0 +1,5 @@
+main.ts(1,1): error TS2448: Block-scoped variable 'x' used before its declaration.
+main.ts(1,1): error TS2454: Variable 'x' is used before being assigned.
+main.ts(3,17): error TS2449: Class 'D' used before its declaration.
+
+[exit 1]

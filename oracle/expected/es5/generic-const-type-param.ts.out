@@ -1,0 +1,3 @@
+main.ts(3,7): error TS4104: The type 'readonly [1, "a"]' is 'readonly' and cannot be assigned to the mutable type '[number, string]'.
+
+[exit 1]

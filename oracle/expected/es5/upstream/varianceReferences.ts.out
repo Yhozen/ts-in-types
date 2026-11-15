@@ -1,0 +1,19 @@
+main.ts(9,32): error TS2637: Variance annotations are only supported in type aliases for object, function, constructor, and mapped types.
+main.ts(15,1): error TS2322: Type '1 | 2' is not assignable to type '1'.
+  Type '2' is not assignable to type '1'.
+main.ts(20,28): error TS2637: Variance annotations are only supported in type aliases for object, function, constructor, and mapped types.
+main.ts(25,1): error TS2322: Type '1 | 2' is not assignable to type '1'.
+  Type '2' is not assignable to type '1'.
+main.ts(32,32): error TS2637: Variance annotations are only supported in type aliases for object, function, constructor, and mapped types.
+main.ts(37,1): error TS2322: Type '1 | 2' is not assignable to type '1'.
+  Type '2' is not assignable to type '1'.
+main.ts(44,20): error TS2637: Variance annotations are only supported in type aliases for object, function, constructor, and mapped types.
+main.ts(49,1): error TS2322: Type 'VarianceShape<1 | 2>' is not assignable to type 'VarianceShape<1>'.
+  Type '1 | 2' is not assignable to type '1'.
+    Type '2' is not assignable to type '1'.
+main.ts(59,24): error TS2637: Variance annotations are only supported in type aliases for object, function, constructor, and mapped types.
+main.ts(64,1): error TS2322: Type 'VarianceDeepShape<1 | 2>' is not assignable to type 'VarianceDeepShape<1>'.
+  Type '1 | 2' is not assignable to type '1'.
+    Type '2' is not assignable to type '1'.
+
+[exit 1]

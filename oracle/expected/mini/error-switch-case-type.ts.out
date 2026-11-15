@@ -1,0 +1,3 @@
+main.ts(4,8): error TS2678: Type '"c"' is not comparable to type '"a" | "b"'.
+
+[exit 1]

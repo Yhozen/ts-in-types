@@ -1,0 +1,11 @@
+main.ts(7,9): error TS7005: Variable 'x' implicitly has an 'any' type.
+main.ts(10,14): error TS7010: 'f', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(10,16): error TS7006: Parameter 'x' implicitly has an 'any' type.
+main.ts(11,14): error TS7010: 'f2', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(15,9): error TS7010: 'foo', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(16,9): error TS7010: 'foo2', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(21,9): error TS7010: 'foo', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(22,9): error TS7010: 'foo2', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(27,13): error TS7005: Variable 'y' implicitly has an 'any' type.
+
+[exit 1]

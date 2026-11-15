@@ -1,0 +1,11 @@
+main.ts(7,7): error TS2813: Class declaration cannot implement overload list for 'Foo'.
+main.ts(15,10): error TS2814: Function with bodies can only merge with classes that are ambient.
+main.ts(15,10): error TS7010: 'Foo', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(17,10): error TS2389: Function implementation name must be 'Foo'.
+main.ts(17,10): error TS2393: Duplicate function implementation.
+main.ts(18,10): error TS2393: Duplicate function implementation.
+main.ts(20,10): error TS2391: Function implementation is missing or not immediately following the declaration.
+main.ts(20,10): error TS7010: 'Goo', which lacks return-type annotation, implicitly has an 'any' return type.
+main.ts(22,18): error TS7010: 'Gar', which lacks return-type annotation, implicitly has an 'any' return type.
+
+[exit 1]

@@ -1,0 +1,4 @@
+main.ts(3,7): error TS2322: Type 'unknown' is not assignable to type 'number'.
+main.ts(6,1): error TS18046: 'u' is of type 'unknown'.
+
+[exit 1]

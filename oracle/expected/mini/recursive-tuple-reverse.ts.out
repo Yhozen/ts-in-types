@@ -1,0 +1,4 @@
+main.ts(2,32): error TS2322: Type '1' is not assignable to type '3'.
+main.ts(2,38): error TS2322: Type '3' is not assignable to type '1'.
+
+[exit 1]

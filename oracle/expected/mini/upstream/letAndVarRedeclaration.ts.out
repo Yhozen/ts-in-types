@@ -1,0 +1,21 @@
+main.ts(7,5): error TS2300: Duplicate identifier 'e0'.
+main.ts(8,5): error TS2300: Duplicate identifier 'e0'.
+main.ts(9,10): error TS2300: Duplicate identifier 'e0'.
+main.ts(12,9): error TS2300: Duplicate identifier 'x1'.
+main.ts(13,9): error TS2300: Duplicate identifier 'x1'.
+main.ts(14,14): error TS2300: Duplicate identifier 'x1'.
+main.ts(18,9): error TS2451: Cannot redeclare block-scoped variable 'x'.
+main.ts(20,13): error TS2451: Cannot redeclare block-scoped variable 'x'.
+main.ts(28,9): error TS2300: Duplicate identifier 'x2'.
+main.ts(29,9): error TS2300: Duplicate identifier 'x2'.
+main.ts(30,14): error TS2300: Duplicate identifier 'x2'.
+main.ts(34,9): error TS2451: Cannot redeclare block-scoped variable 'x2'.
+main.ts(36,13): error TS2451: Cannot redeclare block-scoped variable 'x2'.
+main.ts(43,5): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+main.ts(44,10): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+main.ts(48,9): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+main.ts(49,14): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+main.ts(54,9): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+main.ts(55,14): error TS2451: Cannot redeclare block-scoped variable 'x11'.
+
+[exit 1]

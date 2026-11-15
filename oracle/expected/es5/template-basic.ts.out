@@ -1,0 +1,4 @@
+main.ts(3,7): error TS2322: Type '"hi world"' is not assignable to type '`hello ${string}`'.
+main.ts(6,7): error TS2322: Type '"id-x"' is not assignable to type '`id-${number}`'.
+
+[exit 1]

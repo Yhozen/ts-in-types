@@ -1,0 +1,3 @@
+main.ts(2,3): error TS1308: 'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[exit 1]

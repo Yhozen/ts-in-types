@@ -1,0 +1,4 @@
+main.ts(5,7): error TS2322: Type '"abc"' is not assignable to type '"ABC"'.
+main.ts(8,7): error TS2322: Type '"ABC"' is not assignable to type '"aBC"'.
+
+[exit 1]

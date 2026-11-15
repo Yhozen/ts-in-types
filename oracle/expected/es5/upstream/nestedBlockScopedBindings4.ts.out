@@ -1,0 +1,10 @@
+main.ts(7,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(10,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(16,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(20,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(26,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(29,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(37,13): error TS18048: 'x' is possibly 'undefined'.
+main.ts(41,13): error TS18048: 'x' is possibly 'undefined'.
+
+[exit 1]

@@ -1,0 +1,5 @@
+main.ts(3,7): error TS2322: Type '("a" | "b")[]' is not assignable to type '("a" | "c")[]'.
+  Type '"a" | "b"' is not assignable to type '"a" | "c"'.
+    Type '"b"' is not assignable to type '"a" | "c"'.
+
+[exit 1]
