@@ -1,0 +1,10 @@
+{
+  // The examples load the image (image/, `vp run build`): the compiler as
+  // ~37 MB of declarations plus a ~10 MB start state, ~1.5 GB in tsrs. Kept
+  // out of the root project (`vp run check`); editors pick this project for
+  // files under examples/.
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "noUnusedLocals": false },
+  "include": ["*.ts", "../src"],
+  "exclude": []
+}
