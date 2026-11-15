@@ -1,73 +1,67 @@
 {
  "generated": "by scripts/profile.ts; do not edit",
  "engine": {
-  "ir": "16751 funcs",
+  "ir": "16982 funcs",
   "sample": 128
  },
  "oneLiner": {
   "mini": {
    "fresh": {
-    "total": 1351479,
-    "init": 1003846,
-    "check": 347633,
+    "total": 1305255,
+    "init": 1012925,
+    "check": 292330,
     "phases": {
-     "package init": 1003776,
-     "options (ParseCommandLine)": 77312,
-     "harness: in-memory FS": 2176,
-     "parse": 145920,
-     "bind": 38912,
-     "checker creation (globals merge)": 37888,
-     "check main.ts": 11904,
-     "sort + print diagnostics": 4864,
-     "program setup (file loader)": 25472,
-     "other diagnostics": 512,
-     "harness glue (run, diagnostics loop)": 2743
+     "package init": 1012864,
+     "options (ParseCommandLine)": 77184,
+     "harness: in-memory FS": 1792,
+     "parse": 110720,
+     "bind": 35456,
+     "checker creation (globals merge)": 26752,
+     "check main.ts": 11776,
+     "sort + print diagnostics": 4736,
+     "program setup (file loader)": 20480,
+     "other diagnostics": 640,
+     "harness glue (run, diagnostics loop)": 2855
     }
    },
-   "freshUnprofiled": 1351479,
-   "boot": 1351670,
+   "freshUnprofiled": 1305255,
+   "boot": 1307362,
    "image": {
-    "total": 96689,
+    "total": 69906,
     "phases": {
-     "harness: in-memory FS": 2176,
-     "parse": 9472,
-     "bind": 3712,
-     "checker creation (globals merge)": 38016,
-     "check main.ts": 11904,
-     "sort + print diagnostics": 4864,
-     "program setup (file loader)": 23680,
-     "other diagnostics": 512,
-     "harness glue (run, diagnostics loop)": 2353
+     "parse": 7168,
+     "bind": 3584,
+     "checker creation (globals merge)": 26880,
+     "check main.ts": 11648,
+     "sort + print diagnostics": 4608,
+     "program setup (file loader)": 12928,
+     "other diagnostics": 640,
+     "harness glue (run, diagnostics loop)": 2450
     },
     "byPackage": {
      "github.com/microsoft/typescript-go/internal/checker": 24152,
-     "github.com/zeebo/xxh3": 11899,
-     "github.com/microsoft/typescript-go/internal/tspath": 11054,
-     "github.com/microsoft/typescript-go/internal/ast": 6783,
      "github.com/microsoft/typescript-go/internal/core": 5313,
      "github.com/microsoft/typescript-go/internal/compiler": 4734,
-     "slices": 3409,
-     "strings": 3158,
-     "github.com/microsoft/typescript-go/internal/scanner": 2749,
+     "github.com/microsoft/typescript-go/internal/ast": 4678,
+     "github.com/microsoft/typescript-go/internal/tspath": 4466,
+     "slices": 3186,
+     "strings": 2999,
      "github.com/microsoft/typescript-go/internal/binder": 2698,
      "github.com/microsoft/typescript-go/internal/parser": 2444,
+     "github.com/microsoft/typescript-go/internal/scanner": 2388,
      "github.com/microsoft/typescript-go/internal/printer": 1985,
-     "io/fs": 1664,
      "fmt": 1465,
-     "internal/stringslite": 1418,
-     "internal/bytealg": 1327,
-     "unicode/utf8": 1228,
-     "github.com/microsoft/typescript-go/internal/vfs/vfstest": 1225,
-     "sync": 1077,
-     "testing/fstest": 942,
+     "internal/stringslite": 1422,
+     "sync": 944,
+     "internal/bytealg": 874,
+     "github.com/zeebo/xxh3": 738,
      "github.com/microsoft/typescript-go/internal/collections": 731,
      "github.com/microsoft/typescript-go/internal/diagnostics": 676,
      "github.com/microsoft/typescript-go/internal/tsoptions": 508,
      "time": 462,
-     "math/bits": 378,
-     "github.com/microsoft/typescript-go/internal/vfs/internal": 324,
-     "github.com/microsoft/typescript-go/cmd/tsgo": 302,
+     "github.com/microsoft/typescript-go/cmd/tsgo": 436,
      "github.com/microsoft/typescript-go/internal/stringutil": 299,
+     "math/bits": 294,
      "github.com/microsoft/typescript-go/internal/execute/tsc": 287,
      "github.com/microsoft/typescript-go/internal/module": 263,
      "bytes": 239,
@@ -75,106 +69,93 @@
      "internal/strconv": 182,
      "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 164,
      "cmp": 144,
-     "github.com/microsoft/typescript-go/internal/vfs/iovfs": 144,
      "github.com/microsoft/typescript-go/internal/diagnosticwriter": 124,
-     "maps": 108,
      "github.com/microsoft/typescript-go/internal/outputpaths": 84,
+     "unicode/utf8": 84,
      "github.com/microsoft/typescript-go/internal/packagejson": 78,
-     "path": 75,
-     "gointypes/softfloat": 61,
+     "maps": 60,
      "context": 37,
-     "errors": 29,
      "github.com/microsoft/typescript-go/internal/debug": 26,
      "strconv": 12,
      "github.com/microsoft/typescript-go/internal/evaluator": 10,
      "github.com/microsoft/typescript-go/internal/pseudochecker": 6,
-     "github.com/microsoft/typescript-go/internal/jsnum": 3,
-     "math": 2
+     "math": 4,
+     "github.com/microsoft/typescript-go/internal/jsnum": 3
     },
     "byEvent": {
-     "if": 14484,
-     "fieldAddr": 12883,
-     "load": 9450,
-     "binop ==": 7416,
-     "phi": 6575,
-     "return": 6381,
-     "call static": 5609,
-     "store": 5023,
-     "jump": 3062,
-     "binop +": 3016,
-     "binop !=": 2465,
-     "call builtin len": 2380,
-     "binop <": 2085,
-     "indexAddr": 1415,
-     "extract": 1294,
-     "index": 1291,
-     "convert": 1232,
-     "binop &": 1176,
-     "alloc heap": 1070,
-     "slice": 845,
-     "binop *": 624,
-     "binop ^": 613,
-     "binop >=": 592,
-     "binop >>": 579,
-     "binop -": 575,
-     "call interface method": 419,
-     "binop >": 412,
-     "makeClosure": 281,
-     "binop <=": 274,
-     "typeAssert": 267,
-     "call func value": 261,
-     "changeType": 261,
-     "alloc local": 245,
-     "map lookup": 238,
-     "makeInterface": 228,
-     "call builtin append": 211,
-     "call static (intrinsic)": 202,
-     "binop |": 186,
-     "call builtin cap": 156,
-     "runDefers": 124,
-     "map update": 116,
+     "if": 10258,
+     "fieldAddr": 10001,
+     "load": 7464,
+     "return": 5647,
+     "call static": 4957,
+     "binop ==": 4642,
+     "store": 3818,
+     "phi": 3302,
+     "binop !=": 2275,
+     "call builtin len": 1893,
+     "jump": 1843,
+     "binop <": 1190,
+     "indexAddr": 1161,
+     "binop +": 1156,
+     "binop &": 1133,
+     "alloc heap": 1023,
+     "extract": 885,
+     "convert": 664,
+     "slice": 655,
+     "index": 597,
+     "binop >=": 553,
+     "binop -": 468,
+     "call interface method": 374,
+     "binop <=": 316,
+     "makeClosure": 268,
+     "call builtin append": 262,
+     "typeAssert": 246,
+     "binop >>": 238,
+     "call func value": 237,
+     "binop >": 228,
+     "changeType": 225,
+     "map lookup": 224,
+     "alloc local": 199,
+     "makeInterface": 199,
+     "call static (intrinsic)": 190,
+     "call builtin cap": 152,
+     "binop |": 143,
+     "runDefers": 109,
+     "map update": 107,
      "binop &^": 96,
-     "makeMap": 92,
-     "map range next": 86,
-     "defer static": 73,
-     "makeSlice": 66,
-     "binop <<": 48,
+     "makeMap": 85,
+     "defer static": 66,
+     "makeSlice": 65,
+     "map range next": 54,
+     "binop *": 50,
      "call builtin max": 42,
      "call builtin min": 35,
-     "map range": 33,
-     "call builtin copy": 24,
+     "call builtin copy": 23,
+     "map range": 19,
      "string range next": 14,
-     "defer func value": 13,
-     "unop !": 11,
+     "defer func value": 12,
      "binop /": 8,
      "call builtin clear": 7,
-     "changeInterface": 7,
+     "unop !": 7,
+     "binop <<": 6,
+     "changeInterface": 6,
      "binop %": 5,
-     "defer interface method": 5,
-     "call builtin delete": 4,
-     "call builtin recover": 2,
-     "string range": 2
+     "string range": 2,
+     "call builtin delete": 1,
+     "call builtin recover": 1
     },
     "intrinsics": {
-     "internal/bytealg.IndexByteString": {
-      "calls": 38,
-      "bytes": 332
-     },
-     "internal/bytealg.abigen_runtime_cmpstring": {
-      "calls": 19,
-      "bytes": 240
-     },
-     "internal/bytealg.CountString": {
-      "calls": 58,
-      "bytes": 571
-     },
      "sync/atomic.StoreUint32": {
       "calls": 12,
       "bytes": 0
      },
+     "internal/bytealg.CountString": {
+      "calls": 49,
+      "bytes": 478
+     },
      "internal/bytealg.IndexString": {
-      "calls": 11,
-      "bytes": 161
+      "calls": 41,
+      "bytes": 631
      },
      "internal/abi.NoEscape": {
       "calls": 16,
@@ -183,6 +164,10 @@
      "internal/bytealg.MakeNoZero": {
       "calls": 10,
       "bytes": 0
+     },
+     "internal/bytealg.IndexByteString": {
+      "calls": 11,
+      "bytes": 72
      },
      "sync/atomic.LoadUint32": {
       "calls": 30,
@@ -204,6 +189,10 @@
       "calls": 2,
       "bytes": 9
      },
+     "internal/bytealg.abigen_runtime_cmpstring": {
+      "calls": 13,
+      "bytes": 176
+     },
      "gointypes/rt.Write": {
       "calls": 1,
       "bytes": 78
@@ -211,60 +200,36 @@
     },
     "top": [
      [
-      "(*github.com/zeebo/xxh3.Hasher).step",
-      8834
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-      6353
-     ],
-     [
-      "(*github.com/zeebo/xxh3.Hasher).Write",
-      2544
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).newType",
       2075
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-      2063
-     ],
-     [
-      "io/fs.ValidPath",
-      1446
      ],
      [
       "github.com/microsoft/typescript-go/internal/checker.CompareTypes",
       1310
      ],
      [
-      "internal/bytealg.LastIndexByteString",
-      1289
+      "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypeToUnion",
+      1053
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-      1235
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypeToUnion",
-      1053
+      967
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/binder.Binder).bind",
       952
      ],
      [
-      "unicode/utf8.ValidString",
-      946
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.NewChecker",
       892
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
-      775
+      "internal/bytealg.LastIndexByteString",
+      848
+     ],
+     [
+      "internal/stringslite.Index",
+      788
      ],
      [
       "slices.BinarySearchFunc[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
@@ -283,16 +248,20 @@
       713
      ],
      [
+      "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
+      670
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/core.ComputeECMALineStartsSeq$1",
       642
      ],
      [
-      "internal/stringslite.HasSuffix",
-      636
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.getSortOrderFlags",
       630
+     ],
+     [
+      "internal/stringslite.HasSuffix",
+      612
      ],
      [
       "github.com/microsoft/typescript-go/internal/diagnostics.Format",
@@ -319,10 +288,6 @@
       524
      ],
      [
-      "strings.Count",
-      522
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).removeRedundantLiteralTypes",
       521
      ],
@@ -331,16 +296,8 @@
       508
      ],
      [
-      "internal/stringslite.Index",
-      508
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getOuterTypeParameters",
       506
-     ],
-     [
-      "(testing/fstest.MapFS).Open",
-      478
      ],
      [
       "(*strings.Builder).copyCheck",
@@ -363,8 +320,8 @@
       450
      ],
      [
-      "strings.Replace",
-      440
+      "strings.Count",
+      441
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getGlobalTypeResolver",
@@ -377,6 +334,10 @@
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).checkSourceElementWorker",
       405
+     ],
+     [
+      "(*github.com/zeebo/xxh3.Hasher).Write",
+      399
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getUnionTypeWorker",
@@ -397,6 +358,10 @@
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getDeclaredTypeOfClassOrInterface",
       375
+     ],
+     [
+      "strings.Replace",
+      368
      ],
      [
       "(*fmt.pp).printArg",
@@ -423,24 +388,12 @@
       330
      ],
      [
-      "(testing/fstest.MapFS).resolveSymlinks",
-      325
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).setStructuredTypeMembers",
       319
      ],
      [
-      "math/bits.Len64",
-      306
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]).New[github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]",
       297
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.HasTrailingDirectorySeparator",
-      295
      ],
      [
       "(*sync.Mutex).Lock",
@@ -456,10 +409,6 @@
      ],
      [
       "(*fmt.fmt).fmtInteger",
-      273
-     ],
-     [
-      "(*github.com/zeebo/xxh3.Hasher).Sum128",
       273
      ],
      [
@@ -495,10 +444,6 @@
       252
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).Open",
-      251
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getMergedSymbol",
       243
      ],
@@ -515,6 +460,10 @@
       240
      ],
      [
+      "math/bits.Len64",
+      238
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getUnionTypeFromSortedList",
       237
      ],
@@ -523,8 +472,12 @@
       234
      ],
      [
-      "github.com/zeebo/xxh3.mix",
+      "github.com/zeebo/xxh3.intern",
       234
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
+      232
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getOuterTypeParametersOfClassOrInterface",
@@ -547,20 +500,16 @@
       220
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-      219
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/collections.SyncMap[string, bool]).Store[string, bool]",
       212
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/core.LinkStore[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]).Get[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]",
-      199
+      "github.com/microsoft/typescript-go/internal/tspath.HasTrailingDirectorySeparator",
+      210
      ],
      [
-      "unicode/utf8.word[string]",
-      198
+      "(*github.com/microsoft/typescript-go/internal/core.LinkStore[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]).Get[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.DeclaredTypeLinks]",
+      199
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getGlobalType",
@@ -587,10 +536,6 @@
       190
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getFollowingSymlinksWorker",
-      190
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/core.Memoize[*github.com/microsoft/typescript-go/internal/checker.Type]",
       190
      ],
@@ -611,10 +556,6 @@
       171
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.isAnyDirectorySeparator",
-      170
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.TypeBase).AsType",
       166
      ],
@@ -624,6 +565,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.NewPrinter",
+      165
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
       165
      ],
      [
@@ -647,10 +592,6 @@
       156
      ],
      [
-      "slices.AppendSeq[[]string, string]$1",
-      156
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/binder.Binder).bindContainer",
       155
      ],
@@ -668,10 +609,6 @@
      ],
      [
       "(*strings.Builder).Grow",
-      150
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
       150
      ],
      [
@@ -693,6 +630,10 @@
      [
       "(*github.com/microsoft/typescript-go/internal/core.CompilerOptions).GetEmitModuleKind",
       140
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
+      139
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/module.resolutionState).getPackageJsonInfo",
@@ -755,16 +696,16 @@
       127
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.NormalizePath",
-      126
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getUnionTypeEx",
       125
      ],
      [
       "internal/strconv.ParseUint",
       124
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.isAnyDirectorySeparator",
+      122
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]).New[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]",
@@ -791,10 +732,6 @@
       120
      ],
      [
-      "io/fs.Stat",
-      118
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/printer.textWriter).Clear",
       112
      ],
@@ -804,18 +741,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.InterfaceType).TypeParameters",
-      110
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.NormalizeSlashes",
-      110
-     ],
-     [
-      "internal/stringslite.HasPrefix",
-      110
-     ],
-     [
-      "strings.ReplaceAll",
       110
      ],
      [
@@ -839,10 +764,6 @@
       106
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanIdentifier$1",
-      106
-     ],
-     [
       "strings.ToValidUTF8",
       106
      ],
@@ -851,11 +772,15 @@
       104
      ],
      [
-      "strings.LastIndex",
+      "slices.AppendSeq[[]string, string]$1",
       104
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Relater).reportRelationError",
+      102
+     ],
+     [
+      "strings.Contains",
       102
      ],
      [
@@ -899,6 +824,10 @@
       96
      ],
      [
+      "strings.LastIndex",
+      96
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/compiler.Program).collectDiagnosticsFromFiles",
       92
      ],
@@ -907,11 +836,23 @@
       92
      ],
      [
-      "github.com/microsoft/typescript-go/internal/core.Map[string, *github.com/microsoft/typescript-go/internal/checker.Type]",
+      "github.com/microsoft/typescript-go/internal/tspath.NormalizeSlashes",
+      92
+     ],
+     [
+      "strings.Index",
+      92
+     ],
+     [
+      "strings.ReplaceAll",
+      92
+     ],
+     [
+      "(*github.com/zeebo/xxh3.Hasher).Sum128",
       91
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.FromMapWithClock[string]",
+      "github.com/microsoft/typescript-go/internal/core.Map[string, *github.com/microsoft/typescript-go/internal/checker.Type]",
       91
      ],
      [
@@ -947,16 +888,8 @@
       87
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
-      87
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/compiler.Program).SkipTypeChecking",
       86
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.convertMapFS",
-      85
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).createTypeReferenceEx",
@@ -992,10 +925,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/core.CompilerOptions).GetEmitScriptTarget",
-      80
-     ],
-     [
-      "(*sync.RWMutex).RUnlock",
       80
      ],
      [
@@ -1055,36 +984,12 @@
       76
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).mkdirAll",
-      76
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.comparePathsByParts",
-      76
-     ],
-     [
-      "internal/stringslite.IndexByte",
-      76
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getCanonicalPath",
-      75
-     ],
-     [
       "(*time.Time).nsec",
       75
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.GetImpliedNodeFormatForEmitWorker",
       75
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.convertInfo",
-      74
-     ],
-     [
-      "io/fs.ReadFile",
-      73
      ],
      [
       "(*bytes.Buffer).tryGrowByReslice",
@@ -1115,11 +1020,7 @@
       72
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).Stat",
-      72
-     ],
-     [
-      "(*sync.RWMutex).RLock",
+      "github.com/microsoft/typescript-go/internal/tspath.NormalizePath",
       72
      ],
      [
@@ -1127,20 +1028,8 @@
       72
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.simpleNormalizePath",
-      72
-     ],
-     [
-      "math/bits.Len",
-      72
-     ],
-     [
       "slices.insertionSortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       72
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).RootAndPath",
-      71
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Relater).isRelatedToEx",
@@ -1163,15 +1052,7 @@
       70
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).setEntry",
-      69
-     ],
-     [
       "github.com/microsoft/typescript-go/cmd/tsgo.run",
-      69
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.RemoveTrailingDirectorySeparator",
       69
      ],
      [
@@ -1231,14 +1112,6 @@
       64
      ],
      [
-      "internal/stringslite.Cut",
-      64
-     ],
-     [
-      "strings.Index",
-      64
-     ],
-     [
       "unicode/utf8.DecodeRuneInString",
       64
      ],
@@ -1247,19 +1120,11 @@
       63
      ],
      [
-      "path.Base",
-      63
-     ],
-     [
       "strings.ToLower",
       62
      ],
      [
       "github.com/microsoft/typescript-go/internal/core.Memoize[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
-      60
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.GetCanonicalFileName",
       60
      ],
      [
@@ -1295,10 +1160,6 @@
       57
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/iovfs.From",
-      57
-     ],
-     [
       "slices.Grow[[]*github.com/microsoft/typescript-go/internal/ast.Diagnostic, *github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       57
      ],
@@ -1327,6 +1188,10 @@
       56
      ],
      [
+      "math/bits.Len",
+      56
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getDeclaredTypeOfSymbol",
       55
      ],
@@ -1340,6 +1205,10 @@
      ],
      [
       "(*strings.Builder).WriteByte",
+      55
+     ],
+     [
+      "github.com/microsoft/typescript-go/cmd/tsgo.checkWarm",
       55
      ],
      [
@@ -1455,10 +1324,6 @@
       50
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getFollowingSymlinks",
-      50
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.GetNonAssignedNameOfDeclaration",
       50
      ],
@@ -1471,15 +1336,7 @@
       50
      ],
      [
-      "strings.Cut",
-      50
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).newUnionType",
-      49
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).open",
       49
      ],
      [
@@ -1547,10 +1404,6 @@
       46
      ],
      [
-      "slices.insertionSortCmpFunc[string]",
-      46
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).createNameResolver",
       45
      ],
@@ -1564,6 +1417,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.visitNodes",
+      45
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.simpleNormalizePath",
       45
      ],
      [
@@ -1592,10 +1449,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/vfs/cachedvfs.FS).UseCaseSensitiveFileNames",
-      44
-     ],
-     [
-      "(*testing/fstest.openMapFile).Read",
       44
      ],
      [
@@ -1659,19 +1512,7 @@
       42
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.IsRootedDiskPath",
-      42
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.RootLength",
-      42
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.SplitPath",
-      42
-     ],
-     [
-      "slices.AppendSeq[[]string, string]",
+      "github.com/microsoft/typescript-go/internal/tspath.RemoveTrailingDirectorySeparator",
       42
      ],
      [
@@ -1699,6 +1540,10 @@
       40
      ],
      [
+      "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
+      40
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/compiler.CombineEmitResults",
       40
      ],
@@ -1719,15 +1564,7 @@
       39
      ],
      [
-      "github.com/microsoft/typescript-go/cmd/tsgo.checkWarm",
-      39
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.IsIdentifierName",
-      39
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.isLeftHandSideExpressionKind",
       39
      ],
      [
@@ -1807,14 +1644,6 @@
       38
      ],
      [
-      "internal/bytealg.CompareString",
-      38
-     ],
-     [
-      "strings.Compare",
-      38
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/parser.Parser).parseDelimitedList",
       37
      ],
@@ -1863,10 +1692,6 @@
       36
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).UseCaseSensitiveFileNames",
-      36
-     ],
-     [
       "(*sync.Pool).Put",
       36
      ],
@@ -1899,15 +1724,15 @@
       36
      ],
      [
+      "github.com/microsoft/typescript-go/internal/tspath.IsRootedDiskPath",
+      36
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/checker.keyBuilder).writeAlias",
       35
      ],
      [
       "(*sync.Once).Do$1",
-      35
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.decodeBytes",
       35
      ],
      [
@@ -1975,15 +1800,15 @@
       33
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.IsAssignmentOperator",
-      33
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.NewSymbolTrackerImpl",
       33
      ],
      [
       "(*fmt.fmt).padString",
+      32
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.memoFS).FileExists",
       32
      ],
      [
@@ -2063,10 +1888,6 @@
       30
      ],
      [
-      "(*testing/fstest.mapFileInfo).Sys",
-      30
-     ],
-     [
       "(context.backgroundCtx).Err",
       30
      ],
@@ -2083,7 +1904,15 @@
       30
      ],
      [
+      "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
+      30
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/compiler.getParseTaskData",
+      30
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.GetCanonicalFileName",
       30
      ],
      [
@@ -2167,8 +1996,8 @@
       29
      ],
      [
-      "slices.insertionSortCmpFunc[testing/fstest.mapFileInfo]",
-      29
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).FileExists",
+      28
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.SourceFile).ECMALineMap",
@@ -2211,10 +2040,6 @@
       28
      ],
      [
-      "(*testing/fstest.mapFileInfo).IsDir",
-      28
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.SortAndDeduplicateDiagnostics",
       28
      ],
@@ -2224,14 +2049,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.getLiteralText",
-      28
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/iovfs.From$13",
-      28
-     ],
-     [
-      "gointypes/softfloat.funpack64",
       28
      ],
      [
@@ -2291,10 +2108,6 @@
       26
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).FileExists",
-      26
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.NewDiagnostic",
       26
      ],
@@ -2311,7 +2124,15 @@
       26
      ],
      [
+      "internal/bytealg.CompareString",
+      26
+     ],
+     [
       "slices.AppendSeq[[]github.com/microsoft/typescript-go/internal/core.TextPos, github.com/microsoft/typescript-go/internal/core.TextPos]$1",
+      26
+     ],
+     [
+      "strings.Compare",
       26
      ],
      [
@@ -2439,10 +2260,6 @@
       24
      ],
      [
-      "(io/fs.FileMode).Type",
-      24
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.NewProgram",
       24
      ],
@@ -2519,10 +2336,6 @@
       22
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).ReadFile",
-      22
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.newCheckerPoolWithTracing",
       22
      ],
@@ -2531,23 +2344,11 @@
       22
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.FromMapWithClock[string]$1",
+      "internal/stringslite.IndexByte",
       22
      ],
      [
       "slices.pdqsortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
-      22
-     ],
-     [
-      "slices.pdqsortCmpFunc[string]",
-      22
-     ],
-     [
-      "slices.pdqsortCmpFunc[testing/fstest.mapFileInfo]",
-      22
-     ],
-     [
-      "strings.HasPrefix",
       22
      ],
      [
@@ -2592,10 +2393,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/outputpaths.GetOutputExtension",
-      21
-     ],
-     [
-      "gointypes/softfloat.fcmp64",
       21
      ],
      [
@@ -2751,6 +2548,10 @@
       19
      ],
      [
+      "github.com/microsoft/typescript-go/cmd/tsgo.decodeBytes",
+      19
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/ast.getExternalModuleIndicator",
       19
      ],
@@ -2760,14 +2561,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.NewNodeFactory",
-      19
-     ],
-     [
-      "maps.Keys[map[string]string, string, string]$1",
-      19
-     ],
-     [
-      "maps.Keys[testing/fstest.MapFS, string, *testing/fstest.MapFile]$1",
       19
      ],
      [
@@ -2895,10 +2688,6 @@
       17
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.CanHaveDecorators",
-      17
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.NewCompilerHost",
       17
      ],
@@ -2952,6 +2741,10 @@
      ],
      [
       "(*fmt.fmt).init",
+      16
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.memoFS).DirectoryExists",
       16
      ],
      [
@@ -3020,10 +2813,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/parser.Parser).reScanGreaterThanToken",
-      16
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.fileInfo).IsDir",
       16
      ],
      [
@@ -3131,10 +2920,6 @@
       15
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).set",
-      15
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.isBlockStatement",
       15
      ],
@@ -3147,11 +2932,11 @@
       15
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.must[io/fs.FileInfo]",
-      15
+      "(*bytes.Buffer).Len",
+      14
      ],
      [
-      "(*bytes.Buffer).Len",
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).DirectoryExists",
       14
      ],
      [
@@ -3215,10 +3000,6 @@
       14
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).DirectoryExists",
-      14
-     ],
-     [
       "(*github.com/zeebo/xxh3.Hasher).WriteString",
       14
      ],
@@ -3247,10 +3028,6 @@
       14
      ],
      [
-      "internal/stringslite.TrimSuffix",
-      14
-     ],
-     [
       "slices.AppendSeq[[]github.com/microsoft/typescript-go/internal/core.TextPos, github.com/microsoft/typescript-go/internal/core.TextPos]",
       14
      ],
@@ -3259,7 +3036,7 @@
       14
      ],
      [
-      "strings.IndexByte",
+      "slices.AppendSeq[[]string, string]",
       14
      ],
      [
@@ -3328,6 +3105,10 @@
      ],
      [
       "(*fmt.fmt).fmtS",
+      12
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).UseCaseSensitiveFileNames",
       12
      ],
      [
@@ -3483,19 +3264,7 @@
       12
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).FileExists",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Close",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Read",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Stat",
+      "github.com/microsoft/typescript-go/internal/ast.CanHaveDecorators",
       12
      ],
      [
@@ -3528,6 +3297,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.IsPlainJSFile",
+      12
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.IsPropertyNameLiteral",
       12
      ],
      [
@@ -3567,10 +3340,6 @@
       12
      ],
      [
-      "path.Split",
-      12
-     ],
-     [
       "slices.Clip[[]*github.com/microsoft/typescript-go/internal/ast.Diagnostic, *github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       12
      ],
@@ -3587,7 +3356,7 @@
       12
      ],
      [
-      "strings.Contains",
+      "strings.IndexByte",
       12
      ],
      [
@@ -3759,11 +3528,11 @@
       10
      ],
      [
-      "(testing/fstest.MapFS).Open$1",
+      "(*sync.RWMutex).RUnlock",
       10
      ],
      [
-      "errors.comparable",
+      "github.com/microsoft/typescript-go/internal/ast.IsAssignmentOperator",
       10
      ],
      [
@@ -3771,7 +3540,27 @@
       10
      ],
      [
+      "github.com/microsoft/typescript-go/internal/ast.IsModifierKind",
+      10
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/ast.SkipOuterExpressions",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$24",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$25",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$26",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.isLeftHandSideExpressionKind",
       10
      ],
      [
@@ -3799,24 +3588,12 @@
       10
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.dirName",
-      10
-     ],
-     [
-      "internal/stringslite.CutPrefix",
-      10
-     ],
-     [
       "slices.SortFunc[[]*github.com/microsoft/typescript-go/internal/ast.Symbol, *github.com/microsoft/typescript-go/internal/ast.Symbol]",
       10
      ],
      [
-      "slices.SortFunc[[]string, string]",
-      10
-     ],
-     [
-      "slices.SortFunc[[]testing/fstest.mapFileInfo, testing/fstest.mapFileInfo]",
-      10
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).ReadFile",
+      9
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.NodeFactory).NewVariableDeclarationList",
@@ -3911,15 +3688,7 @@
       9
      ],
      [
-      "(*testing/fstest.openMapFile).Stat",
-      9
-     ],
-     [
-      "github.com/microsoft/typescript-go/cmd/tsgo.newSys",
-      9
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.IsModifierKind",
+      "(*sync.RWMutex).RLock",
       9
      ],
      [
@@ -3956,10 +3725,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/tspath.IsDeclarationFileName",
-      9
-     ],
-     [
-      "gointypes/softfloat.feq64",
       9
      ],
      [
@@ -4131,14 +3896,6 @@
       8
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.readDirFile).Close",
-      8
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.readDirFile).Stat",
-      8
-     ],
-     [
       "(*strings.Builder).Cap",
       8
      ],
@@ -4223,10 +3980,6 @@
       8
      ],
      [
-      "strings.CutPrefix",
-      8
-     ],
-     [
       "strings.Join",
       8
      ],
@@ -4291,15 +4044,7 @@
       7
      ],
      [
-      "(*testing/fstest.mapFileInfo).Size",
-      7
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/tspath.ComparePathsOptions).getEqualityComparer",
-      7
-     ],
-     [
-      "errors.Is",
       7
      ],
      [
@@ -4455,10 +4200,6 @@
       6
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).DirectoryExists",
-      6
-     ],
-     [
       "(*sync.RWMutex).Unlock",
       6
      ],
@@ -4471,15 +4212,7 @@
       6
      ],
      [
-      "(*testing/fstest.mapDir).Stat",
-      6
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/core.Tristate).IsUnknown",
-      6
-     ],
-     [
-      "errors.is",
       6
      ],
      [
@@ -4564,10 +4297,6 @@
      ],
      [
       "slices.Clone[[]*github.com/microsoft/typescript-go/internal/ast.SourceFile, *github.com/microsoft/typescript-go/internal/ast.SourceFile]",
-      6
-     ],
-     [
-      "slices.Collect[string]",
       6
      ],
      [
@@ -4683,10 +4412,6 @@
       5
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).ReadFile",
-      5
-     ],
-     [
       "(*strings.Builder).Reset",
       5
      ],
@@ -4707,7 +4432,7 @@
       5
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.IsPropertyNameLiteral",
+      "github.com/microsoft/typescript-go/internal/ast.init#4$159",
       5
      ],
      [
@@ -4747,19 +4472,7 @@
       5
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.splitPath",
-      5
-     ],
-     [
       "maps.Keys[map[string]github.com/microsoft/typescript-go/internal/checker.TypeFacts, string, github.com/microsoft/typescript-go/internal/checker.TypeFacts]",
-      5
-     ],
-     [
-      "maps.Keys[map[string]string, string, string]",
-      5
-     ],
-     [
-      "maps.Keys[testing/fstest.MapFS, string, *testing/fstest.MapFile]",
       5
      ],
      [
@@ -4987,15 +4700,7 @@
       4
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.fileInfo).Size",
-      4
-     ],
-     [
       "bytes.growSlice$1",
-      4
-     ],
-     [
-      "errors.comparable$1",
       4
      ],
      [
@@ -5079,11 +4784,11 @@
       4
      ],
      [
-      "strings.Split",
+      "math.IsNaN",
       4
      ],
      [
-      "strings.TrimSuffix",
+      "strings.Split",
       4
      ],
      [
@@ -5255,23 +4960,11 @@
       3
      ],
      [
-      "(*testing/fstest.openMapFile).Close",
-      3
-     ],
-     [
-      "(github.com/microsoft/typescript-go/cmd/tsgo.fixedClock).Now",
-      3
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/core.NewLineKind).GetNewLineCharacter",
       3
      ],
      [
       "(github.com/microsoft/typescript-go/internal/jsnum.Number).IsNaN",
-      3
-     ],
-     [
-      "(io/fs.FileMode).IsDir",
       3
      ],
      [
@@ -5296,10 +4989,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/parser.getParser",
-      3
-     ],
-     [
-      "gointypes/softfloat.Ne64",
       3
      ],
      [
@@ -5395,15 +5084,7 @@
       2
      ],
      [
-      "(*testing/fstest.mapDir).Close",
-      2
-     ],
-     [
       "context.Background",
-      2
-     ],
-     [
-      "errors.eqErr",
       2
      ],
      [
@@ -5451,11 +5132,11 @@
       2
      ],
      [
-      "math.IsNaN",
+      "slices.Collect[github.com/microsoft/typescript-go/internal/tspath.Path]",
       2
      ],
      [
-      "slices.Collect[github.com/microsoft/typescript-go/internal/tspath.Path]",
+      "slices.Collect[string]",
       2
      ],
      [
@@ -5639,174 +5320,155 @@
   },
   "es5": {
    "fresh": {
-    "total": 21880822,
-    "init": 1003846,
-    "check": 20876976,
+    "total": 16698038,
+    "init": 1012925,
+    "check": 15685113,
     "phases": {
-     "package init": 1003776,
-     "options (ParseCommandLine)": 77184,
-     "harness: in-memory FS": 2176,
-     "parse": 16991744,
-     "bind": 3702656,
-     "checker creation (globals merge)": 46720,
-     "check main.ts": 23168,
-     "sort + print diagnostics": 4736,
-     "program setup (file loader)": 25088,
-     "other diagnostics": 640,
-     "harness glue (run, diagnostics loop)": 2934
+     "package init": 1012864,
+     "options (ParseCommandLine)": 77312,
+     "harness: in-memory FS": 1664,
+     "parse": 12296448,
+     "bind": 3223552,
+     "checker creation (globals merge)": 34560,
+     "check main.ts": 22784,
+     "sort + print diagnostics": 4864,
+     "program setup (file loader)": 20480,
+     "other diagnostics": 768,
+     "harness glue (run, diagnostics loop)": 2742
     }
    },
-   "freshUnprofiled": 21880822,
-   "boot": 21881013,
+   "freshUnprofiled": 16698038,
+   "boot": 16700137,
    "image": {
-    "total": 116638,
+    "total": 88779,
     "phases": {
-     "harness: in-memory FS": 2048,
-     "parse": 9472,
-     "bind": 3712,
-     "checker creation (globals merge)": 46592,
-     "check main.ts": 23168,
+     "parse": 7040,
+     "bind": 3584,
+     "checker creation (globals merge)": 34304,
+     "check main.ts": 22784,
      "sort + print diagnostics": 4864,
-     "program setup (file loader)": 23552,
-     "other diagnostics": 768,
-     "harness glue (run, diagnostics loop)": 2462
+     "program setup (file loader)": 13056,
+     "other diagnostics": 512,
+     "harness glue (run, diagnostics loop)": 2635
     },
     "byPackage": {
      "github.com/microsoft/typescript-go/internal/checker": 34199,
-     "github.com/zeebo/xxh3": 12855,
-     "github.com/microsoft/typescript-go/internal/ast": 12470,
-     "github.com/microsoft/typescript-go/internal/tspath": 10944,
+     "github.com/microsoft/typescript-go/internal/ast": 10019,
      "github.com/microsoft/typescript-go/internal/core": 6513,
      "github.com/microsoft/typescript-go/internal/compiler": 4734,
-     "slices": 4392,
+     "github.com/microsoft/typescript-go/internal/tspath": 4451,
+     "slices": 4169,
      "github.com/microsoft/typescript-go/internal/binder": 3818,
-     "strings": 3160,
-     "github.com/microsoft/typescript-go/internal/scanner": 2749,
+     "strings": 3001,
      "github.com/microsoft/typescript-go/internal/parser": 2444,
+     "github.com/microsoft/typescript-go/internal/scanner": 2388,
      "github.com/microsoft/typescript-go/internal/printer": 1985,
-     "io/fs": 1646,
      "fmt": 1465,
-     "internal/stringslite": 1424,
-     "internal/bytealg": 1279,
-     "github.com/microsoft/typescript-go/internal/vfs/vfstest": 1225,
-     "unicode/utf8": 1206,
-     "sync": 1077,
-     "testing/fstest": 942,
+     "internal/stringslite": 1432,
+     "sync": 944,
+     "internal/bytealg": 842,
+     "github.com/zeebo/xxh3": 809,
      "github.com/microsoft/typescript-go/internal/collections": 731,
      "github.com/microsoft/typescript-go/internal/diagnostics": 676,
      "github.com/microsoft/typescript-go/internal/tsoptions": 508,
      "time": 462,
-     "math/bits": 378,
-     "github.com/microsoft/typescript-go/internal/vfs/internal": 324,
-     "github.com/microsoft/typescript-go/cmd/tsgo": 302,
+     "github.com/microsoft/typescript-go/cmd/tsgo": 436,
      "github.com/microsoft/typescript-go/internal/stringutil": 299,
+     "math/bits": 294,
      "github.com/microsoft/typescript-go/internal/execute/tsc": 287,
      "github.com/microsoft/typescript-go/internal/module": 263,
-     "maps": 252,
      "bytes": 239,
      "sync/atomic": 207,
+     "maps": 204,
      "internal/strconv": 182,
      "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 164,
      "cmp": 144,
-     "github.com/microsoft/typescript-go/internal/vfs/iovfs": 144,
      "github.com/microsoft/typescript-go/internal/diagnosticwriter": 124,
      "github.com/microsoft/typescript-go/internal/outputpaths": 84,
+     "unicode/utf8": 84,
      "github.com/microsoft/typescript-go/internal/packagejson": 78,
-     "path": 75,
-     "gointypes/softfloat": 61,
      "context": 37,
-     "errors": 29,
      "github.com/microsoft/typescript-go/internal/debug": 28,
      "strconv": 12,
      "github.com/microsoft/typescript-go/internal/evaluator": 10,
      "github.com/microsoft/typescript-go/internal/pseudochecker": 6,
-     "github.com/microsoft/typescript-go/internal/jsnum": 3,
-     "math": 2
+     "math": 4,
+     "github.com/microsoft/typescript-go/internal/jsnum": 3
     },
     "byEvent": {
-     "if": 17808,
-     "fieldAddr": 15540,
-     "load": 12071,
-     "binop ==": 8868,
-     "return": 8129,
-     "phi": 7756,
-     "call static": 7207,
-     "store": 5474,
-     "jump": 3757,
-     "binop !=": 3551,
-     "binop +": 3253,
-     "call builtin len": 2571,
-     "binop <": 2283,
-     "indexAddr": 1746,
-     "extract": 1683,
-     "binop &": 1398,
-     "convert": 1348,
-     "index": 1321,
-     "alloc heap": 1144,
-     "slice": 918,
-     "binop >=": 681,
-     "binop *": 677,
-     "binop ^": 667,
-     "binop >>": 628,
-     "binop -": 621,
-     "call interface method": 513,
-     "map lookup": 459,
-     "binop >": 410,
-     "alloc local": 381,
-     "typeAssert": 342,
-     "call func value": 317,
-     "binop <=": 311,
-     "makeClosure": 284,
-     "changeType": 269,
-     "call builtin append": 259,
-     "map range next": 253,
-     "makeInterface": 233,
-     "map update": 222,
-     "call static (intrinsic)": 202,
-     "binop |": 190,
-     "call builtin cap": 163,
-     "runDefers": 124,
+     "if": 13333,
+     "fieldAddr": 12450,
+     "load": 9968,
+     "return": 7373,
+     "call static": 6533,
+     "binop ==": 5802,
+     "phi": 4530,
+     "store": 4186,
+     "binop !=": 3363,
+     "jump": 2552,
+     "call builtin len": 2088,
+     "indexAddr": 1496,
+     "binop <": 1398,
+     "binop &": 1355,
+     "binop +": 1320,
+     "extract": 1278,
+     "alloc heap": 1097,
+     "convert": 766,
+     "slice": 731,
+     "binop >=": 668,
+     "index": 638,
+     "binop -": 516,
+     "call interface method": 468,
+     "map lookup": 449,
+     "binop <=": 353,
+     "alloc local": 335,
+     "typeAssert": 321,
+     "call builtin append": 313,
+     "call func value": 293,
+     "makeClosure": 271,
+     "binop >>": 255,
+     "changeType": 233,
+     "binop >": 230,
+     "map range next": 221,
+     "map update": 213,
+     "makeInterface": 204,
+     "call static (intrinsic)": 190,
+     "call builtin cap": 159,
+     "binop |": 147,
+     "runDefers": 109,
      "binop &^": 100,
-     "makeMap": 94,
-     "defer static": 73,
-     "makeSlice": 68,
-     "binop <<": 48,
+     "makeMap": 87,
+     "makeSlice": 67,
+     "defer static": 66,
+     "binop *": 55,
      "call builtin max": 44,
      "call builtin min": 37,
-     "map range": 34,
-     "call builtin copy": 24,
+     "call builtin copy": 23,
+     "map range": 20,
      "string range next": 14,
-     "unop !": 14,
-     "defer func value": 13,
+     "defer func value": 12,
      "binop /": 11,
+     "unop !": 10,
      "call builtin clear": 7,
-     "changeInterface": 7,
+     "binop <<": 6,
+     "changeInterface": 6,
      "binop %": 5,
-     "defer interface method": 5,
-     "call builtin delete": 4,
-     "call builtin recover": 2,
-     "string range": 2
+     "string range": 2,
+     "call builtin delete": 1,
+     "call builtin recover": 1
     },
     "intrinsics": {
-     "internal/bytealg.IndexByteString": {
-      "calls": 38,
-      "bytes": 321
-     },
-     "internal/bytealg.abigen_runtime_cmpstring": {
-      "calls": 19,
-      "bytes": 237
-     },
-     "internal/bytealg.CountString": {
-      "calls": 58,
-      "bytes": 561
-     },
      "sync/atomic.StoreUint32": {
       "calls": 12,
       "bytes": 0
      },
+     "internal/bytealg.CountString": {
+      "calls": 49,
+      "bytes": 470
+     },
      "internal/bytealg.IndexString": {
-      "calls": 11,
-      "bytes": 159
+      "calls": 41,
+      "bytes": 623
      },
      "internal/abi.NoEscape": {
       "calls": 16,
@@ -5815,6 +5477,10 @@
      "internal/bytealg.MakeNoZero": {
       "calls": 10,
       "bytes": 0
+     },
+     "internal/bytealg.IndexByteString": {
+      "calls": 11,
+      "bytes": 70
      },
      "sync/atomic.LoadUint32": {
       "calls": 30,
@@ -5836,6 +5502,10 @@
       "calls": 2,
       "bytes": 9
      },
+     "internal/bytealg.abigen_runtime_cmpstring": {
+      "calls": 13,
+      "bytes": 176
+     },
      "gointypes/rt.Write": {
       "calls": 1,
       "bytes": 78
@@ -5843,24 +5513,8 @@
     },
     "top": [
      [
-      "(*github.com/zeebo/xxh3.Hasher).step",
-      9528
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-      6258
-     ],
-     [
-      "(*github.com/zeebo/xxh3.Hasher).Write",
-      2728
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).newType",
       2175
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-      2063
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).mergeGlobalSymbol",
@@ -5875,20 +5529,8 @@
       1515
      ],
      [
-      "io/fs.ValidPath",
-      1428
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.CompareTypes",
       1310
-     ],
-     [
-      "internal/bytealg.LastIndexByteString",
-      1241
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-      1235
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
@@ -5903,12 +5545,12 @@
       1053
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/binder.Binder).bind",
-      952
+      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
+      967
      ],
      [
-      "unicode/utf8.ValidString",
-      924
+      "(*github.com/microsoft/typescript-go/internal/binder.Binder).bind",
+      952
      ],
      [
       "github.com/microsoft/typescript-go/internal/checker.NewChecker",
@@ -5919,12 +5561,16 @@
       882
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getNamedMembers",
-      782
+      "internal/bytealg.LastIndexByteString",
+      816
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
-      775
+      "internal/stringslite.Index",
+      788
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getNamedMembers",
+      782
      ],
      [
       "slices.BinarySearchFunc[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
@@ -5947,6 +5593,10 @@
       698
      ],
      [
+      "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
+      670
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/checker.hashWrite64[int]",
       646
      ],
@@ -5959,12 +5609,12 @@
       642
      ],
      [
-      "internal/stringslite.HasSuffix",
-      636
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.getSortOrderFlags",
       630
+     ],
+     [
+      "internal/stringslite.HasSuffix",
+      612
      ],
      [
       "github.com/microsoft/typescript-go/internal/diagnostics.Format",
@@ -5999,10 +5649,6 @@
       522
      ],
      [
-      "strings.Count",
-      522
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).removeRedundantLiteralTypes",
       521
      ],
@@ -6013,14 +5659,6 @@
      [
       "github.com/microsoft/typescript-go/internal/tspath.CombinePaths",
       508
-     ],
-     [
-      "internal/stringslite.Index",
-      508
-     ],
-     [
-      "(testing/fstest.MapFS).Open",
-      478
      ],
      [
       "(*strings.Builder).copyCheck",
@@ -6035,16 +5673,16 @@
       450
      ],
      [
-      "strings.Replace",
-      440
+      "strings.Count",
+      441
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getResolvedMembersOrExportsOfSymbol",
       433
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
-      423
+      "(*github.com/zeebo/xxh3.Hasher).Write",
+      420
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getGlobalTypeResolver",
@@ -6087,6 +5725,10 @@
       378
      ],
      [
+      "strings.Replace",
+      368
+     ],
+     [
       "(*fmt.pp).printArg",
       366
      ],
@@ -6119,10 +5761,6 @@
       330
      ],
      [
-      "(testing/fstest.MapFS).resolveSymlinks",
-      325
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).compareNodes",
       322
      ],
@@ -6133,18 +5771,6 @@
      [
       "github.com/microsoft/typescript-go/internal/ast.GetNameOfDeclaration",
       318
-     ],
-     [
-      "(*github.com/zeebo/xxh3.Hasher).Sum128",
-      315
-     ],
-     [
-      "math/bits.Len64",
-      306
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.HasTrailingDirectorySeparator",
-      295
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).symbolIsValueEx",
@@ -6179,7 +5805,7 @@
       272
      ],
      [
-      "github.com/zeebo/xxh3.mix",
+      "github.com/zeebo/xxh3.intern",
       270
      ],
      [
@@ -6219,14 +5845,6 @@
       252
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).Open",
-      251
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
-      250
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/binder.GetContainerFlags",
       242
      ],
@@ -6239,6 +5857,10 @@
       240
      ],
      [
+      "math/bits.Len64",
+      238
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getUnionTypeFromSortedList",
       237
      ],
@@ -6248,6 +5870,10 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.Node).AsSourceFile",
+      232
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
       232
      ],
      [
@@ -6271,12 +5897,12 @@
       220
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-      219
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/collections.SyncMap[string, bool]).Store[string, bool]",
       212
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.HasTrailingDirectorySeparator",
+      210
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getGlobalType",
@@ -6288,10 +5914,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getSymbol",
-      198
-     ],
-     [
-      "unicode/utf8.word[string]",
       198
      ],
      [
@@ -6316,10 +5938,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/compiler.Program).Options",
-      190
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getFollowingSymlinksWorker",
       190
      ],
      [
@@ -6367,10 +5985,6 @@
       170
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.isAnyDirectorySeparator",
-      170
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/ast.Node).TypeParameterList",
       168
      ],
@@ -6384,6 +5998,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.NewPrinter",
+      165
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
       165
      ],
      [
@@ -6407,10 +6025,6 @@
       156
      ],
      [
-      "slices.AppendSeq[[]string, string]$1",
-      156
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/binder.Binder).bindContainer",
       155
      ],
@@ -6424,10 +6038,6 @@
      ],
      [
       "(*strings.Builder).Grow",
-      150
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
       150
      ],
      [
@@ -6457,6 +6067,10 @@
      [
       "(*github.com/microsoft/typescript-go/internal/core.CompilerOptions).GetEmitModuleKind",
       140
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
+      139
      ],
      [
       "maps.Values[github.com/microsoft/typescript-go/internal/ast.SymbolTable, string, *github.com/microsoft/typescript-go/internal/ast.Symbol]$1",
@@ -6527,10 +6141,6 @@
       127
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.NormalizePath",
-      126
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).getUnionTypeEx",
       125
      ],
@@ -6541,6 +6151,10 @@
      [
       "internal/strconv.ParseUint",
       124
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.isAnyDirectorySeparator",
+      122
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]).New[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]",
@@ -6559,14 +6173,6 @@
       120
      ],
      [
-      "io/fs.Stat",
-      118
-     ],
-     [
-      "internal/stringslite.HasPrefix",
-      116
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/ast.Node).ModifierFlags",
       114
      ],
@@ -6583,11 +6189,7 @@
       112
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.NormalizeSlashes",
-      110
-     ],
-     [
-      "strings.ReplaceAll",
+      "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
       110
      ],
      [
@@ -6615,12 +6217,12 @@
       106
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanIdentifier$1",
+      "strings.ToValidUTF8",
       106
      ],
      [
-      "strings.ToValidUTF8",
-      106
+      "(*github.com/zeebo/xxh3.Hasher).Sum128",
+      105
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).checkVariableLikeDeclaration",
@@ -6631,7 +6233,7 @@
       104
      ],
      [
-      "strings.LastIndex",
+      "slices.AppendSeq[[]string, string]$1",
       104
      ],
      [
@@ -6640,6 +6242,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.IsStatement",
+      102
+     ],
+     [
+      "strings.Contains",
       102
      ],
      [
@@ -6656,6 +6262,14 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.IsModuleOrEnumDeclaration",
+      100
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
+      100
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
       100
      ],
      [
@@ -6687,6 +6301,10 @@
       96
      ],
      [
+      "strings.LastIndex",
+      96
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/ast.NamedMemberBase).Modifiers",
       92
      ],
@@ -6703,11 +6321,19 @@
       92
      ],
      [
-      "github.com/microsoft/typescript-go/internal/core.Map[string, *github.com/microsoft/typescript-go/internal/checker.Type]",
-      91
+      "github.com/microsoft/typescript-go/internal/tspath.NormalizeSlashes",
+      92
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.FromMapWithClock[string]",
+      "strings.Index",
+      92
+     ],
+     [
+      "strings.ReplaceAll",
+      92
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/core.Map[string, *github.com/microsoft/typescript-go/internal/checker.Type]",
       91
      ],
      [
@@ -6741,10 +6367,6 @@
      [
       "(*github.com/microsoft/typescript-go/internal/compiler.Program).SkipTypeChecking",
       86
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.convertMapFS",
-      85
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.Node).Text",
@@ -6792,10 +6414,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/core.CompilerOptions).GetEmitScriptTarget",
-      80
-     ],
-     [
-      "(*sync.RWMutex).RUnlock",
       80
      ],
      [
@@ -6847,36 +6465,12 @@
       77
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).mkdirAll",
-      76
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.comparePathsByParts",
-      76
-     ],
-     [
-      "internal/stringslite.IndexByte",
-      76
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getCanonicalPath",
-      75
-     ],
-     [
       "(*time.Time).nsec",
       75
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.GetImpliedNodeFormatForEmitWorker",
       75
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.convertInfo",
-      74
-     ],
-     [
-      "io/fs.ReadFile",
-      73
      ],
      [
       "(*bytes.Buffer).tryGrowByReslice",
@@ -6907,11 +6501,7 @@
       72
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).Stat",
-      72
-     ],
-     [
-      "(*sync.RWMutex).RLock",
+      "github.com/microsoft/typescript-go/internal/tspath.NormalizePath",
       72
      ],
      [
@@ -6919,20 +6509,8 @@
       72
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.simpleNormalizePath",
-      72
-     ],
-     [
-      "math/bits.Len",
-      72
-     ],
-     [
       "slices.insertionSortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       72
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).RootAndPath",
-      71
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/checker.Relater).isRelatedToEx",
@@ -6971,15 +6549,7 @@
       69
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).setEntry",
-      69
-     ],
-     [
       "github.com/microsoft/typescript-go/cmd/tsgo.run",
-      69
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.RemoveTrailingDirectorySeparator",
       69
      ],
      [
@@ -7051,23 +6621,11 @@
       64
      ],
      [
-      "internal/stringslite.Cut",
-      64
-     ],
-     [
-      "strings.Index",
-      64
-     ],
-     [
       "unicode/utf8.DecodeRuneInString",
       64
      ],
      [
       "(*fmt.fmt).clearflags",
-      63
-     ],
-     [
-      "path.Base",
       63
      ],
      [
@@ -7088,10 +6646,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/core.Memoize[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
-      60
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/tspath.GetCanonicalFileName",
       60
      ],
      [
@@ -7131,10 +6685,6 @@
       57
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/iovfs.From",
-      57
-     ],
-     [
       "slices.Grow[[]*github.com/microsoft/typescript-go/internal/ast.Diagnostic, *github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       57
      ],
@@ -7163,6 +6713,10 @@
       56
      ],
      [
+      "math/bits.Len",
+      56
+     ],
+     [
       "(*github.com/microsoft/typescript-go/internal/checker.ObjectType).AsType",
       55
      ],
@@ -7172,6 +6726,10 @@
      ],
      [
       "(*strings.Builder).WriteByte",
+      55
+     ],
+     [
+      "github.com/microsoft/typescript-go/cmd/tsgo.checkWarm",
       55
      ],
      [
@@ -7283,23 +6841,11 @@
       50
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).getFollowingSymlinks",
-      50
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.IsBindingPattern",
       50
      ],
      [
-      "strings.Cut",
-      50
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).newUnionType",
-      49
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).open",
       49
      ],
      [
@@ -7379,10 +6925,6 @@
       46
      ],
      [
-      "slices.insertionSortCmpFunc[string]",
-      46
-     ],
-     [
       "(*github.com/microsoft/typescript-go/internal/checker.Checker).createNameResolver",
       45
      ],
@@ -7392,6 +6934,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.visitNodes",
+      45
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.simpleNormalizePath",
       45
      ],
      [
@@ -7428,10 +6974,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/vfs/cachedvfs.FS).UseCaseSensitiveFileNames",
-      44
-     ],
-     [
-      "(*testing/fstest.openMapFile).Read",
       44
      ],
      [
@@ -7507,19 +7049,7 @@
       42
      ],
      [
-      "github.com/microsoft/typescript-go/internal/tspath.IsRootedDiskPath",
-      42
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.RootLength",
-      42
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.SplitPath",
-      42
-     ],
-     [
-      "slices.AppendSeq[[]string, string]",
+      "github.com/microsoft/typescript-go/internal/tspath.RemoveTrailingDirectorySeparator",
       42
      ],
      [
@@ -7579,15 +7109,7 @@
       39
      ],
      [
-      "github.com/microsoft/typescript-go/cmd/tsgo.checkWarm",
-      39
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.IsIdentifierName",
-      39
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.isLeftHandSideExpressionKind",
       39
      ],
      [
@@ -7663,15 +7185,7 @@
       38
      ],
      [
-      "internal/bytealg.CompareString",
-      38
-     ],
-     [
       "slices.pdqsortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
-      38
-     ],
-     [
-      "strings.Compare",
       38
      ],
      [
@@ -7719,10 +7233,6 @@
       36
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).UseCaseSensitiveFileNames",
-      36
-     ],
-     [
       "(*sync.Pool).Put",
       36
      ],
@@ -7751,6 +7261,10 @@
       36
      ],
      [
+      "github.com/microsoft/typescript-go/internal/tspath.IsRootedDiskPath",
+      36
+     ],
+     [
       "slices.Index[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
       36
      ],
@@ -7760,10 +7274,6 @@
      ],
      [
       "(*sync.Once).Do$1",
-      35
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/internal.decodeBytes",
       35
      ],
      [
@@ -7827,15 +7337,15 @@
       33
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.IsAssignmentOperator",
-      33
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.NewSymbolTrackerImpl",
       33
      ],
      [
       "(*fmt.fmt).padString",
+      32
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.memoFS).FileExists",
       32
      ],
      [
@@ -7931,10 +7441,6 @@
       30
      ],
      [
-      "(*testing/fstest.mapFileInfo).Sys",
-      30
-     ],
-     [
       "(context.backgroundCtx).Err",
       30
      ],
@@ -7944,6 +7450,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/compiler.getParseTaskData",
+      30
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/tspath.GetCanonicalFileName",
       30
      ],
      [
@@ -8027,8 +7537,8 @@
       29
      ],
      [
-      "slices.insertionSortCmpFunc[testing/fstest.mapFileInfo]",
-      29
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).FileExists",
+      28
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.SourceFile).ECMALineMap",
@@ -8075,10 +7585,6 @@
       28
      ],
      [
-      "(*testing/fstest.mapFileInfo).IsDir",
-      28
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/checker.getTypeListKey",
       28
      ],
@@ -8096,14 +7602,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.getLiteralText",
-      28
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/vfs/iovfs.From$13",
-      28
-     ],
-     [
-      "gointypes/softfloat.funpack64",
       28
      ],
      [
@@ -8155,10 +7653,6 @@
       26
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).FileExists",
-      26
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.NewDiagnostic",
       26
      ],
@@ -8171,7 +7665,15 @@
       26
      ],
      [
+      "internal/bytealg.CompareString",
+      26
+     ],
+     [
       "slices.AppendSeq[[]github.com/microsoft/typescript-go/internal/core.TextPos, github.com/microsoft/typescript-go/internal/core.TextPos]$1",
+      26
+     ],
+     [
+      "strings.Compare",
       26
      ],
      [
@@ -8287,10 +7789,6 @@
       24
      ],
      [
-      "(io/fs.FileMode).Type",
-      24
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/ast.GetExtendsHeritageClauseElements",
       24
      ],
@@ -8312,10 +7810,6 @@
      ],
      [
       "slices.order2CmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
-      24
-     ],
-     [
-      "strings.HasPrefix",
       24
      ],
      [
@@ -8387,10 +7881,6 @@
       22
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).ReadFile",
-      22
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.newCheckerPoolWithTracing",
       22
      ],
@@ -8399,15 +7889,7 @@
       22
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.FromMapWithClock[string]$1",
-      22
-     ],
-     [
-      "slices.pdqsortCmpFunc[string]",
-      22
-     ],
-     [
-      "slices.pdqsortCmpFunc[testing/fstest.mapFileInfo]",
+      "internal/stringslite.IndexByte",
       22
      ],
      [
@@ -8456,10 +7938,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/outputpaths.GetOutputExtension",
-      21
-     ],
-     [
-      "gointypes/softfloat.fcmp64",
       21
      ],
      [
@@ -8607,6 +8085,10 @@
       19
      ],
      [
+      "github.com/microsoft/typescript-go/cmd/tsgo.decodeBytes",
+      19
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/ast.getExternalModuleIndicator",
       19
      ],
@@ -8616,14 +8098,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/printer.NewNodeFactory",
-      19
-     ],
-     [
-      "maps.Keys[map[string]string, string, string]$1",
-      19
-     ],
-     [
-      "maps.Keys[testing/fstest.MapFS, string, *testing/fstest.MapFile]$1",
       19
      ],
      [
@@ -8751,10 +8225,6 @@
       17
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.CanHaveDecorators",
-      17
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/compiler.NewCompilerHost",
       17
      ],
@@ -8812,6 +8282,10 @@
      ],
      [
       "(*fmt.fmt).init",
+      16
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.memoFS).DirectoryExists",
       16
      ],
      [
@@ -8876,10 +8350,6 @@
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/parser.Parser).reScanGreaterThanToken",
-      16
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.fileInfo).IsDir",
       16
      ],
      [
@@ -8975,10 +8445,6 @@
       15
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.MapFS).set",
-      15
-     ],
-     [
       "github.com/microsoft/typescript-go/internal/core.FindIndex[*github.com/microsoft/typescript-go/internal/checker.Type]",
       15
      ],
@@ -8987,11 +8453,11 @@
       15
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.must[io/fs.FileInfo]",
-      15
+      "(*bytes.Buffer).Len",
+      14
      ],
      [
-      "(*bytes.Buffer).Len",
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).DirectoryExists",
       14
      ],
      [
@@ -9047,10 +8513,6 @@
       14
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/internal.Common).DirectoryExists",
-      14
-     ],
-     [
       "(*github.com/zeebo/xxh3.Hasher).WriteString",
       14
      ],
@@ -9083,10 +8545,6 @@
       14
      ],
      [
-      "internal/stringslite.TrimSuffix",
-      14
-     ],
-     [
       "slices.AppendSeq[[]*github.com/microsoft/typescript-go/internal/ast.Symbol, *github.com/microsoft/typescript-go/internal/ast.Symbol]",
       14
      ],
@@ -9099,7 +8557,7 @@
       14
      ],
      [
-      "strings.IndexByte",
+      "slices.AppendSeq[[]string, string]",
       14
      ],
      [
@@ -9172,6 +8630,10 @@
      ],
      [
       "(*fmt.fmt).fmtS",
+      12
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).UseCaseSensitiveFileNames",
       12
      ],
      [
@@ -9319,19 +8781,7 @@
       12
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).FileExists",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Close",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Read",
-      12
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.file).Stat",
+      "github.com/microsoft/typescript-go/internal/ast.CanHaveDecorators",
       12
      ],
      [
@@ -9360,6 +8810,10 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/ast.IsPlainJSFile",
+      12
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.IsPropertyNameLiteral",
       12
      ],
      [
@@ -9399,10 +8853,6 @@
       12
      ],
      [
-      "path.Split",
-      12
-     ],
-     [
       "slices.Clip[[]*github.com/microsoft/typescript-go/internal/ast.Diagnostic, *github.com/microsoft/typescript-go/internal/ast.Diagnostic]",
       12
      ],
@@ -9419,7 +8869,7 @@
       12
      ],
      [
-      "strings.Contains",
+      "strings.IndexByte",
       12
      ],
      [
@@ -9595,11 +9045,11 @@
       10
      ],
      [
-      "(testing/fstest.MapFS).Open$1",
+      "(*sync.RWMutex).RUnlock",
       10
      ],
      [
-      "errors.comparable",
+      "github.com/microsoft/typescript-go/internal/ast.IsAssignmentOperator",
       10
      ],
      [
@@ -9607,7 +9057,27 @@
       10
      ],
      [
+      "github.com/microsoft/typescript-go/internal/ast.IsModifierKind",
+      10
+     ],
+     [
       "github.com/microsoft/typescript-go/internal/ast.SkipOuterExpressions",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$24",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$25",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.init#4$26",
+      10
+     ],
+     [
+      "github.com/microsoft/typescript-go/internal/ast.isLeftHandSideExpressionKind",
       10
      ],
      [
@@ -9635,11 +9105,7 @@
       10
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.dirName",
-      10
-     ],
-     [
-      "internal/stringslite.CutPrefix",
+      "internal/stringslite.HasPrefix",
       10
      ],
      [
@@ -9647,16 +9113,12 @@
       10
      ],
      [
-      "slices.SortFunc[[]string, string]",
-      10
-     ],
-     [
-      "slices.SortFunc[[]testing/fstest.mapFileInfo, testing/fstest.mapFileInfo]",
-      10
-     ],
-     [
       "slices.medianCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
       10
+     ],
+     [
+      "(*github.com/microsoft/typescript-go/cmd/tsgo.warmFS).ReadFile",
+      9
      ],
      [
       "(*github.com/microsoft/typescript-go/internal/ast.NodeFactory).NewVariableDeclarationList",
@@ -9763,15 +9225,7 @@
       9
      ],
      [
-      "(*testing/fstest.openMapFile).Stat",
-      9
-     ],
-     [
-      "github.com/microsoft/typescript-go/cmd/tsgo.newSys",
-      9
-     ],
-     [
-      "github.com/microsoft/typescript-go/internal/ast.IsModifierKind",
+      "(*sync.RWMutex).RLock",
       9
      ],
      [
@@ -9808,10 +9262,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/tspath.IsDeclarationFileName",
-      9
-     ],
-     [
-      "gointypes/softfloat.feq64",
       9
      ],
      [
@@ -9999,14 +9449,6 @@
       8
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.readDirFile).Close",
-      8
-     ],
-     [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.readDirFile).Stat",
-      8
-     ],
-     [
       "(*strings.Builder).Cap",
       8
      ],
@@ -10107,10 +9549,6 @@
       8
      ],
      [
-      "strings.CutPrefix",
-      8
-     ],
-     [
       "strings.Join",
       8
      ],
@@ -10171,15 +9609,7 @@
       7
      ],
      [
-      "(*testing/fstest.mapFileInfo).Size",
-      7
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/tspath.ComparePathsOptions).getEqualityComparer",
-      7
-     ],
-     [
-      "errors.Is",
       7
      ],
      [
@@ -10343,10 +9773,6 @@
       6
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).DirectoryExists",
-      6
-     ],
-     [
       "(*sync.RWMutex).Unlock",
       6
      ],
@@ -10359,15 +9785,7 @@
       6
      ],
      [
-      "(*testing/fstest.mapDir).Stat",
-      6
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/core.Tristate).IsUnknown",
-      6
-     ],
-     [
-      "errors.is",
       6
      ],
      [
@@ -10444,10 +9862,6 @@
      ],
      [
       "slices.Clone[[]*github.com/microsoft/typescript-go/internal/ast.SourceFile, *github.com/microsoft/typescript-go/internal/ast.SourceFile]",
-      6
-     ],
-     [
-      "slices.Collect[string]",
       6
      ],
      [
@@ -10563,10 +9977,6 @@
       5
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/iovfs.ioFS).ReadFile",
-      5
-     ],
-     [
       "(*strings.Builder).Reset",
       5
      ],
@@ -10587,7 +9997,7 @@
       5
      ],
      [
-      "github.com/microsoft/typescript-go/internal/ast.IsPropertyNameLiteral",
+      "github.com/microsoft/typescript-go/internal/ast.init#4$159",
       5
      ],
      [
@@ -10627,19 +10037,7 @@
       5
      ],
      [
-      "github.com/microsoft/typescript-go/internal/vfs/vfstest.splitPath",
-      5
-     ],
-     [
       "maps.Keys[map[string]github.com/microsoft/typescript-go/internal/checker.TypeFacts, string, github.com/microsoft/typescript-go/internal/checker.TypeFacts]",
-      5
-     ],
-     [
-      "maps.Keys[map[string]string, string, string]",
-      5
-     ],
-     [
-      "maps.Keys[testing/fstest.MapFS, string, *testing/fstest.MapFile]",
       5
      ],
      [
@@ -10871,15 +10269,7 @@
       4
      ],
      [
-      "(*github.com/microsoft/typescript-go/internal/vfs/vfstest.fileInfo).Size",
-      4
-     ],
-     [
       "bytes.growSlice$1",
-      4
-     ],
-     [
-      "errors.comparable$1",
       4
      ],
      [
@@ -10975,11 +10365,11 @@
       4
      ],
      [
-      "strings.Split",
+      "math.IsNaN",
       4
      ],
      [
-      "strings.TrimSuffix",
+      "strings.Split",
       4
      ],
      [
@@ -11139,23 +10529,11 @@
       3
      ],
      [
-      "(*testing/fstest.openMapFile).Close",
-      3
-     ],
-     [
-      "(github.com/microsoft/typescript-go/cmd/tsgo.fixedClock).Now",
-      3
-     ],
-     [
       "(github.com/microsoft/typescript-go/internal/core.NewLineKind).GetNewLineCharacter",
       3
      ],
      [
       "(github.com/microsoft/typescript-go/internal/jsnum.Number).IsNaN",
-      3
-     ],
-     [
-      "(io/fs.FileMode).IsDir",
       3
      ],
      [
@@ -11180,10 +10558,6 @@
      ],
      [
       "github.com/microsoft/typescript-go/internal/parser.getParser",
-      3
-     ],
-     [
-      "gointypes/softfloat.Ne64",
       3
      ],
      [
@@ -11287,15 +10661,7 @@
       2
      ],
      [
-      "(*testing/fstest.mapDir).Close",
-      2
-     ],
-     [
       "context.Background",
-      2
-     ],
-     [
-      "errors.eqErr",
       2
      ],
      [
@@ -11339,15 +10705,19 @@
       2
      ],
      [
-      "math.IsNaN",
-      2
-     ],
-     [
       "slices.Collect[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
       2
      ],
      [
       "slices.Collect[github.com/microsoft/typescript-go/internal/tspath.Path]",
+      2
+     ],
+     [
+      "slices.Collect[string]",
+      2
+     ],
+     [
+      "strings.HasPrefix",
       2
      ],
      [
@@ -11530,59 +10900,53 @@
   "mini": {
    "ops": {
     "n": 328,
-    "min": 72522,
-    "median": 202295,
-    "p90": 641376,
-    "max": 244757603,
-    "sum": 455382476
+    "min": 47661,
+    "median": 155887,
+    "p90": 426480,
+    "max": 69359527,
+    "sum": 186289359
    },
    "phases": {
-    "check main.ts": 401176320,
-    "parse": 21525120,
-    "checker creation (globals merge)": 12011264,
-    "program setup (file loader)": 7784448,
-    "bind": 6829952,
-    "sort + print diagnostics": 3902464,
-    "harness glue (run, diagnostics loop)": 1259596,
-    "harness: in-memory FS": 713728,
-    "other diagnostics": 179584
+    "check main.ts": 146252544,
+    "parse": 16103680,
+    "checker creation (globals merge)": 8466560,
+    "bind": 6001664,
+    "program setup (file loader)": 4262144,
+    "sort + print diagnostics": 3895680,
+    "harness glue (run, diagnostics loop)": 1126991,
+    "other diagnostics": 180096
    },
    "byPackage": {
-    "gointypes/softfloat": 222645598,
     "github.com/microsoft/typescript-go/internal/checker": 106308784,
-    "github.com/zeebo/xxh3": 31454553,
-    "github.com/microsoft/typescript-go/internal/ast": 16893014,
-    "github.com/microsoft/typescript-go/internal/core": 14273599,
-    "slices": 12991367,
-    "math": 11125074,
-    "github.com/microsoft/typescript-go/internal/scanner": 7719047,
+    "github.com/microsoft/typescript-go/internal/core": 17395544,
+    "slices": 12918223,
+    "github.com/microsoft/typescript-go/internal/ast": 10979167,
+    "github.com/microsoft/typescript-go/internal/scanner": 6637480,
     "github.com/microsoft/typescript-go/internal/binder": 5585804,
     "github.com/microsoft/typescript-go/internal/parser": 5092051,
-    "github.com/microsoft/typescript-go/internal/tspath": 3833214,
-    "strings": 3325319,
+    "strings": 3273167,
+    "github.com/zeebo/xxh3": 2486671,
+    "gointypes/softfloat": 2049600,
+    "github.com/microsoft/typescript-go/internal/tspath": 1672350,
     "github.com/microsoft/typescript-go/internal/compiler": 1645276,
-    "internal/bytealg": 1385332,
+    "internal/bytealg": 1236748,
     "github.com/microsoft/typescript-go/internal/stringutil": 1209314,
-    "unicode": 1124123,
     "fmt": 1055845,
     "internal/strconv": 967090,
     "github.com/microsoft/typescript-go/internal/printer": 882519,
-    "unicode/utf8": 732329,
-    "internal/stringslite": 566448,
-    "io/fs": 545775,
+    "unicode": 774253,
+    "internal/stringslite": 567760,
     "github.com/microsoft/typescript-go/internal/diagnostics": 518521,
-    "github.com/microsoft/typescript-go/internal/vfs/vfstest": 401794,
-    "sync": 374799,
+    "unicode/utf8": 357097,
     "github.com/microsoft/typescript-go/internal/collections": 354059,
-    "testing/fstest": 308945,
-    "math/bits": 297252,
-    "github.com/microsoft/typescript-go/internal/jsnum": 226166,
+    "sync": 331175,
+    "math/bits": 293823,
+    "github.com/microsoft/typescript-go/internal/jsnum": 268467,
     "github.com/microsoft/typescript-go/internal/tsoptions": 177590,
     "time": 147840,
+    "github.com/microsoft/typescript-go/cmd/tsgo": 142948,
     "bytes": 137932,
-    "github.com/microsoft/typescript-go/internal/vfs/internal": 106230,
     "github.com/microsoft/typescript-go/internal/evaluator": 106041,
-    "github.com/microsoft/typescript-go/cmd/tsgo": 99008,
     "github.com/microsoft/typescript-go/internal/execute/tsc": 98964,
     "github.com/microsoft/typescript-go/internal/module": 93902,
     "github.com/microsoft/typescript-go/internal/diagnosticwriter": 89513,
@@ -11590,104 +10954,101 @@
     "strconv": 61828,
     "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 53792,
     "cmp": 48856,
-    "maps": 47814,
-    "github.com/microsoft/typescript-go/internal/vfs/iovfs": 47232,
+    "math": 48484,
     "context": 35873,
+    "maps": 32070,
     "github.com/microsoft/typescript-go/internal/outputpaths": 27552,
     "github.com/microsoft/typescript-go/internal/packagejson": 25584,
-    "path": 24600,
     "github.com/microsoft/typescript-go/internal/debug": 19820,
-    "errors": 9512,
     "github.com/microsoft/typescript-go/internal/pseudochecker": 5747,
     "unicode/utf16": 135
    },
    "byEvent": {
-    "if": 80862424,
-    "phi": 46253105,
-    "binop ==": 30768829,
-    "fieldAddr": 30278026,
-    "load": 28434900,
-    "return": 26036890,
-    "call static": 24416991,
-    "extract": 23870875,
-    "jump": 20014926,
-    "binop &": 18936736,
-    "binop <": 18488848,
-    "binop +": 14438402,
-    "binop !=": 13044295,
-    "binop -": 9697489,
-    "binop >>": 9160139,
-    "convert": 8602043,
-    "store": 7923321,
-    "binop <<": 7821963,
-    "indexAddr": 6404513,
-    "binop |": 4966867,
-    "call builtin len": 3600671,
-    "binop >=": 3079571,
-    "binop >": 2932911,
-    "binop ^": 2188527,
-    "binop *": 1585251,
-    "call func value": 1172924,
-    "slice": 1152175,
-    "unop !": 1116735,
-    "alloc heap": 1071525,
-    "typeAssert": 1007341,
-    "index": 968535,
-    "binop <=": 929843,
-    "changeType": 724592,
-    "call static (intrinsic)": 570166,
-    "call interface method": 416702,
-    "call builtin append": 359171,
-    "alloc local": 323829,
-    "map lookup": 277645,
-    "binop &^": 257406,
-    "call builtin cap": 227780,
-    "map update": 188618,
-    "makeInterface": 155474,
-    "makeClosure": 154111,
-    "map range next": 103193,
+    "if": 30413051,
+    "load": 24562110,
+    "fieldAddr": 24037164,
+    "return": 12444642,
+    "binop ==": 11200139,
+    "call static": 10916551,
+    "binop !=": 10462489,
+    "phi": 8737939,
+    "binop &": 6119208,
+    "indexAddr": 5881586,
+    "store": 5756205,
+    "binop <": 4484431,
+    "binop +": 4335481,
+    "jump": 4013877,
+    "call builtin len": 3367147,
+    "convert": 2583778,
+    "extract": 2244327,
+    "binop -": 1650248,
+    "call func value": 1100138,
+    "slice": 1090248,
+    "alloc heap": 1056498,
+    "typeAssert": 1000453,
+    "binop <=": 888571,
+    "binop >=": 867233,
+    "binop >>": 841327,
+    "index": 742232,
+    "map lookup": 580238,
+    "alloc local": 576045,
+    "call static (intrinsic)": 566230,
+    "call builtin append": 558839,
+    "binop |": 426783,
+    "call interface method": 401944,
+    "binop >": 347665,
+    "changeType": 332092,
+    "call builtin min": 272413,
+    "call builtin cap": 226470,
+    "map update": 213504,
+    "makeClosure": 149847,
+    "makeInterface": 145962,
+    "binop <<": 95724,
+    "map range next": 92697,
+    "binop &^": 84711,
+    "binop *": 81921,
     "call builtin max": 62402,
-    "call builtin min": 61988,
-    "runDefers": 47903,
-    "makeSlice": 43597,
-    "makeMap": 36214,
+    "makeSlice": 43269,
+    "runDefers": 42983,
+    "makeMap": 34016,
     "binop /": 26515,
-    "defer static": 24075,
+    "unop !": 24705,
+    "defer static": 21779,
     "string range next": 18425,
-    "call builtin copy": 16037,
-    "map range": 15201,
+    "call builtin copy": 15710,
     "binop %": 10683,
+    "map range": 10609,
     "call builtin clear": 7886,
     "string range": 6872,
-    "defer func value": 4230,
-    "unop -": 3867,
-    "call builtin delete": 3142,
-    "changeInterface": 2479,
+    "defer func value": 3902,
+    "binop ^": 2293,
+    "call builtin delete": 2158,
+    "changeInterface": 2151,
     "field": 2059,
-    "defer interface method": 1640,
-    "call builtin recover": 896,
+    "call builtin recover": 568,
+    "unop -": 129,
     "call builtin wrapnilchk": 87
    },
    "intrinsics": {
     "internal/bytealg.abigen_runtime_cmpstring": {
-     "calls": 481225,
-     "bytes": 2731638
+     "calls": 479257,
+     "bytes": 2710646
     },
     "internal/bytealg.IndexByteString": {
-     "calls": 25234,
-     "bytes": 1784931
+     "calls": 16378,
+     "bytes": 1699651
     },
     "internal/bytealg.CountString": {
-     "calls": 20910,
-     "bytes": 268994
+     "calls": 17958,
+     "bytes": 238490
+    },
+    "internal/bytealg.IndexString": {
+     "calls": 13450,
+     "bytes": 207031
     },
     "gointypes/rt.Write": {
      "calls": 328,
      "bytes": 64115
-    },
-    "internal/bytealg.IndexString": {
-     "calls": 3610,
-     "bytes": 52871
     },
     "slices.overlaps": {
      "calls": 1232,
@@ -11740,32 +11101,8 @@
    },
    "topFunctions": [
     [
-     "gointypes/softfloat.fpack64",
-     62287103
-    ],
-    [
-     "gointypes/softfloat.funpack64",
-     56587353
-    ],
-    [
-     "gointypes/softfloat.fcmp64",
-     45953007
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).step",
-     22961363
-    ],
-    [
-     "gointypes/softfloat.f64toint",
-     20652954
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/checker.CompareTypes",
      19450015
-    ],
-    [
-     "gointypes/softfloat.fadd64",
-     16485429
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.ArrayTypeMapper).Map",
@@ -11780,26 +11117,6 @@
      7627766
     ],
     [
-     "(*github.com/zeebo/xxh3.Hasher).Write",
-     7020000
-    ],
-    [
-     "gointypes/softfloat.feq64",
-     6210546
-    ],
-    [
-     "gointypes/softfloat.fgt64",
-     5873785
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-     5213710
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
-     5146910
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/checker.getSortOrderFlags",
      5107764
     ],
@@ -11808,28 +11125,24 @@
      4773727
     ],
     [
-     "math.IsInf",
-     4102587
+     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
+     4464161
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.hashWrite32[github.com/microsoft/typescript-go/internal/checker.TypeId]",
      2902724
     ],
     [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-     2841829
-    ],
-    [
-     "math.min",
-     2739213
+     "github.com/microsoft/typescript-go/internal/core.levAdd",
+     2584859
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.compareTypeNames",
      2474278
     ],
     [
-     "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-     2083784
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
+     2254985
     ],
     [
      "slices.partitionCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
@@ -11864,8 +11177,8 @@
      1482917
     ],
     [
-     "gointypes/softfloat.Ne64",
-     1443603
+     "(*github.com/zeebo/xxh3.Hasher).Write",
+     1408169
     ],
     [
      "slices.insertionSortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
@@ -11884,6 +11197,10 @@
      1240045
     ],
     [
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
+     1190803
+    ],
+    [
      "github.com/microsoft/typescript-go/internal/core.ComputeECMALineStartsSeq$1",
      1184108
     ],
@@ -11892,52 +11209,24 @@
      1145706
     ],
     [
-     "gointypes/softfloat.fneg64",
-     1143146
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
      1124548
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-     1107312
-    ],
-    [
-     "gointypes/softfloat.fintto64",
-     1100520
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/ast.Symbol]).New[github.com/microsoft/typescript-go/internal/ast.Symbol]",
      1034920
     ],
     [
-     "gointypes/softfloat.Neg64",
-     1002176
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]).New[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]",
      989176
     ],
     [
-     "gointypes/softfloat.Gt64",
-     984588
-    ],
-    [
      "internal/bytealg.CompareString",
-     962450
+     958514
     ],
     [
      "strings.Compare",
-     962450
-    ],
-    [
-     "unicode.ToLower",
-     937428
-    ],
-    [
-     "math.IsNaN",
-     934520
+     958514
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).couldContainTypeVariablesWorker",
@@ -11968,182 +11257,245 @@
      821062
     ],
     [
-     "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
-     814958
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).Sum128",
-     790140
+     "github.com/zeebo/xxh3.intern",
+     810003
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/binder.Binder).bindChildren",
      747341
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).createTupleTargetType",
+     741699
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/core.levInt",
+     739751
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/stringutil.ContainsNonASCII",
+     723062
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isErrorType",
+     710389
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).checkSourceElementWorker",
+     694793
+    ],
+    [
+     "(*strings.Builder).copyCheck",
+     671457
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.keyBuilder).writeType",
+     659710
+    ],
+    [
+     "gointypes/softfloat.fpack64",
+     649954
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/scanner.iterateCommentRanges$1",
+     635450
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isSimpleTypeRelatedTo",
+     617672
+    ],
+    [
+     "unicode.ToLower",
+     587558
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).newSymbol",
+     585949
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/binder.GetContainerFlags",
+     540959
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.TupleNormalizer).normalize",
+     528445
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/checker.isReservedMemberName",
+     527733
+    ],
+    [
+     "(*strings.Builder).WriteString",
+     522000
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.keyBuilder).writeByte",
+     509913
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).symbolIsValueEx",
+     501102
+    ],
+    [
+     "slices.Insert[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
+     493680
     ]
    ],
-   "functionsExecuted": 5554,
-   "checkOps": 455382476
+   "functionsExecuted": 5594,
+   "checkOps": 186289359
   },
   "es5": {
    "ops": {
     "n": 328,
-    "min": 81086,
-    "median": 225852,
-    "p90": 667428,
-    "max": 244777552,
-    "sum": 472394661
+    "min": 55445,
+    "median": 173312,
+    "p90": 521378,
+    "max": 75224300,
+    "sum": 205681645
    },
    "phases": {
-    "check main.ts": 415719040,
-    "parse": 21519232,
-    "checker creation (globals merge)": 14783360,
-    "program setup (file loader)": 7723648,
-    "bind": 6832256,
-    "sort + print diagnostics": 3559936,
-    "harness glue (run, diagnostics loop)": 1407909,
-    "harness: in-memory FS": 671744,
-    "other diagnostics": 177536
+    "check main.ts": 163430528,
+    "parse": 16100352,
+    "checker creation (globals merge)": 10942720,
+    "bind": 6000512,
+    "program setup (file loader)": 4249472,
+    "sort + print diagnostics": 3563264,
+    "harness glue (run, diagnostics loop)": 1213933,
+    "other diagnostics": 180864
    },
    "byPackage": {
-    "gointypes/softfloat": 217330754,
     "github.com/microsoft/typescript-go/internal/checker": 117883156,
-    "github.com/zeebo/xxh3": 33690618,
-    "github.com/microsoft/typescript-go/internal/ast": 22286834,
-    "github.com/microsoft/typescript-go/internal/core": 16109108,
-    "slices": 14224198,
-    "math": 10832992,
-    "github.com/microsoft/typescript-go/internal/scanner": 7702109,
+    "github.com/microsoft/typescript-go/internal/core": 19137702,
+    "github.com/microsoft/typescript-go/internal/ast": 15906372,
+    "slices": 14151054,
+    "github.com/microsoft/typescript-go/internal/scanner": 6620400,
     "github.com/microsoft/typescript-go/internal/binder": 6104421,
     "github.com/microsoft/typescript-go/internal/parser": 5092051,
-    "github.com/microsoft/typescript-go/internal/tspath": 3764358,
-    "strings": 3294892,
+    "strings": 3242740,
+    "github.com/zeebo/xxh3": 2685949,
     "github.com/microsoft/typescript-go/internal/compiler": 1640939,
-    "internal/bytealg": 1359686,
+    "github.com/microsoft/typescript-go/internal/tspath": 1634654,
+    "gointypes/softfloat": 1377070,
+    "internal/bytealg": 1216350,
     "github.com/microsoft/typescript-go/internal/stringutil": 1210670,
-    "unicode": 1097827,
     "internal/strconv": 967233,
     "fmt": 962032,
     "github.com/microsoft/typescript-go/internal/printer": 953626,
-    "unicode/utf8": 724443,
-    "internal/stringslite": 569168,
-    "io/fs": 539871,
+    "unicode": 762443,
+    "internal/stringslite": 571792,
     "github.com/microsoft/typescript-go/internal/diagnostics": 491600,
-    "github.com/microsoft/typescript-go/internal/vfs/vfstest": 401794,
     "github.com/microsoft/typescript-go/internal/collections": 381293,
-    "sync": 366366,
-    "math/bits": 313905,
-    "testing/fstest": 308945,
-    "github.com/microsoft/typescript-go/internal/jsnum": 238591,
+    "unicode/utf8": 356427,
+    "sync": 322742,
+    "math/bits": 310935,
+    "github.com/microsoft/typescript-go/internal/jsnum": 282119,
     "github.com/microsoft/typescript-go/internal/tsoptions": 177590,
     "time": 147840,
+    "github.com/microsoft/typescript-go/cmd/tsgo": 142948,
     "bytes": 128712,
-    "github.com/microsoft/typescript-go/internal/vfs/internal": 106230,
     "github.com/microsoft/typescript-go/internal/evaluator": 106201,
-    "github.com/microsoft/typescript-go/cmd/tsgo": 99008,
     "github.com/microsoft/typescript-go/internal/execute/tsc": 97870,
     "github.com/microsoft/typescript-go/internal/module": 93902,
     "github.com/microsoft/typescript-go/internal/diagnosticwriter": 82005,
     "sync/atomic": 74739,
-    "maps": 73962,
     "strconv": 61958,
+    "maps": 58218,
     "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 53792,
     "cmp": 48752,
-    "github.com/microsoft/typescript-go/internal/vfs/iovfs": 47232,
     "context": 35915,
     "github.com/microsoft/typescript-go/internal/outputpaths": 27552,
     "github.com/microsoft/typescript-go/internal/packagejson": 25584,
-    "path": 24600,
+    "math": 24072,
     "github.com/microsoft/typescript-go/internal/debug": 21660,
-    "errors": 9512,
     "github.com/microsoft/typescript-go/internal/pseudochecker": 6430,
     "unicode/utf16": 135
    },
    "byEvent": {
-    "if": 83272056,
-    "phi": 46574877,
-    "fieldAddr": 33693787,
-    "binop ==": 31964458,
-    "load": 31679461,
-    "return": 27387936,
-    "call static": 25623872,
-    "extract": 23555715,
-    "jump": 20397696,
-    "binop &": 19016489,
-    "binop <": 18416671,
-    "binop +": 14632553,
-    "binop !=": 14179294,
-    "binop -": 9642977,
-    "binop >>": 9094855,
-    "convert": 8713574,
-    "store": 8612972,
-    "binop <<": 7665373,
-    "indexAddr": 6884872,
-    "binop |": 4878871,
-    "call builtin len": 3957540,
-    "binop >=": 3104504,
-    "binop >": 2906181,
-    "binop ^": 2297410,
-    "binop *": 1699496,
-    "call func value": 1255774,
-    "slice": 1237692,
-    "alloc heap": 1141331,
-    "typeAssert": 1118235,
-    "unop !": 1089766,
-    "index": 997363,
-    "binop <=": 977471,
-    "changeType": 730826,
-    "call static (intrinsic)": 564953,
-    "call interface method": 478172,
-    "alloc local": 469794,
-    "map lookup": 396487,
-    "call builtin append": 392490,
-    "call builtin cap": 257855,
-    "map update": 256930,
-    "binop &^": 256751,
-    "map range next": 186928,
-    "makeInterface": 161484,
-    "makeClosure": 160348,
+    "if": 33436048,
+    "load": 27485150,
+    "fieldAddr": 26970737,
+    "return": 14050329,
+    "binop ==": 12396389,
+    "call static": 12377578,
+    "binop !=": 11657610,
+    "phi": 9679970,
+    "binop &": 6509692,
+    "indexAddr": 6332494,
+    "store": 6245365,
+    "jump": 4617783,
+    "binop <": 4589583,
+    "binop +": 4470461,
+    "call builtin len": 3713905,
+    "convert": 2736640,
+    "extract": 2471492,
+    "binop -": 1721534,
+    "call func value": 1183483,
+    "slice": 1176532,
+    "alloc heap": 1126087,
+    "typeAssert": 1111347,
+    "binop >=": 960319,
+    "binop <=": 938902,
+    "binop >>": 848505,
+    "index": 774725,
+    "alloc local": 714821,
+    "map lookup": 701501,
+    "call builtin append": 603735,
+    "call static (intrinsic)": 561017,
+    "call interface method": 463414,
+    "binop |": 448697,
+    "binop >": 387351,
+    "changeType": 343179,
+    "map update": 282257,
+    "call builtin min": 267019,
+    "call builtin cap": 256545,
+    "map range next": 176432,
+    "makeClosure": 156084,
+    "makeInterface": 151972,
+    "binop &^": 87192,
+    "binop *": 86090,
     "call builtin max": 63009,
-    "call builtin min": 62421,
-    "runDefers": 48054,
-    "makeSlice": 46499,
-    "makeMap": 37454,
+    "binop <<": 58235,
+    "makeSlice": 46171,
+    "runDefers": 43134,
+    "makeMap": 35206,
     "binop /": 31888,
-    "defer static": 23926,
+    "unop !": 25581,
+    "defer static": 21630,
     "string range next": 18525,
-    "call builtin copy": 17002,
-    "map range": 16013,
+    "call builtin copy": 16675,
+    "map range": 11421,
     "binop %": 10896,
     "call builtin clear": 9441,
     "string range": 7050,
-    "defer func value": 4224,
-    "unop -": 3530,
-    "call builtin delete": 3521,
-    "changeInterface": 2408,
+    "defer func value": 3896,
+    "call builtin delete": 2537,
     "field": 2118,
-    "defer interface method": 1640,
-    "call builtin recover": 808,
-    "call builtin wrapnilchk": 94
+    "changeInterface": 2080,
+    "binop ^": 1557,
+    "call builtin recover": 480,
+    "call builtin wrapnilchk": 94,
+    "unop -": 55
    },
    "intrinsics": {
     "internal/bytealg.abigen_runtime_cmpstring": {
-     "calls": 476274,
-     "bytes": 2723200
+     "calls": 474306,
+     "bytes": 2703192
     },
     "internal/bytealg.IndexByteString": {
-     "calls": 25173,
-     "bytes": 1780877
+     "calls": 16317,
+     "bytes": 1698549
     },
     "internal/bytealg.CountString": {
-     "calls": 20492,
-     "bytes": 257641
+     "calls": 17540,
+     "bytes": 227793
+    },
+    "internal/bytealg.IndexString": {
+     "calls": 13450,
+     "bytes": 204407
     },
     "gointypes/rt.Write": {
      "calls": 328,
      "bytes": 60587
-    },
-    "internal/bytealg.IndexString": {
-     "calls": 3610,
-     "bytes": 52215
     },
     "slices.overlaps": {
      "calls": 1476,
@@ -12196,32 +11548,8 @@
    },
    "topFunctions": [
     [
-     "gointypes/softfloat.fpack64",
-     60987485
-    ],
-    [
-     "gointypes/softfloat.funpack64",
-     55107614
-    ],
-    [
-     "gointypes/softfloat.fcmp64",
-     44739219
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).step",
-     24561135
-    ],
-    [
-     "gointypes/softfloat.f64toint",
-     20280300
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/checker.CompareTypes",
      19536470
-    ],
-    [
-     "gointypes/softfloat.fadd64",
-     16066095
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.ArrayTypeMapper).Map",
@@ -12236,36 +11564,16 @@
      7663458
     ],
     [
-     "(*github.com/zeebo/xxh3.Hasher).Write",
-     7484392
-    ],
-    [
-     "gointypes/softfloat.feq64",
-     6048643
-    ],
-    [
-     "gointypes/softfloat.fgt64",
-     5718139
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-     5467048
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/checker.getSortOrderFlags",
      5141640
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
-     5032185
     ],
     [
      "slices.BinarySearchFunc[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
      4811857
     ],
     [
-     "math.IsInf",
-     3990890
+     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
+     4366041
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.hashWrite32[github.com/microsoft/typescript-go/internal/checker.TypeId]",
@@ -12276,28 +11584,24 @@
      2912540
     ],
     [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-     2841954
-    ],
-    [
-     "math.min",
-     2663310
-    ],
-    [
      "slices.partitionCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
      2614210
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/core.levAdd",
+     2503794
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.compareTypeNames",
      2484948
     ],
     [
-     "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypeToUnion",
-     2107971
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
+     2255019
     ],
     [
-     "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-     2052624
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypeToUnion",
+     2107971
     ],
     [
      "slices.insertionSortCmpFunc[*github.com/microsoft/typescript-go/internal/ast.Symbol]",
@@ -12336,12 +11640,12 @@
      1519589
     ],
     [
-     "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
-     1453549
+     "(*github.com/zeebo/xxh3.Hasher).Write",
+     1490888
     ],
     [
-     "gointypes/softfloat.Ne64",
-     1405542
+     "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
+     1453549
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getNamedMembers",
@@ -12360,6 +11664,10 @@
      1254794
     ],
     [
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
+     1190925
+    ],
+    [
      "(*github.com/microsoft/typescript-go/internal/checker.TupleNormalizer).add",
      1146036
     ],
@@ -12372,40 +11680,16 @@
      1115093
     ],
     [
-     "gointypes/softfloat.fneg64",
-     1113970
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-     1107425
-    ],
-    [
-     "gointypes/softfloat.fintto64",
-     1081368
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
-     996969
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).couldContainTypeVariablesWorker",
      984358
     ],
     [
-     "gointypes/softfloat.Neg64",
-     976184
-    ],
-    [
-     "gointypes/softfloat.Gt64",
-     958328
-    ],
-    [
      "internal/bytealg.CompareString",
-     952548
+     948612
     ],
     [
      "strings.Compare",
-     952548
+     948612
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.keyBuilder).writeTypes",
@@ -12416,12 +11700,8 @@
      934352
     ],
     [
-     "math.IsNaN",
-     909480
-    ],
-    [
-     "unicode.ToLower",
-     902312
+     "github.com/zeebo/xxh3.intern",
+     895797
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).char",
@@ -12432,174 +11712,237 @@
      885594
     ],
     [
-     "(*github.com/zeebo/xxh3.Hasher).Sum128",
-     882918
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).removeRedundantLiteralTypes",
+     844126
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).symbolIsValueEx",
+     818209
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/binder.Binder).bindChildren",
+     747341
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).createTupleTargetType",
+     742997
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isErrorType",
+     730250
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).newSymbol",
+     728260
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/core.levInt",
+     723112
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/stringutil.ContainsNonASCII",
+     723062
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).checkSourceElementWorker",
+     694903
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.keyBuilder).writeType",
+     688755
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isNamedMember",
+     677444
+    ],
+    [
+     "(*strings.Builder).copyCheck",
+     668854
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isSimpleTypeRelatedTo",
+     662740
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/scanner.iterateCommentRanges$1",
+     635450
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).mergeGlobalSymbol",
+     624464
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).isDeclarationContainedBy",
+     621028
+    ],
+    [
+     "(github.com/microsoft/typescript-go/internal/core.TextRange).Pos",
+     619116
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).getConditionalFlowTypeOfType",
+     606808
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).compareNodes",
+     591335
     ]
    ],
-   "functionsExecuted": 5628,
-   "checkOps": 472394661
+   "functionsExecuted": 5668,
+   "checkOps": 205681645
   },
   "mini-core": {
    "ops": {
     "n": 324,
-    "min": 72522,
-    "median": 200454,
-    "p90": 618890,
-    "max": 5051257,
-    "sum": 107934833
+    "min": 47661,
+    "median": 154204,
+    "p90": 403303,
+    "max": 1379449,
+    "sum": 69141457
    },
    "phases": {
-    "check main.ts": 56605056,
-    "parse": 19735936,
-    "checker creation (globals merge)": 11858560,
-    "program setup (file loader)": 7689728,
-    "bind": 6148096,
-    "sort + print diagnostics": 3765504,
-    "harness glue (run, diagnostics loop)": 1249649,
-    "harness: in-memory FS": 705024,
-    "other diagnostics": 177280
+    "check main.ts": 31236864,
+    "parse": 14815232,
+    "checker creation (globals merge)": 8358912,
+    "bind": 5466624,
+    "program setup (file loader)": 4210304,
+    "sort + print diagnostics": 3758336,
+    "harness glue (run, diagnostics loop)": 1117265,
+    "other diagnostics": 177920
    },
    "byPackage": {
     "github.com/microsoft/typescript-go/internal/checker": 22021252,
-    "gointypes/softfloat": 21681971,
-    "github.com/microsoft/typescript-go/internal/ast": 15211272,
-    "github.com/zeebo/xxh3": 7819475,
-    "github.com/microsoft/typescript-go/internal/scanner": 7154010,
-    "github.com/microsoft/typescript-go/internal/core": 5229120,
+    "github.com/microsoft/typescript-go/internal/ast": 10123209,
+    "github.com/microsoft/typescript-go/internal/scanner": 6114838,
+    "github.com/microsoft/typescript-go/internal/core": 5546285,
     "github.com/microsoft/typescript-go/internal/binder": 5106239,
     "github.com/microsoft/typescript-go/internal/parser": 4625662,
-    "github.com/microsoft/typescript-go/internal/tspath": 3786602,
-    "slices": 1693597,
+    "github.com/microsoft/typescript-go/internal/tspath": 1652090,
     "github.com/microsoft/typescript-go/internal/compiler": 1625276,
-    "strings": 1369502,
-    "math": 1119017,
+    "slices": 1621345,
+    "strings": 1317986,
+    "gointypes/softfloat": 1241765,
     "github.com/microsoft/typescript-go/internal/stringutil": 1104484,
     "fmt": 1042836,
     "github.com/microsoft/typescript-go/internal/printer": 816192,
-    "unicode/utf8": 720962,
-    "io/fs": 539119,
-    "internal/stringslite": 536216,
+    "github.com/zeebo/xxh3": 582338,
+    "internal/stringslite": 537512,
     "github.com/microsoft/typescript-go/internal/diagnostics": 512196,
-    "internal/bytealg": 436994,
-    "github.com/microsoft/typescript-go/internal/vfs/vfstest": 396894,
-    "sync": 370052,
+    "unicode/utf8": 350306,
+    "sync": 326960,
     "github.com/microsoft/typescript-go/internal/collections": 326546,
-    "unicode": 314343,
-    "testing/fstest": 305177,
     "internal/strconv": 300089,
-    "github.com/microsoft/typescript-go/internal/jsnum": 221382,
+    "internal/bytealg": 290222,
+    "github.com/microsoft/typescript-go/internal/jsnum": 262990,
+    "unicode": 260237,
     "github.com/microsoft/typescript-go/internal/tsoptions": 175438,
-    "math/bits": 170770,
+    "math/bits": 167320,
     "time": 145992,
+    "github.com/microsoft/typescript-go/cmd/tsgo": 141204,
     "bytes": 136107,
-    "github.com/microsoft/typescript-go/internal/vfs/internal": 104934,
-    "github.com/microsoft/typescript-go/cmd/tsgo": 97800,
     "github.com/microsoft/typescript-go/internal/execute/tsc": 97752,
     "github.com/microsoft/typescript-go/internal/module": 92778,
     "github.com/microsoft/typescript-go/internal/diagnosticwriter": 88451,
     "sync/atomic": 73047,
     "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 53136,
     "cmp": 48280,
-    "maps": 47298,
-    "github.com/microsoft/typescript-go/internal/vfs/iovfs": 46656,
+    "math": 45130,
     "context": 33835,
+    "maps": 31746,
     "github.com/microsoft/typescript-go/internal/outputpaths": 27216,
     "github.com/microsoft/typescript-go/internal/packagejson": 25272,
-    "path": 24300,
     "strconv": 20650,
     "github.com/microsoft/typescript-go/internal/debug": 18710,
-    "errors": 9396,
     "github.com/microsoft/typescript-go/internal/pseudochecker": 5402,
     "github.com/microsoft/typescript-go/internal/evaluator": 5001,
     "unicode/utf16": 135
    },
    "byEvent": {
-    "if": 20536821,
-    "fieldAddr": 11405352,
-    "binop ==": 11344030,
-    "load": 8836640,
-    "phi": 7598363,
-    "return": 7019331,
-    "call static": 6396451,
-    "jump": 3581858,
-    "store": 3303524,
-    "extract": 3059944,
-    "binop !=": 2817026,
-    "binop +": 2677597,
-    "binop <": 2672450,
-    "binop &": 2664515,
-    "call builtin len": 1446084,
-    "convert": 1367123,
-    "binop >>": 1089072,
-    "binop -": 1010061,
-    "indexAddr": 967401,
-    "index": 860454,
-    "binop >=": 767669,
-    "binop <<": 691988,
-    "binop |": 593764,
-    "slice": 565198,
-    "alloc heap": 525028,
-    "binop >": 479325,
-    "binop ^": 468878,
-    "binop *": 411943,
-    "call interface method": 307401,
-    "binop <=": 294121,
-    "call func value": 285602,
-    "typeAssert": 240043,
-    "alloc local": 215154,
-    "map lookup": 165818,
-    "changeType": 160871,
-    "unop !": 132571,
-    "call builtin append": 118714,
-    "makeClosure": 115490,
-    "call builtin cap": 115149,
-    "makeInterface": 105761,
-    "call static (intrinsic)": 75659,
-    "map update": 67879,
-    "binop &^": 59392,
-    "runDefers": 46476,
-    "makeSlice": 38234,
-    "map range next": 37747,
-    "makeMap": 34544,
+    "if": 11984635,
+    "fieldAddr": 9686858,
+    "load": 7832825,
+    "binop ==": 5990318,
+    "return": 5368461,
+    "call static": 4836091,
+    "phi": 3374800,
+    "store": 2635175,
+    "binop !=": 2458885,
+    "jump": 1824948,
+    "binop &": 1366313,
+    "binop <": 1292417,
+    "call builtin len": 1275850,
+    "binop +": 1097000,
+    "indexAddr": 951371,
+    "extract": 745764,
+    "convert": 641089,
+    "index": 636906,
+    "binop >=": 614761,
+    "alloc heap": 510178,
+    "slice": 504020,
+    "binop -": 357341,
+    "call interface method": 292823,
+    "binop <=": 275500,
+    "typeAssert": 233239,
+    "alloc local": 227142,
+    "call func value": 213882,
+    "map lookup": 199737,
+    "binop >>": 195444,
+    "call builtin append": 157654,
+    "binop >": 155453,
+    "changeType": 126424,
+    "binop |": 124943,
+    "call builtin cap": 113855,
+    "makeClosure": 111278,
+    "makeInterface": 96365,
+    "binop <<": 81938,
+    "call static (intrinsic)": 71771,
+    "map update": 69815,
+    "call builtin min": 49036,
+    "binop &^": 48895,
+    "runDefers": 41616,
+    "makeSlice": 37910,
+    "binop *": 32521,
+    "makeMap": 32370,
+    "map range next": 27379,
     "call builtin max": 26604,
-    "call builtin min": 26071,
-    "defer static": 23765,
+    "defer static": 21497,
     "string range next": 17621,
-    "call builtin copy": 14453,
-    "map range": 13414,
+    "call builtin copy": 14130,
+    "unop !": 13693,
+    "map range": 8878,
     "string range": 6763,
     "binop /": 5694,
     "binop %": 5431,
     "call builtin clear": 5392,
-    "defer func value": 4168,
-    "call builtin delete": 2771,
-    "changeInterface": 2447,
+    "defer func value": 3844,
+    "binop ^": 2182,
+    "changeInterface": 2123,
     "field": 2038,
-    "defer interface method": 1620,
-    "unop -": 1095,
-    "call builtin recover": 884,
+    "call builtin delete": 1799,
+    "call builtin recover": 560,
+    "unop -": 126,
     "call builtin wrapnilchk": 86
    },
    "intrinsics": {
     "internal/bytealg.CountString": {
-     "calls": 20654,
-     "bytes": 259380
+     "calls": 17738,
+     "bytes": 229248
     },
-    "internal/bytealg.IndexByteString": {
-     "calls": 13281,
-     "bytes": 159529
+    "internal/bytealg.IndexString": {
+     "calls": 13286,
+     "bytes": 204507
     },
     "internal/bytealg.abigen_runtime_cmpstring": {
-     "calls": 9634,
-     "bytes": 117532
+     "calls": 7690,
+     "bytes": 96796
+    },
+    "internal/bytealg.IndexByteString": {
+     "calls": 4533,
+     "bytes": 75289
     },
     "gointypes/rt.Write": {
      "calls": 324,
      "bytes": 62853
-    },
-    "internal/bytealg.IndexString": {
-     "calls": 3566,
-     "bytes": 52227
     },
     "slices.overlaps": {
      "calls": 1137,
@@ -12652,48 +11995,16 @@
    },
    "topFunctions": [
     [
-     "gointypes/softfloat.funpack64",
-     5902623
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).step",
-     5719205
-    ],
-    [
-     "gointypes/softfloat.fpack64",
-     5510579
-    ],
-    [
-     "gointypes/softfloat.fcmp64",
-     4897197
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-     4573403
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-     2566663
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-     2058372
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).Write",
-     1663672
-    ],
-    [
-     "gointypes/softfloat.f64toint",
-     1653210
-    ],
-    [
-     "gointypes/softfloat.fadd64",
-     1576319
+     2003007
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/binder.Binder).bind",
      1393508
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
+     1148329
     ],
     [
      "github.com/microsoft/typescript-go/internal/core.ComputeECMALineStartsSeq$1",
@@ -12702,10 +12013,6 @@
     [
      "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
      1070895
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-     1067637
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getApparentType",
@@ -12728,24 +12035,16 @@
      665230
     ],
     [
-     "gointypes/softfloat.feq64",
-     663295
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/scanner.iterateCommentRanges$1",
      627726
     ],
     [
-     "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
-     618815
-    ],
-    [
-     "gointypes/softfloat.fgt64",
-     603765
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).checkSourceElementWorker",
      581113
+    ],
+    [
+     "gointypes/softfloat.fpack64",
+     548209
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.CompareTypes",
@@ -12760,28 +12059,16 @@
      469172
     ],
     [
-     "io/fs.ValidPath",
-     468504
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
-     461171
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/diagnostics.Format",
      450489
     ],
     [
-     "math.IsInf",
-     443708
-    ],
-    [
-     "internal/bytealg.LastIndexByteString",
-     417714
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypeToUnion",
      411558
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
+     397057
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).isSimpleTypeRelatedTo",
@@ -12796,20 +12083,12 @@
      376665
     ],
     [
-     "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
-     366475
-    ],
-    [
      "unicode/utf8.DecodeRuneInString",
      329107
     ],
     [
      "slices.BinarySearchFunc[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
      311345
-    ],
-    [
-     "unicode/utf8.ValidString",
-     306504
     ],
     [
      "github.com/microsoft/typescript-go/internal/checker.hashWrite64[int]",
@@ -12820,8 +12099,8 @@
      299462
     ],
     [
-     "math.min",
-     298869
+     "github.com/microsoft/typescript-go/internal/core.levAdd",
+     292551
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypesToUnion",
@@ -12840,28 +12119,32 @@
      287154
     ],
     [
-     "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
-     279278
+     "(*github.com/zeebo/xxh3.Hasher).Write",
+     282982
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
+     282536
     ],
     [
      "(*fmt.pp).doPrintf",
      279007
     ],
     [
-     "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
-     270381
+     "internal/bytealg.LastIndexByteString",
+     274830
     ],
     [
      "(*fmt.pp).printArg",
      267051
     ],
     [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanIdentifier$1",
-     264954
-    ],
-    [
      "github.com/microsoft/typescript-go/internal/ast.newNode",
      263426
+    ],
+    [
+     "internal/stringslite.Index",
+     258881
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/parser.Parser).mark",
@@ -12890,172 +12173,223 @@
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Relater).isRelatedToEx",
      241210
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/tspath.GetEncodedRootLength",
+     236361
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/tspath.ToFileNameLowerCase",
+     231012
+    ],
+    [
+     "internal/stringslite.HasSuffix",
+     230292
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).getPropagatingFlagsOfTypes",
+     228514
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/parser.Parser).nextToken",
+     226692
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/parser.Parser).finishNodeWithEnd",
+     223995
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/binder.getIsDeferredContext",
+     220576
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).newObjectType",
+     219666
+    ],
+    [
+     "github.com/zeebo/xxh3.intern",
+     216952
+    ],
+    [
+     "gointypes/softfloat.f64toint",
+     213414
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/binder.isSelfReferenceLocation",
+     210936
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
+     206000
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/tspath.CombinePaths",
+     198618
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).getTypeFromTypeNodeWorker",
+     196363
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).getMergedSymbol",
+     193743
     ]
    ],
-   "functionsExecuted": 5541,
-   "checkOps": 107934833
+   "functionsExecuted": 5581,
+   "checkOps": 69141457
   },
   "es5-core": {
    "ops": {
     "n": 324,
-    "min": 81086,
-    "median": 223363,
-    "p90": 622674,
-    "max": 12367995,
-    "sum": 118189001
+    "min": 55445,
+    "median": 167981,
+    "p90": 495757,
+    "max": 1671199,
+    "sum": 81801423
    },
    "phases": {
-    "check main.ts": 64424064,
-    "parse": 19730304,
-    "checker creation (globals merge)": 14595968,
-    "program setup (file loader)": 7629568,
-    "bind": 6150528,
-    "sort + print diagnostics": 3422208,
-    "harness glue (run, diagnostics loop)": 1397193,
-    "harness: in-memory FS": 663552,
-    "other diagnostics": 175616
+    "check main.ts": 41714048,
+    "parse": 14812032,
+    "checker creation (globals merge)": 10803968,
+    "bind": 5465472,
+    "program setup (file loader)": 4197632,
+    "sort + print diagnostics": 3425664,
+    "harness glue (run, diagnostics loop)": 1204047,
+    "other diagnostics": 178560
    },
    "byPackage": {
     "github.com/microsoft/typescript-go/internal/checker": 30364666,
-    "github.com/microsoft/typescript-go/internal/ast": 18566633,
-    "gointypes/softfloat": 16367127,
-    "github.com/zeebo/xxh3": 10029433,
-    "github.com/microsoft/typescript-go/internal/scanner": 7137084,
-    "github.com/microsoft/typescript-go/internal/core": 6251509,
+    "github.com/microsoft/typescript-go/internal/ast": 13013586,
+    "github.com/microsoft/typescript-go/internal/core": 6475323,
+    "github.com/microsoft/typescript-go/internal/scanner": 6097770,
     "github.com/microsoft/typescript-go/internal/binder": 5620826,
     "github.com/microsoft/typescript-go/internal/parser": 4625662,
-    "github.com/microsoft/typescript-go/internal/tspath": 3718186,
-    "slices": 2260082,
+    "slices": 2187830,
     "github.com/microsoft/typescript-go/internal/compiler": 1620939,
-    "strings": 1350126,
+    "github.com/microsoft/typescript-go/internal/tspath": 1614454,
+    "strings": 1298610,
     "github.com/microsoft/typescript-go/internal/stringutil": 1105840,
     "fmt": 949023,
     "github.com/microsoft/typescript-go/internal/printer": 887299,
-    "math": 826935,
-    "unicode/utf8": 713164,
-    "internal/stringslite": 538912,
-    "io/fs": 533287,
+    "github.com/zeebo/xxh3": 780195,
+    "gointypes/softfloat": 569235,
+    "internal/stringslite": 541504,
     "github.com/microsoft/typescript-go/internal/diagnostics": 485275,
-    "internal/bytealg": 422498,
-    "github.com/microsoft/typescript-go/internal/vfs/vfstest": 396894,
-    "sync": 361619,
     "github.com/microsoft/typescript-go/internal/collections": 353720,
-    "testing/fstest": 305177,
+    "unicode/utf8": 349636,
+    "sync": 318527,
     "internal/strconv": 300244,
-    "unicode": 288047,
-    "github.com/microsoft/typescript-go/internal/jsnum": 233807,
-    "math/bits": 186730,
+    "internal/bytealg": 280910,
+    "github.com/microsoft/typescript-go/internal/jsnum": 276642,
+    "unicode": 248427,
+    "math/bits": 183739,
     "github.com/microsoft/typescript-go/internal/tsoptions": 175438,
     "time": 145992,
+    "github.com/microsoft/typescript-go/cmd/tsgo": 141204,
     "bytes": 126887,
-    "github.com/microsoft/typescript-go/internal/vfs/internal": 104934,
-    "github.com/microsoft/typescript-go/cmd/tsgo": 97800,
     "github.com/microsoft/typescript-go/internal/execute/tsc": 96658,
     "github.com/microsoft/typescript-go/internal/module": 92778,
     "github.com/microsoft/typescript-go/internal/diagnosticwriter": 80943,
     "sync/atomic": 73695,
-    "maps": 72390,
+    "maps": 56838,
     "github.com/microsoft/typescript-go/internal/vfs/cachedvfs": 53136,
     "cmp": 48176,
-    "github.com/microsoft/typescript-go/internal/vfs/iovfs": 46656,
     "context": 33877,
     "github.com/microsoft/typescript-go/internal/outputpaths": 27216,
     "github.com/microsoft/typescript-go/internal/packagejson": 25272,
-    "path": 24300,
     "strconv": 20782,
+    "math": 20718,
     "github.com/microsoft/typescript-go/internal/debug": 20550,
-    "errors": 9396,
     "github.com/microsoft/typescript-go/internal/pseudochecker": 6085,
     "github.com/microsoft/typescript-go/internal/evaluator": 5161,
     "unicode/utf16": 135
    },
    "byEvent": {
-    "if": 21856363,
-    "fieldAddr": 13883902,
-    "binop ==": 12101365,
-    "load": 11061123,
-    "return": 7877502,
-    "phi": 7538727,
-    "call static": 7155199,
-    "store": 3823746,
-    "jump": 3712724,
-    "binop !=": 3561182,
-    "binop +": 2819743,
-    "binop &": 2671684,
-    "extract": 2661141,
-    "binop <": 2549656,
-    "call builtin len": 1660466,
-    "convert": 1424533,
-    "indexAddr": 1245758,
-    "binop >>": 1022200,
-    "binop -": 901445,
-    "index": 869034,
-    "binop >=": 760619,
-    "slice": 628130,
-    "alloc heap": 581054,
-    "binop ^": 576232,
-    "binop <<": 535209,
-    "binop *": 521999,
-    "binop |": 494304,
-    "binop >": 420364,
-    "call interface method": 362823,
-    "call func value": 329758,
-    "binop <=": 299081,
-    "typeAssert": 296380,
-    "alloc local": 290104,
-    "map lookup": 268580,
-    "changeType": 166821,
-    "call builtin append": 140634,
-    "call builtin cap": 134826,
-    "makeClosure": 121707,
-    "map update": 120662,
-    "makeInterface": 111671,
-    "unop !": 105591,
-    "map range next": 100633,
-    "call static (intrinsic)": 75830,
-    "binop &^": 58679,
-    "runDefers": 46624,
-    "makeSlice": 41093,
-    "makeMap": 35781,
+    "if": 13919827,
+    "fieldAddr": 11688916,
+    "load": 9739684,
+    "binop ==": 6750111,
+    "return": 6481876,
+    "call static": 5849588,
+    "phi": 3935868,
+    "binop !=": 3263155,
+    "store": 2957159,
+    "jump": 2177531,
+    "binop &": 1684213,
+    "call builtin len": 1480232,
+    "binop <": 1347545,
+    "indexAddr": 1200763,
+    "binop +": 1182430,
+    "extract": 889254,
+    "convert": 740883,
+    "binop >=": 675755,
+    "index": 649107,
+    "slice": 567707,
+    "alloc heap": 565987,
+    "binop -": 374515,
+    "call interface method": 348245,
+    "map lookup": 304888,
+    "alloc local": 294903,
+    "typeAssert": 289576,
+    "binop <=": 283163,
+    "call func value": 258533,
+    "binop >>": 201717,
+    "call builtin append": 191008,
+    "binop >": 162892,
+    "changeType": 137227,
+    "binop |": 135393,
+    "call builtin cap": 133532,
+    "map update": 123035,
+    "makeClosure": 117495,
+    "makeInterface": 102275,
+    "map range next": 90265,
+    "call static (intrinsic)": 71942,
+    "binop &^": 51318,
+    "binop <<": 44260,
+    "call builtin min": 43604,
+    "runDefers": 41764,
+    "makeSlice": 40769,
+    "binop *": 33739,
+    "makeMap": 33557,
     "call builtin max": 27173,
-    "call builtin min": 26466,
-    "defer static": 23616,
+    "defer static": 21348,
     "string range next": 17721,
-    "call builtin copy": 15218,
-    "map range": 14214,
+    "call builtin copy": 14895,
+    "unop !": 14558,
+    "map range": 9678,
     "binop /": 7330,
     "call builtin clear": 6945,
     "string range": 6941,
     "binop %": 5644,
-    "defer func value": 4162,
-    "call builtin delete": 3147,
-    "changeInterface": 2376,
+    "defer func value": 3838,
+    "call builtin delete": 2175,
     "field": 2099,
-    "defer interface method": 1620,
-    "call builtin recover": 796,
-    "unop -": 758,
-    "call builtin wrapnilchk": 93
+    "changeInterface": 2052,
+    "binop ^": 1203,
+    "call builtin recover": 472,
+    "call builtin wrapnilchk": 93,
+    "unop -": 52
    },
    "intrinsics": {
     "internal/bytealg.CountString": {
-     "calls": 20236,
-     "bytes": 248067
+     "calls": 17320,
+     "bytes": 218583
     },
-    "internal/bytealg.IndexByteString": {
-     "calls": 13220,
-     "bytes": 155519
+    "internal/bytealg.IndexString": {
+     "calls": 13286,
+     "bytes": 201915
     },
     "internal/bytealg.abigen_runtime_cmpstring": {
-     "calls": 10162,
-     "bytes": 120968
+     "calls": 8218,
+     "bytes": 101204
+    },
+    "internal/bytealg.IndexByteString": {
+     "calls": 4472,
+     "bytes": 74195
     },
     "gointypes/rt.Write": {
      "calls": 324,
      "bytes": 59325
-    },
-    "internal/bytealg.IndexString": {
-     "calls": 3566,
-     "bytes": 51579
     },
     "slices.overlaps": {
      "calls": 1282,
@@ -13108,36 +12442,8 @@
    },
    "topFunctions": [
     [
-     "(*github.com/zeebo/xxh3.Hasher).step",
-     7299334
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
-     4826741
-    ],
-    [
-     "gointypes/softfloat.funpack64",
-     4422884
-    ],
-    [
-     "gointypes/softfloat.fpack64",
-     4210961
-    ],
-    [
-     "gointypes/softfloat.fcmp64",
-     3683409
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).Scan",
-     2566788
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).Write",
-     2122224
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/tspath.hasRelativePathSegment",
-     2027592
+     2003041
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/binder.NameResolver).Resolve",
@@ -13152,16 +12458,8 @@
      1350770
     ],
     [
-     "gointypes/softfloat.f64toint",
-     1280556
-    ],
-    [
-     "gointypes/softfloat.fadd64",
-     1156985
-    ],
-    [
-     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIIWhile",
-     1067750
+     "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanASCIITable",
+     1148451
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getApparentType",
@@ -13178,10 +12476,6 @@
     [
      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).char",
      805407
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/ast.isStatementKindButNotDeclarationKind",
-     799455
     ],
     [
      "github.com/microsoft/typescript-go/internal/stringutil.ContainsNonASCII",
@@ -13220,10 +12514,6 @@
      551280
     ],
     [
-     "gointypes/softfloat.feq64",
-     501392
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getMergedSymbol",
      497508
     ],
@@ -13234,18 +12524,6 @@
     [
      "github.com/microsoft/typescript-go/internal/binder.GetContainerFlags",
      484731
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/ast.isDeclarationStatementKind",
-     477795
-    ],
-    [
-     "io/fs.ValidPath",
-     462672
-    ],
-    [
-     "gointypes/softfloat.fgt64",
-     448119
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).getNamedMembers",
@@ -13264,10 +12542,6 @@
      427961
     ],
     [
-     "internal/bytealg.LastIndexByteString",
-     402162
-    ],
-    [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).isDeclarationContainedBy",
      393508
     ],
@@ -13280,12 +12554,8 @@
      365546
     ],
     [
-     "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
-     353006
-    ],
-    [
-     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
-     346446
+     "(*github.com/zeebo/xxh3.Hasher).Write",
+     364700
     ],
     [
      "slices.BinarySearchFunc[[]*github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type, *github.com/microsoft/typescript-go/internal/checker.Type]",
@@ -13300,16 +12570,8 @@
      335196
     ],
     [
-     "math.IsInf",
-     332011
-    ],
-    [
      "unicode/utf8.DecodeRuneInString",
      328252
-    ],
-    [
-     "(*github.com/zeebo/xxh3.Hasher).Sum128",
-     324432
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Checker).addTypesToUnion",
@@ -13324,8 +12586,12 @@
      307506
     ],
     [
-     "unicode/utf8.ValidString",
-     299376
+     "github.com/zeebo/xxh3.intern",
+     302438
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/core.levenshteinWithMax",
+     298937
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/checker.Relater).isRelatedToEx",
@@ -13334,6 +12600,10 @@
     [
      "github.com/microsoft/typescript-go/internal/stringutil.IsLineBreak",
      297125
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/ast.Node).ForEachChild",
+     295160
     ],
     [
      "(*github.com/microsoft/typescript-go/internal/scanner.Scanner).scanIdentifier",
@@ -13346,1324 +12616,1388 @@
     [
      "github.com/microsoft/typescript-go/internal/checker.NewChecker",
      289008
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/parser.Parser).rewind",
+     287154
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]).New[github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]",
+     286069
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/binder.isSelfReferenceLocation",
+     282724
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/checker.getSortOrderFlags",
+     282108
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/core.Arena[github.com/microsoft/typescript-go/internal/ast.Symbol]).New[github.com/microsoft/typescript-go/internal/ast.Symbol]",
+     281114
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/core.LinkStore[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]).Get[*github.com/microsoft/typescript-go/internal/ast.Symbol, github.com/microsoft/typescript-go/internal/checker.ValueSymbolLinks]",
+     277461
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).instantiateTypeWithAlias",
+     274160
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/ast.newNode",
+     267063
+    ],
+    [
+     "internal/bytealg.LastIndexByteString",
+     264462
+    ],
+    [
+     "internal/stringslite.Index",
+     258201
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/parser.Parser).mark",
+     257160
+    ],
+    [
+     "github.com/microsoft/typescript-go/internal/ast.isFunctionLikeDeclarationKind",
+     255680
+    ],
+    [
+     "(*fmt.pp).doPrintf",
+     249915
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).newObjectType",
+     248388
+    ],
+    [
+     "(*github.com/microsoft/typescript-go/internal/checker.Checker).getTypeFromTypeNodeWorker",
+     247259
+    ],
+    [
+     "gointypes/softfloat.fpack64",
+     246456
     ]
    ],
-   "functionsExecuted": 5612,
-   "checkOps": 118189001
+   "functionsExecuted": 5652,
+   "checkOps": 81801423
   }
  },
  "perInput": {
-  "assign-basic.ts": {
-   "es5": 116638,
-   "mini": 96689
-  },
   "assign-any-unknown.ts": {
-   "es5": 187208,
-   "mini": 178644
+   "es5": 147585,
+   "mini": 139801
+  },
+  "assign-basic.ts": {
+   "es5": 88779,
+   "mini": 69906
   },
   "extreme/add-20-22.ts": {
-   "es5": 2928062,
-   "mini": 2092341
-  },
-  "assign-enum-number.ts": {
-   "es5": 197945,
-   "mini": 186951
+   "es5": 2237914,
+   "mini": 1411882
   },
   "assign-callback-bivariance.ts": {
-   "es5": 316364,
-   "mini": 304783
+   "es5": 260539,
+   "mini": 249738
+  },
+  "assign-enum-number.ts": {
+   "es5": 153520,
+   "mini": 143306
   },
   "assign-function-params.ts": {
-   "es5": 210557,
-   "mini": 201993
-  },
-  "assign-index-signature.ts": {
-   "es5": 238848,
-   "mini": 215886
-  },
-  "assign-null-undefined.ts": {
-   "es5": 170233,
-   "mini": 161669
+   "es5": 167981,
+   "mini": 160197
   },
   "assign-function-return.ts": {
-   "es5": 182426,
-   "mini": 158514
+   "es5": 144644,
+   "mini": 122848
   },
-  "assign-object-excess.ts": {
-   "es5": 210801,
-   "mini": 199195
+  "assign-index-signature.ts": {
+   "es5": 193233,
+   "mini": 171347
   },
   "assign-never.ts": {
-   "es5": 178847,
-   "mini": 158902
-  },
-  "assign-object-missing.ts": {
-   "es5": 173791,
-   "mini": 162185
-  },
-  "assign-readonly.ts": {
-   "es5": 377516,
-   "mini": 333151
-  },
-  "assign-optional.ts": {
-   "es5": 290191,
-   "mini": 264733
-  },
-  "assign-object-literal-nested.ts": {
-   "es5": 449040,
-   "mini": 375034
-  },
-  "assign-structural-class.ts": {
-   "es5": 228290,
-   "mini": 219759
+   "es5": 141765,
+   "mini": 122896
   },
   "extreme/large-unions.ts": {
-   "es5": 13583634,
-   "mini": 13559396
+   "es5": 4760091,
+   "mini": 4737449
+  },
+  "assign-null-undefined.ts": {
+   "es5": 134261,
+   "mini": 126477
+  },
+  "assign-object-excess.ts": {
+   "es5": 165030,
+   "mini": 154204
+  },
+  "assign-object-literal-nested.ts": {
+   "es5": 360388,
+   "mini": 287458
+  },
+  "assign-optional.ts": {
+   "es5": 238967,
+   "mini": 214585
+  },
+  "assign-object-missing.ts": {
+   "es5": 135879,
+   "mini": 125053
+  },
+  "assign-structural-class.ts": {
+   "es5": 176527,
+   "mini": 168781
+  },
+  "assign-readonly.ts": {
+   "es5": 301028,
+   "mini": 260365
   },
   "assign-symbol-bigint-like.ts": {
-   "es5": 160667,
-   "mini": 167742
-  },
-  "assign-void.ts": {
-   "es5": 194286,
-   "mini": 183263
-  },
-  "assign-weak-type.ts": {
-   "es5": 225852,
-   "mini": 214246
-  },
-  "assign-tuple-array.ts": {
-   "es5": 616419,
-   "mini": 421621
+   "es5": 126030,
+   "mini": 133345
   },
   "assign-variance-arrays.ts": {
-   "es5": 303253,
-   "mini": 265342
+   "es5": 246519,
+   "mini": 209499
   },
-  "class-accessor.ts": {
-   "es5": 262569,
-   "mini": 242624
+  "assign-tuple-array.ts": {
+   "es5": 497182,
+   "mini": 303465
+  },
+  "assign-void.ts": {
+   "es5": 150347,
+   "mini": 140104
+  },
+  "assign-weak-type.ts": {
+   "es5": 180230,
+   "mini": 169404
   },
   "class-abstract.ts": {
-   "es5": 158122,
-   "mini": 149587
+   "es5": 121924,
+   "mini": 114174
   },
-  "class-basic.ts": {
-   "es5": 281960,
-   "mini": 247255
-  },
-  "class-index-signature.ts": {
-   "es5": 138068,
-   "mini": 129508
+  "class-accessor.ts": {
+   "es5": 210764,
+   "mini": 191900
   },
   "class-generic-constraint-error.ts": {
-   "es5": 200262,
-   "mini": 188021
+   "es5": 152368,
+   "mini": 141427
+  },
+  "class-basic.ts": {
+   "es5": 227905,
+   "mini": 194590
   },
   "class-implements.ts": {
-   "es5": 152592,
-   "mini": 141011
+   "es5": 118870,
+   "mini": 108074
   },
-  "class-strict-property-init.ts": {
-   "es5": 140766,
-   "mini": 132202
+  "class-index-signature.ts": {
+   "es5": 105451,
+   "mini": 97676
   },
   "class-override.ts": {
-   "es5": 263019,
-   "mini": 251438
+   "es5": 213787,
+   "mini": 202991
   },
   "class-private-protected.ts": {
-   "es5": 279130,
-   "mini": 270599
+   "es5": 220436,
+   "mini": 212690
   },
   "class-static.ts": {
-   "es5": 200201,
-   "mini": 188595
+   "es5": 161625,
+   "mini": 150804
   },
-  "class-this-type.ts": {
-   "es5": 299601,
-   "mini": 275831
+  "class-strict-property-init.ts": {
+   "es5": 105723,
+   "mini": 97944
   },
   "class-super-call.ts": {
-   "es5": 219108,
-   "mini": 197945
+   "es5": 169801,
+   "mini": 150239
+  },
+  "class-this-type.ts": {
+   "es5": 221763,
+   "mini": 199447
   },
   "clean-basic.ts": {
-   "es5": 111734,
-   "mini": 103174
-  },
-  "clean-comments-only.ts": {
-   "es5": 83619,
-   "mini": 75055
+   "es5": 77999,
+   "mini": 70219
   },
   "clean-abstract-generic.ts": {
-   "es5": 589781,
-   "mini": 618890
+   "es5": 470237,
+   "mini": 472526
+  },
+  "clean-comments-only.ts": {
+   "es5": 57745,
+   "mini": 49961
   },
   "clean-classes.ts": {
-   "es5": 433528,
-   "mini": 406399
+   "es5": 347279,
+   "mini": 320935
   },
   "clean-declare.ts": {
-   "es5": 186881,
-   "mini": 178317
+   "es5": 144360,
+   "mini": 136581
   },
   "clean-control-flow.ts": {
-   "es5": 520579,
-   "mini": 596917
+   "es5": 410202,
+   "mini": 430742
   },
   "clean-empty.ts": {
-   "es5": 81086,
-   "mini": 72522
-  },
-  "clean-functions.ts": {
-   "es5": 213340,
-   "mini": 204780
-  },
-  "clean-labeled-loops.ts": {
-   "es5": 243443,
-   "mini": 233248
-  },
-  "clean-enums-namespaces.ts": {
-   "es5": 206923,
-   "mini": 196757
+   "es5": 55445,
+   "mini": 47661
   },
   "clean-destructuring.ts": {
-   "es5": 784852,
-   "mini": 712968
+   "es5": 650874,
+   "mini": 559783
+  },
+  "clean-enums-namespaces.ts": {
+   "es5": 158369,
+   "mini": 149503
+  },
+  "clean-functions.ts": {
+   "es5": 164845,
+   "mini": 157065
   },
   "clean-mapped-conditional.ts": {
-   "es5": 304295,
-   "mini": 292674
+   "es5": 229189,
+   "mini": 218253
+  },
+  "clean-labeled-loops.ts": {
+   "es5": 181172,
+   "mini": 172277
   },
   "clean-generics.ts": {
-   "es5": 622674,
-   "mini": 580880
+   "es5": 469801,
+   "mini": 426480
   },
   "clean-object-methods.ts": {
-   "es5": 210904,
-   "mini": 202344
+   "es5": 165852,
+   "mini": 158072
   },
   "clean-overloads-guards.ts": {
-   "es5": 267362,
-   "mini": 287055
-  },
-  "clean-unicode.ts": {
-   "es5": 155891,
-   "mini": 229370
-  },
-  "conditional-basic.ts": {
-   "es5": 187169,
-   "mini": 167224
-  },
-  "clean-unions.ts": {
-   "es5": 349923,
-   "mini": 336711
+   "es5": 212657,
+   "mini": 214983
   },
   "clean-type-level.ts": {
-   "es5": 1484701,
-   "mini": 1026643
+   "es5": 1145040,
+   "mini": 692915
+  },
+  "clean-unicode.ts": {
+   "es5": 121056,
+   "mini": 140718
+  },
+  "clean-unions.ts": {
+   "es5": 274457,
+   "mini": 262545
+  },
+  "conditional-basic.ts": {
+   "es5": 141382,
+   "mini": 122513
   },
   "conditional-deferred.ts": {
-   "es5": 163961,
-   "mini": 155401
-  },
-  "conditional-builtin-utils.ts": {
-   "es5": 674746,
-   "mini": 2434659
-  },
-  "enum-computed-error.ts": {
-   "es5": 151010,
-   "mini": 177956
-  },
-  "conditional-infer.ts": {
-   "es5": 349516,
-   "mini": 293649
-  },
-  "conditional-distributive.ts": {
-   "es5": 876945,
-   "mini": 481476
-  },
-  "enum-const.ts": {
-   "es5": 203902,
-   "mini": 192908
+   "es5": 117881,
+   "mini": 110101
   },
   "conditional-infer-constraint.ts": {
-   "es5": 387159,
-   "mini": 287948
-  },
-  "enum-declaration-merge.ts": {
-   "es5": 119841,
-   "mini": 111281
-  },
-  "enum-string.ts": {
-   "es5": 165483,
-   "mini": 145563
-  },
-  "error-await-outside-async.ts": {
-   "es5": 106542,
-   "mini": 96735
-  },
-  "error-abstract-instantiation.ts": {
-   "es5": 200710,
-   "mini": 192175
-  },
-  "error-arg-count.ts": {
-   "es5": 147679,
-   "mini": 139119
-  },
-  "enum-numeric.ts": {
-   "es5": 277253,
-   "mini": 264429
-  },
-  "error-const-assign.ts": {
-   "es5": 130435,
-   "mini": 121875
-  },
-  "error-delete-non-optional.ts": {
-   "es5": 147547,
-   "mini": 138983
-  },
-  "error-comparison-no-overlap.ts": {
-   "es5": 176540,
-   "mini": 166345
-  },
-  "error-duplicate-property.ts": {
-   "es5": 164868,
-   "mini": 156308
-  },
-  "error-cannot-find-name.ts": {
-   "es5": 1754319,
-   "mini": 660771
-  },
-  "error-generic-arity.ts": {
-   "es5": 212579,
-   "mini": 204048
-  },
-  "error-implicit-any.ts": {
-   "es5": 179837,
-   "mini": 171277
-  },
-  "error-not-callable.ts": {
-   "es5": 186743,
-   "mini": 151692
-  },
-  "error-index-implicit-any.ts": {
-   "es5": 169331,
-   "mini": 160771
-  },
-  "error-object-possibly-undefined.ts": {
-   "es5": 165869,
-   "mini": 157305
-  },
-  "error-redeclare.ts": {
-   "es5": 194692,
-   "mini": 186132
-  },
-  "error-operator-types.ts": {
-   "es5": 239872,
-   "mini": 211438
-  },
-  "error-label-break.ts": {
-   "es5": 116172,
-   "mini": 107608
-  },
-  "error-property-not-exist.ts": {
-   "es5": 346516,
-   "mini": 168308
-  },
-  "error-missing-return-type.ts": {
-   "es5": 120278,
-   "mini": 111714
-  },
-  "error-type-as-value.ts": {
-   "es5": 131534,
-   "mini": 122970
-  },
-  "error-this-implicit.ts": {
-   "es5": 170442,
-   "mini": 157585
-  },
-  "error-spread-non-object.ts": {
-   "es5": 184147,
-   "mini": 127422
-  },
-  "error-unicode-position.ts": {
-   "es5": 187019,
-   "mini": 164611
-  },
-  "error-satisfies.ts": {
-   "es5": 557893,
-   "mini": 759264
-  },
-  "error-switch-case-type.ts": {
-   "es5": 138891,
-   "mini": 130327
-  },
-  "error-unreachable-like.ts": {
-   "es5": 125344,
-   "mini": 115149
-  },
-  "error-unique-symbol-and-readonly-array.ts": {
-   "es5": 376537,
-   "mini": 161245
-  },
-  "error-unused-ts-expect.ts": {
-   "es5": 164004,
-   "mini": 141596
-  },
-  "error-used-before-declared.ts": {
-   "es5": 157901,
-   "mini": 149370
-  },
-  "error-value-as-type.ts": {
-   "es5": 151087,
-   "mini": 142527
-  },
-  "generic-class.ts": {
-   "es5": 397684,
-   "mini": 376272
-  },
-  "generic-const-type-param.ts": {
-   "es5": 429583,
-   "mini": 293367
-  },
-  "generic-default.ts": {
-   "es5": 204908,
-   "mini": 193914
-  },
-  "generic-higher-order.ts": {
-   "es5": 399127,
-   "mini": 411490
-  },
-  "generic-identity.ts": {
-   "es5": 228634,
-   "mini": 207438
-  },
-  "generic-infer-from-object.ts": {
-   "es5": 312870,
-   "mini": 274934
-  },
-  "generic-inference-multiple.ts": {
-   "es5": 490762,
-   "mini": 366007
-  },
-  "generic-inference-callback.ts": {
-   "es5": 573078,
-   "mini": 535936
-  },
-  "generic-keyof-constraint.ts": {
-   "es5": 376751,
-   "mini": 353125
-  },
-  "generic-return-inference.ts": {
-   "es5": 141283,
-   "mini": 132719
-  },
-  "generic-constraint.ts": {
-   "es5": 351623,
-   "mini": 311984
-  },
-  "generic-unresolved-error.ts": {
-   "es5": 208789,
-   "mini": 199007
-  },
-  "interface-extends-conflict.ts": {
-   "es5": 144949,
-   "mini": 136414
-  },
-  "indexed-union-key.ts": {
-   "es5": 165533,
-   "mini": 156581
-  },
-  "indexed-access.ts": {
-   "es5": 264032,
-   "mini": 225456
-  },
-  "interface-call-construct.ts": {
-   "es5": 274295,
-   "mini": 250669
-  },
-  "interface-merge.ts": {
-   "es5": 178980,
-   "mini": 167374
-  },
-  "keyof-typeof.ts": {
-   "es5": 207067,
-   "mini": 185875
-  },
-  "intersection-basic.ts": {
-   "es5": 318793,
-   "mini": 307187
-  },
-  "keyof-basic.ts": {
-   "es5": 207520,
-   "mini": 187571
-  },
-  "literal-const-let.ts": {
-   "es5": 188225,
-   "mini": 168276
-  },
-  "literal-as-const.ts": {
-   "es5": 573322,
-   "mini": 334262
-  },
-  "literal-boolean.ts": {
-   "es5": 144933,
-   "mini": 135981
-  },
-  "literal-numeric.ts": {
-   "es5": 265586,
-   "mini": 254563
-  },
-  "literal-enum-member.ts": {
-   "es5": 206845,
-   "mini": 186925
-  },
-  "literal-template-widen.ts": {
-   "es5": 190130,
-   "mini": 170181
-  },
-  "literal-fresh-excess.ts": {
-   "es5": 241065,
-   "mini": 229459
-  },
-  "extreme/deep-recursion.ts": {
-   "es5": 92916412,
-   "mini": 87038303
-  },
-  "lookup-element-access.ts": {
-   "es5": 256953,
-   "mini": 227303
-  },
-  "literal-widening-object.ts": {
-   "es5": 327523,
-   "mini": 315917
-  },
-  "mapped-filter-keys.ts": {
-   "es5": 315553,
-   "mini": 303932
-  },
-  "mapped-custom-modifiers.ts": {
-   "es5": 384611,
-   "mini": 373052
-  },
-  "mapped-partial-required.ts": {
-   "es5": 306000,
-   "mini": 1423392
-  },
-  "mapped-readonly-record.ts": {
-   "es5": 311391,
-   "mini": 1441865
-  },
-  "mapped-key-remap.ts": {
-   "es5": 593593,
-   "mini": 928728
-  },
-  "namespace-basic.ts": {
-   "es5": 210012,
-   "mini": 197159
-  },
-  "mapped-pick-omit.ts": {
-   "es5": 427084,
-   "mini": 880239
-  },
-  "namespace-merge-class.ts": {
-   "es5": 154055,
-   "mini": 143032
-  },
-  "namespace-merge-function.ts": {
-   "es5": 163101,
-   "mini": 143156
-  },
-  "namespace-nested.ts": {
-   "es5": 180542,
-   "mini": 160593
-  },
-  "narrow-assertion-fn.ts": {
-   "es5": 192800,
-   "mini": 171220
-  },
-  "narrow-equality.ts": {
-   "es5": 234105,
-   "mini": 223910
-  },
-  "narrow-closure-reset.ts": {
-   "es5": 343064,
-   "mini": 199174
-  },
-  "narrow-control-flow-assign.ts": {
-   "es5": 296274,
-   "mini": 212962
-  },
-  "narrow-discriminated.ts": {
-   "es5": 373280,
-   "mini": 360427
-  },
-  "narrow-exhaustive-never.ts": {
-   "es5": 208498,
-   "mini": 188553
-  },
-  "narrow-in.ts": {
-   "es5": 235205,
-   "mini": 221960
-  },
-  "narrow-instanceof.ts": {
-   "es5": 237564,
-   "mini": 219366
-  },
-  "narrow-optional-chain.ts": {
-   "es5": 236043,
-   "mini": 225020
-  },
-  "narrow-truthiness.ts": {
-   "es5": 181779,
-   "mini": 160583
-  },
-  "narrow-typeof.ts": {
-   "es5": 287515,
-   "mini": 195000
-  },
-  "overload-arity.ts": {
-   "es5": 170677,
-   "mini": 162117
-  },
-  "narrow-user-guard.ts": {
-   "es5": 287487,
-   "mini": 274271
-  },
-  "overload-impl-incompatible.ts": {
-   "es5": 141989,
-   "mini": 133425
-  },
-  "overload-basic.ts": {
-   "es5": 223363,
-   "mini": 191745
-  },
-  "recursive-alias-circular.ts": {
-   "es5": 142663,
-   "mini": 134099
-  },
-  "recursive-deep-readonly.ts": {
-   "es5": 283581,
-   "mini": 271993
-  },
-  "overload-method.ts": {
-   "es5": 226580,
-   "mini": 205493
-  },
-  "recursive-linked-list.ts": {
-   "es5": 336324,
-   "mini": 396573
-  },
-  "recursive-json.ts": {
-   "es5": 767068,
-   "mini": 631965
-  },
-  "spread-call.ts": {
-   "es5": 306519,
-   "mini": 233103
-  },
-  "rest-params.ts": {
-   "es5": 267341,
-   "mini": 212661
-  },
-  "syntax-bad-token.ts": {
-   "es5": 120457,
-   "mini": 111897
-  },
-  "syntax-invalid-type.ts": {
-   "es5": 104760,
-   "mini": 96196
-  },
-  "syntax-decl-modifiers.ts": {
-   "es5": 140454,
-   "mini": 131923
-  },
-  "recursive-tuple-reverse.ts": {
-   "es5": 987510,
-   "mini": 543574
-  },
-  "syntax-jsx-in-ts.ts": {
-   "es5": 100528,
-   "mini": 91964
-  },
-  "syntax-missing-paren.ts": {
-   "es5": 91212,
-   "mini": 82648
-  },
-  "syntax-missing-brace.ts": {
-   "es5": 92162,
-   "mini": 83602
-  },
-  "syntax-numeric-literal.ts": {
-   "es5": 135427,
-   "mini": 126867
-  },
-  "syntax-unexpected-keyword.ts": {
-   "es5": 95214,
-   "mini": 86654
-  },
-  "syntax-regex-errors.ts": {
-   "es5": 112036,
-   "mini": 103472
-  },
-  "syntax-unterminated-string.ts": {
-   "es5": 98464,
-   "mini": 89904
-  },
-  "syntax-reserved-word.ts": {
-   "es5": 118309,
-   "mini": 109749
-  },
-  "syntax-unterminated-template.ts": {
-   "es5": 95151,
-   "mini": 86591
-  },
-  "template-basic.ts": {
-   "es5": 234865,
-   "mini": 214916
-  },
-  "template-intrinsics.ts": {
-   "es5": 247542,
-   "mini": 2688530
-  },
-  "tuple-labeled.ts": {
-   "es5": 340922,
-   "mini": 239615
-  },
-  "template-union-expand.ts": {
-   "es5": 661283,
-   "mini": 641334
-  },
-  "template-infer.ts": {
-   "es5": 554332,
-   "mini": 415168
-  },
-  "tuple-length-index.ts": {
-   "es5": 331064,
-   "mini": 251235
-  },
-  "tuple-optional-rest.ts": {
-   "es5": 475479,
-   "mini": 333525
-  },
-  "upstream/ArrowFunctionExpression1.ts": {
-   "es5": 128591,
-   "mini": 120027
-  },
-  "upstream/ClassDeclaration21.ts": {
-   "es5": 140350,
-   "mini": 131790
-  },
-  "tuple-variadic.ts": {
-   "es5": 756611,
-   "mini": 535546
-  },
-  "upstream/ClassDeclaration10.ts": {
-   "es5": 136651,
-   "mini": 128087
-  },
-  "union-call.ts": {
-   "es5": 181825,
-   "mini": 169555
-  },
-  "upstream/anyAndUnknownHaveFalsyComponents.ts": {
-   "es5": 285536,
-   "mini": 275729
-  },
-  "upstream/ambientEnumElementInitializer3.ts": {
-   "es5": 115623,
-   "mini": 107059
-  },
-  "union-property-access.ts": {
-   "es5": 205174,
-   "mini": 192317
-  },
-  "upstream/arrayLiteral1.ts": {
-   "es5": 145344,
-   "mini": 121203
-  },
-  "upstream/arrayDestructuringInSwitch1.ts": {
-   "es5": 1009342,
-   "mini": 603733
-  },
-  "upstream/breakInIterationOrSwitchStatement1.ts": {
-   "es5": 102878,
-   "mini": 94314
-  },
-  "upstream/assignmentToParenthesizedExpression1.ts": {
-   "es5": 136217,
-   "mini": 127657
-  },
-  "upstream/baseClassImprovedMismatchErrors.ts": {
-   "es5": 688157,
-   "mini": 664144
-  },
-  "upstream/callOverloads2.ts": {
-   "es5": 314096,
-   "mini": 305421
-  },
-  "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface.ts": {
-   "es5": 667428,
-   "mini": 626916
-  },
-  "upstream/classExpressionAssignment.ts": {
-   "es5": 217339,
-   "mini": 200454
-  },
-  "upstream/classExtendsMultipleBaseClasses.ts": {
-   "es5": 148388,
-   "mini": 139853
-  },
-  "upstream/classExtendingQualifiedName.ts": {
-   "es5": 158689,
-   "mini": 145861
-  },
-  "upstream/capturedLetConstInLoop10_ES6.ts": {
-   "es5": 706691,
-   "mini": 682579
-  },
-  "upstream/classOrder1.ts": {
-   "es5": 152366,
-   "mini": 143802
-  },
-  "upstream/classVarianceResolveCircularity1.ts": {
-   "es5": 271139,
-   "mini": 262604
-  },
-  "upstream/collisionCodeGenModuleWithMethodChildren.ts": {
-   "es5": 295942,
-   "mini": 287411
-  },
-  "upstream/commentOnArrayElement12.ts": {
-   "es5": 137420,
-   "mini": 113275
-  },
-  "upstream/commentOnClassAccessor2.ts": {
-   "es5": 149401,
-   "mini": 140841
-  },
-  "upstream/collisionThisExpressionAndLocalVarInProperty.ts": {
-   "es5": 301148,
-   "mini": 292617
-  },
-  "upstream/conditionalEqualityTestingNullability.ts": {
-   "es5": 567355,
-   "mini": 581999
-  },
-  "upstream/conditionalExpressions2.ts": {
-   "es5": 399008,
-   "mini": 373261
-  },
-  "upstream/commentOnClassAccessor1.ts": {
-   "es5": 134987,
-   "mini": 126427
-  },
-  "upstream/constructorArgsErrors3.ts": {
-   "es5": 128628,
-   "mini": 120064
-  },
-  "upstream/arguments.ts": {
-   "es5": 12367995,
-   "mini": 1951884
-  },
-  "upstream/contextualTyping19.ts": {
-   "es5": 255231,
-   "mini": 228044
-  },
-  "upstream/contextualSignatureInstatiationContravariance.ts": {
-   "es5": 439763,
-   "mini": 428182
-  },
-  "upstream/contextualTypeSelfReferencing.ts": {
-   "es5": 769300,
-   "mini": 641376
-  },
-  "upstream/contextualTyping4.ts": {
-   "es5": 198039,
-   "mini": 186433
-  },
-  "upstream/contextualTyping41.ts": {
-   "es5": 194997,
-   "mini": 186433
-  },
-  "upstream/declFileClassWithIndexSignature.ts": {
-   "es5": 120107,
-   "mini": 111543
-  },
-  "upstream/contextualTypingOfConditionalExpression.ts": {
-   "es5": 406750,
-   "mini": 402271
-  },
-  "upstream/declFileOptionalInterfaceMethod.ts": {
-   "es5": 127175,
-   "mini": 118640
-  },
-  "upstream/contextualTypingOfArrayLiterals1.ts": {
-   "es5": 388783,
-   "mini": 225167
-  },
-  "upstream/declarationEmitDestructuringArrayPattern3.ts": {
-   "es5": 269188,
-   "mini": 188346
-  },
-  "upstream/contextuallyTypingOrOperator.ts": {
-   "es5": 451665,
-   "mini": 595688
-  },
-  "upstream/declarationEmitExpandoWithGenericConstraint.ts": {
-   "es5": 416203,
-   "mini": 407672
-  },
-  "upstream/declarationEmitNameConflictsWithAlias.ts": {
-   "es5": 189059,
-   "mini": 180524
-  },
-  "upstream/declarationEmitOptionalMethod.ts": {
-   "es5": 205898,
-   "mini": 194288
-  },
-  "upstream/deleteOperatorInStrictMode.ts": {
-   "es5": 122964,
-   "mini": 114400
-  },
-  "upstream/declarationEmitTypeAliasWithTypeParameters5.ts": {
-   "es5": 234468,
-   "mini": 225933
-  },
-  "upstream/defaultValueInFunctionTypes.ts": {
-   "es5": 223448,
-   "mini": 214888
-  },
-  "upstream/discriminantUsingEvaluatableTemplateExpression.ts": {
-   "es5": 292322,
-   "mini": 283758
-  },
-  "upstream/distributiveConditionalTypeNeverIntersection1.ts": {
-   "es5": 253820,
-   "mini": 245260
-  },
-  "upstream/duplicateErrorNameNotFound.ts": {
-   "es5": 369033,
-   "mini": 360469
-  },
-  "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse.ts": {
-   "es5": 246037,
-   "mini": 237473
-  },
-  "upstream/duplicateObjectLiteralProperty_computedName2.ts": {
-   "es5": 424449,
-   "mini": 415918
-  },
-  "upstream/discriminantsAndPrimitives.ts": {
-   "es5": 899018,
-   "mini": 986665
-  },
-  "upstream/emptyFile.ts": {
-   "es5": 93277,
-   "mini": 84713
-  },
-  "upstream/enumMemberResolution.ts": {
-   "es5": 136138,
-   "mini": 127578
-  },
-  "upstream/emitThisInSuperMethodCall.ts": {
-   "es5": 282414,
-   "mini": 273879
-  },
-  "upstream/emitSkipsThisWithRestParameter.ts": {
-   "es5": 637235,
-   "mini": 308467
-  },
-  "upstream/errorForUsingPropertyOfTypeAsType02.ts": {
-   "es5": 176914,
-   "mini": 168350
-  },
-  "upstream/es6DeclOrdering.ts": {
-   "es5": 214508,
-   "mini": 190668
-  },
-  "upstream/es6ModuleWithModuleGenTargetCommonjs.ts": {
-   "es5": 139144,
-   "mini": 130584
-  },
-  "upstream/errorsForCallAndAssignmentAreSimilar.ts": {
-   "es5": 1017495,
-   "mini": 907493
-  },
-  "upstream/errorsWithInvokablesInUnions01.ts": {
-   "es5": 545249,
-   "mini": 512260
-  },
-  "upstream/exportArrayBindingPattern.ts": {
-   "es5": 299740,
-   "mini": 217085
-  },
-  "upstream/exportDeclarationsInAmbientNamespaces2.ts": {
-   "es5": 146355,
-   "mini": 137791
-  },
-  "upstream/excessPropertyCheckWithSpread.ts": {
-   "es5": 309158,
-   "mini": 300627
-  },
-  "upstream/exportDefaultForNonInstantiatedModule.ts": {
-   "es5": 123794,
-   "mini": 115230
-  },
-  "upstream/externSemantics.ts": {
-   "es5": 162667,
-   "mini": 154107
-  },
-  "upstream/fixTypeParameterInSignatureWithRestParameters.ts": {
-   "es5": 192910,
-   "mini": 171718
-  },
-  "upstream/functionAssignmentError.ts": {
-   "es5": 147795,
-   "mini": 139231
-  },
-  "upstream/exportedBlockScopedDeclarations.ts": {
-   "es5": 392442,
-   "mini": 383878
-  },
-  "upstream/functionOverloads43.ts": {
-   "es5": 443772,
-   "mini": 394405
-  },
-  "upstream/functionsWithModifiersInBlocks1.ts": {
-   "es5": 165741,
-   "mini": 157177
-  },
-  "upstream/functionWithDefaultParameterWithNoStatements10.ts": {
-   "es5": 162776,
-   "mini": 138635
-  },
-  "upstream/genericClasses1.ts": {
-   "es5": 176581,
-   "mini": 168046
-  },
-  "upstream/genericConstraintDeclaration.ts": {
-   "es5": 177258,
-   "mini": 168723
-  },
-  "upstream/generics5.ts": {
-   "es5": 240729,
-   "mini": 229148
-  },
-  "upstream/genericFunctions2.ts": {
-   "es5": 316863,
-   "mini": 327176
-  },
-  "upstream/implicitAnyAmbients.ts": {
-   "es5": 351848,
-   "mini": 343313
-  },
-  "upstream/indexerA.ts": {
-   "es5": 266099,
-   "mini": 254522
-  },
-  "upstream/indirectSelfReferenceGeneric.ts": {
-   "es5": 180400,
-   "mini": 171865
-  },
-  "upstream/infinitelyExpandingBaseTypes2.ts": {
-   "es5": 264541,
-   "mini": 256006
-  },
-  "upstream/inferentialTypingObjectLiteralMethod1.ts": {
-   "es5": 520878,
-   "mini": 541284
-  },
-  "upstream/genericTypeParameterEquivalence2.ts": {
-   "es5": 1791151,
-   "mini": 1493194
-  },
-  "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins.ts": {
-   "es5": 195168,
-   "mini": 186633
-  },
-  "upstream/innerExtern.ts": {
-   "es5": 186861,
-   "mini": 178297
-  },
-  "upstream/inheritanceStaticFuncOverridingProperty.ts": {
-   "es5": 185562,
-   "mini": 177145
-  },
-  "upstream/identicalTypesNoDifferByCheckOrder.ts": {
-   "es5": 2200470,
-   "mini": 3872114
-  },
-  "upstream/instanceSubtypeCheck1.ts": {
-   "es5": 256015,
-   "mini": 247480
-  },
-  "upstream/interfaceInReopenedModule.ts": {
-   "es5": 154171,
-   "mini": 145636
-  },
-  "upstream/instanceofTypeAliasToGenericClass.ts": {
-   "es5": 387255,
-   "mini": 370895
-  },
-  "upstream/letAndVarRedeclaration.ts": {
-   "es5": 443108,
-   "mini": 434544
-  },
-  "upstream/lambdaPropSelf.ts": {
-   "es5": 318669,
-   "mini": 311741
-  },
-  "upstream/letAsIdentifierInStrictMode.ts": {
-   "es5": 173891,
-   "mini": 165331
-  },
-  "upstream/library_StringSlice.ts": {
-   "es5": 196980,
-   "mini": 174635
-  },
-  "upstream/intersectionApparentTypeCaching.ts": {
-   "es5": 1681126,
-   "mini": 199161
-  },
-  "upstream/intersectionsAndOptionalProperties.ts": {
-   "es5": 2144077,
-   "mini": 823634
-  },
-  "upstream/memberAccessOnConstructorType.ts": {
-   "es5": 148621,
-   "mini": 147571
-  },
-  "upstream/moduleCodeGenTest5.ts": {
-   "es5": 279156,
-   "mini": 270625
-  },
-  "upstream/multipleBaseInterfaesWithIncompatibleProperties.ts": {
-   "es5": 182704,
-   "mini": 174169
-  },
-  "upstream/multiExtendsSplitInterfaces1.ts": {
-   "es5": 433080,
-   "mini": 156643
-  },
-  "upstream/localImportNameVsGlobalName.ts": {
-   "es5": 251730,
-   "mini": 243195
-  },
-  "upstream/namespaces2.ts": {
-   "es5": 161101,
-   "mini": 152537
-  },
-  "upstream/nestedBlockScopedBindings15.ts": {
-   "es5": 275516,
-   "mini": 266956
-  },
-  "upstream/narrowByClauseExpressionInSwitchTrue2.ts": {
-   "es5": 360158,
-   "mini": 351594
-  },
-  "upstream/narrowingTypeofUndefined1.ts": {
-   "es5": 350970,
-   "mini": 340771
-  },
-  "upstream/nestedBlockScopedBindings8.ts": {
-   "es5": 177803,
-   "mini": 169243
-  },
-  "upstream/noEmitHelpers.ts": {
-   "es5": 131381,
-   "mini": 122846
-  },
-  "upstream/nestedBlockScopedBindings4.ts": {
-   "es5": 733524,
-   "mini": 724964
-  },
-  "upstream/noCheckNoEmit.ts": {
-   "es5": 148763,
-   "mini": 128814
-  },
-  "upstream/noCrashOnMixin2.ts": {
-   "es5": 473408,
-   "mini": 431393
-  },
-  "upstream/noImplicitAnyIndexing.ts": {
-   "es5": 616501,
-   "mini": 618320
-  },
-  "upstream/nestedTypeVariableInfersLiteral.ts": {
-   "es5": 947054,
-   "mini": 2231254
-  },
-  "upstream/nongenericConditionalNotPartiallyComputed.ts": {
-   "es5": 168246,
-   "mini": 159550
-  },
-  "upstream/noImplicitReturnsWithProtectedBlocks1.ts": {
-   "es5": 167153,
-   "mini": 158589
-  },
-  "upstream/noImplicitAnyForIn.ts": {
-   "es5": 1199919,
-   "mini": 911212
-  },
-  "upstream/objectLiteralMemberWithModifiers1.ts": {
-   "es5": 136230,
-   "mini": 127666
-  },
-  "upstream/parseEntityNameWithReservedWord.ts": {
-   "es5": 127539,
-   "mini": 119004
-  },
-  "upstream/objectLiteralArraySpecialization.ts": {
-   "es5": 534869,
-   "mini": 486807
-  },
-  "upstream/overloadAssignmentCompat.ts": {
-   "es5": 461695,
-   "mini": 426837
-  },
-  "upstream/prespecializedGenericMembers1.ts": {
-   "es5": 275858,
-   "mini": 267323
-  },
-  "upstream/rectype.ts": {
-   "es5": 267650,
-   "mini": 259086
-  },
-  "upstream/overrideBaseIntersectionMethod.ts": {
-   "es5": 967709,
-   "mini": 866497
-  },
-  "upstream/scopeCheckClassProperty.ts": {
-   "es5": 163620,
-   "mini": 155085
-  },
-  "upstream/scopeCheckExtendedClassInsideStaticMethod1.ts": {
-   "es5": 299814,
-   "mini": 261892
-  },
-  "upstream/spaceBeforeQuestionMarkInPropertyAssignment.ts": {
-   "es5": 130886,
-   "mini": 122326
-  },
-  "upstream/returnTypeTypeArguments.ts": {
-   "es5": 1581467,
-   "mini": 1572932
-  },
-  "upstream/specializedLambdaTypeArguments.ts": {
-   "es5": 162798,
-   "mini": 154263
-  },
-  "upstream/signatureInstantiationWithRecursiveConstraints.ts": {
-   "es5": 313446,
-   "mini": 304911
-  },
-  "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex.ts": {
-   "es5": 189112,
-   "mini": 180548
-  },
-  "upstream/singletonLabeledTuple.ts": {
-   "es5": 353844,
-   "mini": 345280
-  },
-  "upstream/staticGetter1.ts": {
-   "es5": 122846,
-   "mini": 114282
-  },
-  "upstream/staticInstanceResolution4.ts": {
-   "es5": 162329,
-   "mini": 138493
-  },
-  "upstream/superCallFromClassThatDerivesFromGenericType2.ts": {
-   "es5": 198937,
-   "mini": 190402
-  },
-  "upstream/superCallAssignResult.ts": {
-   "es5": 213289,
-   "mini": 202295
-  },
-  "upstream/superWithTypeArgument.ts": {
-   "es5": 125839,
-   "mini": 117275
-  },
-  "upstream/superHasMethodsFromMergedInterface.ts": {
-   "es5": 190921,
-   "mini": 182386
-  },
-  "upstream/superCallInStaticMethod.ts": {
-   "es5": 405932,
-   "mini": 397401
-  },
-  "upstream/thisInModule.ts": {
-   "es5": 134668,
-   "mini": 126108
-  },
-  "upstream/typeInferenceFixEarly.ts": {
-   "es5": 194535,
-   "mini": 185975
-  },
-  "upstream/typeArgumentConstraintResolution1.ts": {
-   "es5": 461229,
-   "mini": 360997
-  },
-  "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6.ts": {
-   "es5": 617807,
-   "mini": 586939
-  },
-  "upstream/typeParameterConstrainedToOuterTypeParameter.ts": {
-   "es5": 360149,
-   "mini": 299939
-  },
-  "upstream/thisInPropertyBoundDeclarations.ts": {
-   "es5": 926065,
-   "mini": 674574
-  },
-  "upstream/typeofUsedBeforeBlockScoped.ts": {
-   "es5": 217227,
-   "mini": 208667
-  },
-  "upstream/typePredicateTopLevelTypeParameter.ts": {
-   "es5": 501066,
-   "mini": 301044
-  },
-  "upstream/unknownPropertiesAreAssignableToObjectUnion.ts": {
-   "es5": 223298,
-   "mini": 178733
-  },
-  "upstream/unusedModuleInModule.ts": {
-   "es5": 114428,
-   "mini": 105864
-  },
-  "upstream/unusedMultipleParameters2InFunctionDeclaration.ts": {
-   "es5": 153889,
-   "mini": 145329
-  },
-  "upstream/voidAsOperator.ts": {
-   "es5": 135594,
-   "mini": 125399
-  },
-  "upstream/varianceCantBeStrictWhileStructureIsnt.ts": {
-   "es5": 656956,
-   "mini": 648421
-  },
-  "upstream/vardecl.ts": {
-   "es5": 1307984,
-   "mini": 1290543
-  },
-  "upstream/varianceReferences.ts": {
-   "es5": 1229525,
-   "mini": 1218502
-  },
-  "upstream/vueLikeDataAndPropsInference2.ts": {
-   "es5": 1541828,
-   "mini": 5051257
+   "es5": 303068,
+   "mini": 204933
+  },
+  "conditional-infer.ts": {
+   "es5": 265978,
+   "mini": 211744
   },
   "extreme/template-cross-product.ts": {
-   "es5": 244777552,
-   "mini": 244757603
+   "es5": 41657917,
+   "mini": 41639044
+  },
+  "conditional-builtin-utils.ts": {
+   "es5": 504081,
+   "mini": 403303
+  },
+  "conditional-distributive.ts": {
+   "es5": 644363,
+   "mini": 339920
+  },
+  "enum-computed-error.ts": {
+   "es5": 115433,
+   "mini": 122604
+  },
+  "enum-const.ts": {
+   "es5": 150668,
+   "mini": 140454
+  },
+  "enum-declaration-merge.ts": {
+   "es5": 84250,
+   "mini": 76470
+  },
+  "enum-string.ts": {
+   "es5": 129736,
+   "mini": 110892
+  },
+  "enum-numeric.ts": {
+   "es5": 178862,
+   "mini": 167338
+  },
+  "error-abstract-instantiation.ts": {
+   "es5": 155357,
+   "mini": 147607
+  },
+  "error-arg-count.ts": {
+   "es5": 110859,
+   "mini": 103079
+  },
+  "error-await-outside-async.ts": {
+   "es5": 76301,
+   "mini": 67794
+  },
+  "error-cannot-find-name.ts": {
+   "es5": 240988,
+   "mini": 156418
+  },
+  "error-comparison-no-overlap.ts": {
+   "es5": 136565,
+   "mini": 127670
+  },
+  "error-const-assign.ts": {
+   "es5": 95920,
+   "mini": 88140
+  },
+  "error-delete-non-optional.ts": {
+   "es5": 111436,
+   "mini": 103652
+  },
+  "error-duplicate-property.ts": {
+   "es5": 126660,
+   "mini": 118880
+  },
+  "error-generic-arity.ts": {
+   "es5": 166681,
+   "mini": 158930
+  },
+  "error-implicit-any.ts": {
+   "es5": 143863,
+   "mini": 136083
+  },
+  "error-label-break.ts": {
+   "es5": 88300,
+   "mini": 80516
+  },
+  "error-missing-return-type.ts": {
+   "es5": 90657,
+   "mini": 82873
+  },
+  "error-index-implicit-any.ts": {
+   "es5": 132607,
+   "mini": 124827
+  },
+  "error-object-possibly-undefined.ts": {
+   "es5": 125947,
+   "mini": 118163
+  },
+  "error-operator-types.ts": {
+   "es5": 194173,
+   "mini": 167039
+  },
+  "error-redeclare.ts": {
+   "es5": 151211,
+   "mini": 143431
+  },
+  "error-not-callable.ts": {
+   "es5": 147818,
+   "mini": 115198
+  },
+  "error-property-not-exist.ts": {
+   "es5": 159617,
+   "mini": 124975
+  },
+  "error-spread-non-object.ts": {
+   "es5": 144317,
+   "mini": 92354
+  },
+  "error-switch-case-type.ts": {
+   "es5": 106391,
+   "mini": 98607
+  },
+  "error-type-as-value.ts": {
+   "es5": 101031,
+   "mini": 93247
+  },
+  "error-satisfies.ts": {
+   "es5": 429867,
+   "mini": 212896
+  },
+  "error-this-implicit.ts": {
+   "es5": 137263,
+   "mini": 125706
+  },
+  "error-unicode-position.ts": {
+   "es5": 147907,
+   "mini": 126575
+  },
+  "error-unreachable-like.ts": {
+   "es5": 93619,
+   "mini": 84724
+  },
+  "error-unique-symbol-and-readonly-array.ts": {
+   "es5": 184288,
+   "mini": 121304
+  },
+  "error-unused-ts-expect.ts": {
+   "es5": 126648,
+   "mini": 105316
+  },
+  "error-used-before-declared.ts": {
+   "es5": 119756,
+   "mini": 112010
+  },
+  "error-value-as-type.ts": {
+   "es5": 114623,
+   "mini": 106843
+  },
+  "generic-class.ts": {
+   "es5": 319542,
+   "mini": 295739
+  },
+  "generic-const-type-param.ts": {
+   "es5": 348666,
+   "mini": 216932
+  },
+  "generic-default.ts": {
+   "es5": 157109,
+   "mini": 146895
+  },
+  "generic-constraint.ts": {
+   "es5": 277983,
+   "mini": 237776
+  },
+  "generic-higher-order.ts": {
+   "es5": 316271,
+   "mini": 309362
+  },
+  "generic-identity.ts": {
+   "es5": 184936,
+   "mini": 165336
+  },
+  "generic-infer-from-object.ts": {
+   "es5": 252733,
+   "mini": 215683
+  },
+  "generic-inference-callback.ts": {
+   "es5": 450340,
+   "mini": 390442
+  },
+  "generic-inference-multiple.ts": {
+   "es5": 404219,
+   "mini": 281060
+  },
+  "generic-keyof-constraint.ts": {
+   "es5": 304934,
+   "mini": 282904
+  },
+  "generic-return-inference.ts": {
+   "es5": 106165,
+   "mini": 98381
+  },
+  "indexed-union-key.ts": {
+   "es5": 124975,
+   "mini": 116803
+  },
+  "generic-unresolved-error.ts": {
+   "es5": 164369,
+   "mini": 155887
+  },
+  "indexed-access.ts": {
+   "es5": 212004,
+   "mini": 174504
+  },
+  "interface-extends-conflict.ts": {
+   "es5": 111983,
+   "mini": 104228
+  },
+  "interface-call-construct.ts": {
+   "es5": 221101,
+   "mini": 199071
+  },
+  "interface-merge.ts": {
+   "es5": 140362,
+   "mini": 129536
+  },
+  "keyof-basic.ts": {
+   "es5": 141206,
+   "mini": 122333
+  },
+  "intersection-basic.ts": {
+   "es5": 256056,
+   "mini": 245230
+  },
+  "keyof-typeof.ts": {
+   "es5": 165884,
+   "mini": 146288
+  },
+  "literal-boolean.ts": {
+   "es5": 112128,
+   "mini": 103956
+  },
+  "literal-as-const.ts": {
+   "es5": 333802,
+   "mini": 238916
+  },
+  "literal-numeric.ts": {
+   "es5": 192405,
+   "mini": 182162
+  },
+  "literal-template-widen.ts": {
+   "es5": 151344,
+   "mini": 132471
+  },
+  "literal-const-let.ts": {
+   "es5": 150283,
+   "mini": 131410
+  },
+  "literal-enum-member.ts": {
+   "es5": 165554,
+   "mini": 146710
+  },
+  "extreme/deep-recursion.ts": {
+   "es5": 75224300,
+   "mini": 69359527
+  },
+  "literal-fresh-excess.ts": {
+   "es5": 190336,
+   "mini": 179510
+  },
+  "lookup-element-access.ts": {
+   "es5": 207611,
+   "mini": 178741
+  },
+  "literal-widening-object.ts": {
+   "es5": 267043,
+   "mini": 256217
+  },
+  "mapped-custom-modifiers.ts": {
+   "es5": 294189,
+   "mini": 283315
+  },
+  "mapped-filter-keys.ts": {
+   "es5": 233000,
+   "mini": 222064
+  },
+  "mapped-partial-required.ts": {
+   "es5": 238482,
+   "mini": 237448
+  },
+  "mapped-key-remap.ts": {
+   "es5": 460219,
+   "mini": 337054
+  },
+  "namespace-merge-class.ts": {
+   "es5": 115282,
+   "mini": 105044
+  },
+  "mapped-pick-omit.ts": {
+   "es5": 314989,
+   "mini": 233655
+  },
+  "namespace-basic.ts": {
+   "es5": 164686,
+   "mini": 153133
+  },
+  "mapped-readonly-record.ts": {
+   "es5": 238751,
+   "mini": 257380
+  },
+  "namespace-merge-function.ts": {
+   "es5": 127468,
+   "mini": 108599
+  },
+  "namespace-nested.ts": {
+   "es5": 141553,
+   "mini": 122680
+  },
+  "narrow-assertion-fn.ts": {
+   "es5": 153078,
+   "mini": 133094
+  },
+  "narrow-control-flow-assign.ts": {
+   "es5": 166707,
+   "mini": 152419
+  },
+  "narrow-closure-reset.ts": {
+   "es5": 241732,
+   "mini": 155798
+  },
+  "narrow-equality.ts": {
+   "es5": 186051,
+   "mini": 177156
+  },
+  "narrow-exhaustive-never.ts": {
+   "es5": 163545,
+   "mini": 144676
+  },
+  "narrow-discriminated.ts": {
+   "es5": 303396,
+   "mini": 291843
+  },
+  "narrow-in.ts": {
+   "es5": 184317,
+   "mini": 172372
+  },
+  "narrow-instanceof.ts": {
+   "es5": 189816,
+   "mini": 172875
+  },
+  "narrow-optional-chain.ts": {
+   "es5": 187920,
+   "mini": 177677
+  },
+  "narrow-truthiness.ts": {
+   "es5": 145681,
+   "mini": 126081
+  },
+  "overload-arity.ts": {
+   "es5": 127481,
+   "mini": 119701
+  },
+  "narrow-typeof.ts": {
+   "es5": 163212,
+   "mini": 139858
+  },
+  "narrow-user-guard.ts": {
+   "es5": 224447,
+   "mini": 212531
+  },
+  "overload-basic.ts": {
+   "es5": 178884,
+   "mini": 153115
+  },
+  "overload-impl-incompatible.ts": {
+   "es5": 106290,
+   "mini": 98506
+  },
+  "recursive-alias-circular.ts": {
+   "es5": 108163,
+   "mini": 100379
+  },
+  "overload-method.ts": {
+   "es5": 175575,
+   "mini": 159526
+  },
+  "recursive-deep-readonly.ts": {
+   "es5": 212656,
+   "mini": 201753
+  },
+  "recursive-linked-list.ts": {
+   "es5": 267978,
+   "mini": 329193
+  },
+  "recursive-json.ts": {
+   "es5": 624412,
+   "mini": 502745
+  },
+  "recursive-tuple-reverse.ts": {
+   "es5": 752151,
+   "mini": 363955
+  },
+  "rest-params.ts": {
+   "es5": 212322,
+   "mini": 159790
+  },
+  "syntax-bad-token.ts": {
+   "es5": 86134,
+   "mini": 78354
+  },
+  "spread-call.ts": {
+   "es5": 248034,
+   "mini": 175398
+  },
+  "syntax-invalid-type.ts": {
+   "es5": 74765,
+   "mini": 66981
+  },
+  "syntax-decl-modifiers.ts": {
+   "es5": 105325,
+   "mini": 97579
+  },
+  "syntax-jsx-in-ts.ts": {
+   "es5": 70425,
+   "mini": 62641
+  },
+  "syntax-missing-brace.ts": {
+   "es5": 63711,
+   "mini": 55931
+  },
+  "syntax-missing-paren.ts": {
+   "es5": 64166,
+   "mini": 56382
+  },
+  "syntax-numeric-literal.ts": {
+   "es5": 97602,
+   "mini": 89822
+  },
+  "syntax-reserved-word.ts": {
+   "es5": 86903,
+   "mini": 79123
+  },
+  "syntax-regex-errors.ts": {
+   "es5": 83908,
+   "mini": 76124
+  },
+  "syntax-unterminated-string.ts": {
+   "es5": 68752,
+   "mini": 60972
+  },
+  "syntax-unexpected-keyword.ts": {
+   "es5": 66068,
+   "mini": 58288
+  },
+  "syntax-unterminated-template.ts": {
+   "es5": 65311,
+   "mini": 57531
+  },
+  "template-basic.ts": {
+   "es5": 181613,
+   "mini": 162740
+  },
+  "template-intrinsics.ts": {
+   "es5": 197790,
+   "mini": 345836
+  },
+  "template-infer.ts": {
+   "es5": 414126,
+   "mini": 276590
+  },
+  "template-union-expand.ts": {
+   "es5": 218314,
+   "mini": 199441
+  },
+  "tuple-labeled.ts": {
+   "es5": 274046,
+   "mini": 174071
+  },
+  "tuple-length-index.ts": {
+   "es5": 263768,
+   "mini": 185015
+  },
+  "tuple-optional-rest.ts": {
+   "es5": 383840,
+   "mini": 242666
+  },
+  "union-call.ts": {
+   "es5": 136014,
+   "mini": 125044
+  },
+  "upstream/ClassDeclaration10.ts": {
+   "es5": 107037,
+   "mini": 99258
+  },
+  "upstream/ArrowFunctionExpression1.ts": {
+   "es5": 98455,
+   "mini": 90671
+  },
+  "union-property-access.ts": {
+   "es5": 162333,
+   "mini": 150776
+  },
+  "tuple-variadic.ts": {
+   "es5": 592359,
+   "mini": 372864
+  },
+  "upstream/ClassDeclaration21.ts": {
+   "es5": 108557,
+   "mini": 100782
+  },
+  "upstream/ambientEnumElementInitializer3.ts": {
+   "es5": 85159,
+   "mini": 77375
+  },
+  "upstream/anyAndUnknownHaveFalsyComponents.ts": {
+   "es5": 230705,
+   "mini": 222198
+  },
+  "upstream/arrayLiteral1.ts": {
+   "es5": 109502,
+   "mini": 86141
+  },
+  "upstream/assignmentToParenthesizedExpression1.ts": {
+   "es5": 102834,
+   "mini": 95054
+  },
+  "upstream/arguments.ts": {
+   "es5": 878858,
+   "mini": 407365
+  },
+  "upstream/arrayDestructuringInSwitch1.ts": {
+   "es5": 824955,
+   "mini": 482813
+  },
+  "upstream/breakInIterationOrSwitchStatement1.ts": {
+   "es5": 75336,
+   "mini": 67552
+  },
+  "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface.ts": {
+   "es5": 564132,
+   "mini": 527250
+  },
+  "upstream/baseClassImprovedMismatchErrors.ts": {
+   "es5": 592575,
+   "mini": 569735
+  },
+  "upstream/classExpressionAssignment.ts": {
+   "es5": 180354,
+   "mini": 164254
+  },
+  "upstream/classExtendsMultipleBaseClasses.ts": {
+   "es5": 112493,
+   "mini": 104743
+  },
+  "upstream/callOverloads2.ts": {
+   "es5": 265827,
+   "mini": 257937
+  },
+  "upstream/classExtendingQualifiedName.ts": {
+   "es5": 124322,
+   "mini": 112799
+  },
+  "upstream/capturedLetConstInLoop10_ES6.ts": {
+   "es5": 600405,
+   "mini": 577078
+  },
+  "upstream/collisionCodeGenModuleWithMethodChildren.ts": {
+   "es5": 243228,
+   "mini": 235482
+  },
+  "upstream/commentOnArrayElement12.ts": {
+   "es5": 105378,
+   "mini": 82013
+  },
+  "upstream/classOrder1.ts": {
+   "es5": 117510,
+   "mini": 109731
+  },
+  "upstream/collisionThisExpressionAndLocalVarInProperty.ts": {
+   "es5": 246269,
+   "mini": 238523
+  },
+  "upstream/commentOnClassAccessor1.ts": {
+   "es5": 99817,
+   "mini": 92042
+  },
+  "upstream/classVarianceResolveCircularity1.ts": {
+   "es5": 208826,
+   "mini": 201071
+  },
+  "upstream/conditionalEqualityTestingNullability.ts": {
+   "es5": 380454,
+   "mini": 396576
+  },
+  "upstream/commentOnClassAccessor2.ts": {
+   "es5": 113445,
+   "mini": 105670
+  },
+  "upstream/constructorArgsErrors3.ts": {
+   "es5": 97973,
+   "mini": 90194
+  },
+  "upstream/contextualSignatureInstatiationContravariance.ts": {
+   "es5": 364717,
+   "mini": 353916
+  },
+  "upstream/contextualTyping19.ts": {
+   "es5": 193722,
+   "mini": 167315
+  },
+  "upstream/contextualTypeSelfReferencing.ts": {
+   "es5": 588169,
+   "mini": 461528
+  },
+  "upstream/conditionalExpressions2.ts": {
+   "es5": 311760,
+   "mini": 287313
+  },
+  "upstream/contextualTyping4.ts": {
+   "es5": 159465,
+   "mini": 148644
+  },
+  "upstream/contextualTyping41.ts": {
+   "es5": 158566,
+   "mini": 150782
+  },
+  "upstream/declFileClassWithIndexSignature.ts": {
+   "es5": 89270,
+   "mini": 81491
+  },
+  "upstream/declFileOptionalInterfaceMethod.ts": {
+   "es5": 97363,
+   "mini": 89608
+  },
+  "upstream/contextualTypingOfArrayLiterals1.ts": {
+   "es5": 313721,
+   "mini": 175126
+  },
+  "upstream/contextuallyTypingOrOperator.ts": {
+   "es5": 376819,
+   "mini": 404888
+  },
+  "upstream/declarationEmitDestructuringArrayPattern3.ts": {
+   "es5": 216534,
+   "mini": 137024
+  },
+  "upstream/declarationEmitOptionalMethod.ts": {
+   "es5": 162423,
+   "mini": 151593
+  },
+  "upstream/contextualTypingOfConditionalExpression.ts": {
+   "es5": 331969,
+   "mini": 328785
+  },
+  "upstream/declarationEmitNameConflictsWithAlias.ts": {
+   "es5": 145945,
+   "mini": 138190
+  },
+  "upstream/declarationEmitTypeAliasWithTypeParameters5.ts": {
+   "es5": 173312,
+   "mini": 165557
+  },
+  "upstream/declarationEmitExpandoWithGenericConstraint.ts": {
+   "es5": 336079,
+   "mini": 328328
+  },
+  "upstream/defaultValueInFunctionTypes.ts": {
+   "es5": 177534,
+   "mini": 169754
+  },
+  "upstream/deleteOperatorInStrictMode.ts": {
+   "es5": 94017,
+   "mini": 86233
+  },
+  "upstream/distributiveConditionalTypeNeverIntersection1.ts": {
+   "es5": 184956,
+   "mini": 177176
+  },
+  "upstream/duplicateErrorNameNotFound.ts": {
+   "es5": 161918,
+   "mini": 154134
+  },
+  "upstream/discriminantUsingEvaluatableTemplateExpression.ts": {
+   "es5": 235471,
+   "mini": 227687
+  },
+  "upstream/duplicateObjectLiteralProperty_computedName2.ts": {
+   "es5": 342799,
+   "mini": 335048
+  },
+  "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse.ts": {
+   "es5": 198767,
+   "mini": 190983
+  },
+  "upstream/discriminantsAndPrimitives.ts": {
+   "es5": 736478,
+   "mini": 755544
+  },
+  "upstream/emptyFile.ts": {
+   "es5": 66698,
+   "mini": 58914
+  },
+  "upstream/enumMemberResolution.ts": {
+   "es5": 100180,
+   "mini": 92400
+  },
+  "upstream/emitThisInSuperMethodCall.ts": {
+   "es5": 235161,
+   "mini": 227411
+  },
+  "upstream/emitSkipsThisWithRestParameter.ts": {
+   "es5": 495757,
+   "mini": 234434
+  },
+  "upstream/errorForUsingPropertyOfTypeAsType02.ts": {
+   "es5": 138782,
+   "mini": 130998
+  },
+  "upstream/es6DeclOrdering.ts": {
+   "es5": 175765,
+   "mini": 153379
+  },
+  "upstream/es6ModuleWithModuleGenTargetCommonjs.ts": {
+   "es5": 105615,
+   "mini": 97840
+  },
+  "upstream/errorsWithInvokablesInUnions01.ts": {
+   "es5": 457840,
+   "mini": 426058
+  },
+  "upstream/exportArrayBindingPattern.ts": {
+   "es5": 242733,
+   "mini": 161410
+  },
+  "upstream/excessPropertyCheckWithSpread.ts": {
+   "es5": 250247,
+   "mini": 242496
+  },
+  "upstream/errorsForCallAndAssignmentAreSimilar.ts": {
+   "es5": 708413,
+   "mini": 600007
+  },
+  "upstream/exportDeclarationsInAmbientNamespaces2.ts": {
+   "es5": 111754,
+   "mini": 103970
+  },
+  "upstream/exportDefaultForNonInstantiatedModule.ts": {
+   "es5": 92437,
+   "mini": 84653
+  },
+  "upstream/externSemantics.ts": {
+   "es5": 125071,
+   "mini": 117291
+  },
+  "upstream/exportedBlockScopedDeclarations.ts": {
+   "es5": 346403,
+   "mini": 338619
+  },
+  "upstream/fixTypeParameterInSignatureWithRestParameters.ts": {
+   "es5": 152275,
+   "mini": 132679
+  },
+  "upstream/functionAssignmentError.ts": {
+   "es5": 116003,
+   "mini": 108219
+  },
+  "upstream/functionWithDefaultParameterWithNoStatements10.ts": {
+   "es5": 127573,
+   "mini": 104212
+  },
+  "upstream/functionsWithModifiersInBlocks1.ts": {
+   "es5": 134002,
+   "mini": 126218
+  },
+  "upstream/functionOverloads43.ts": {
+   "es5": 363022,
+   "mini": 314955
+  },
+  "upstream/genericConstraintDeclaration.ts": {
+   "es5": 138160,
+   "mini": 130405
+  },
+  "upstream/genericFunctions2.ts": {
+   "es5": 254722,
+   "mini": 245265
+  },
+  "upstream/genericClasses1.ts": {
+   "es5": 137667,
+   "mini": 129912
+  },
+  "upstream/generics5.ts": {
+   "es5": 192095,
+   "mini": 181294
+  },
+  "upstream/indirectSelfReferenceGeneric.ts": {
+   "es5": 141232,
+   "mini": 133477
+  },
+  "upstream/implicitAnyAmbients.ts": {
+   "es5": 298157,
+   "mini": 290407
+  },
+  "upstream/indexerA.ts": {
+   "es5": 204361,
+   "mini": 193569
+  },
+  "upstream/infinitelyExpandingBaseTypes2.ts": {
+   "es5": 199737,
+   "mini": 191982
+  },
+  "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins.ts": {
+   "es5": 155409,
+   "mini": 147659
+  },
+  "upstream/genericTypeParameterEquivalence2.ts": {
+   "es5": 1467461,
+   "mini": 1213240
+  },
+  "upstream/inferentialTypingObjectLiteralMethod1.ts": {
+   "es5": 428002,
+   "mini": 429148
+  },
+  "upstream/inheritanceStaticFuncOverridingProperty.ts": {
+   "es5": 147997,
+   "mini": 140365
+  },
+  "upstream/identicalTypesNoDifferByCheckOrder.ts": {
+   "es5": 1671199,
+   "mini": 1070189
+  },
+  "upstream/instanceSubtypeCheck1.ts": {
+   "es5": 183278,
+   "mini": 175523
+  },
+  "upstream/innerExtern.ts": {
+   "es5": 146496,
+   "mini": 138717
+  },
+  "upstream/interfaceInReopenedModule.ts": {
+   "es5": 118790,
+   "mini": 111040
+  },
+  "upstream/instanceofTypeAliasToGenericClass.ts": {
+   "es5": 289160,
+   "mini": 273532
+  },
+  "upstream/letAsIdentifierInStrictMode.ts": {
+   "es5": 135462,
+   "mini": 127682
+  },
+  "upstream/lambdaPropSelf.ts": {
+   "es5": 260054,
+   "mini": 249929
+  },
+  "upstream/library_StringSlice.ts": {
+   "es5": 155877,
+   "mini": 137069
+  },
+  "upstream/letAndVarRedeclaration.ts": {
+   "es5": 391863,
+   "mini": 384079
+  },
+  "upstream/intersectionApparentTypeCaching.ts": {
+   "es5": 1232821,
+   "mini": 144110
+  },
+  "upstream/intersectionsAndOptionalProperties.ts": {
+   "es5": 1611718,
+   "mini": 515631
+  },
+  "upstream/memberAccessOnConstructorType.ts": {
+   "es5": 115947,
+   "mini": 115102
+  },
+  "upstream/multiExtendsSplitInterfaces1.ts": {
+   "es5": 140717,
+   "mini": 113708
+  },
+  "upstream/moduleCodeGenTest5.ts": {
+   "es5": 228302,
+   "mini": 220556
+  },
+  "upstream/localImportNameVsGlobalName.ts": {
+   "es5": 202026,
+   "mini": 194271
+  },
+  "upstream/namespaces2.ts": {
+   "es5": 123118,
+   "mini": 115339
+  },
+  "upstream/multipleBaseInterfaesWithIncompatibleProperties.ts": {
+   "es5": 141663,
+   "mini": 133913
+  },
+  "upstream/narrowingTypeofUndefined1.ts": {
+   "es5": 282144,
+   "mini": 273245
+  },
+  "upstream/nestedBlockScopedBindings15.ts": {
+   "es5": 220350,
+   "mini": 212570
+  },
+  "upstream/nestedBlockScopedBindings8.ts": {
+   "es5": 138504,
+   "mini": 130724
+  },
+  "upstream/nestedBlockScopedBindings4.ts": {
+   "es5": 587823,
+   "mini": 580043
+  },
+  "upstream/noCheckNoEmit.ts": {
+   "es5": 118792,
+   "mini": 99919
+  },
+  "upstream/nestedTypeVariableInfersLiteral.ts": {
+   "es5": 719543,
+   "mini": 706620
+  },
+  "upstream/narrowByClauseExpressionInSwitchTrue2.ts": {
+   "es5": 297176,
+   "mini": 289392
+  },
+  "upstream/noCrashOnMixin2.ts": {
+   "es5": 384250,
+   "mini": 343572
+  },
+  "upstream/noEmitHelpers.ts": {
+   "es5": 97936,
+   "mini": 90186
+  },
+  "upstream/noImplicitReturnsWithProtectedBlocks1.ts": {
+   "es5": 130987,
+   "mini": 123203
+  },
+  "upstream/noImplicitAnyIndexing.ts": {
+   "es5": 521378,
+   "mini": 523910
+  },
+  "upstream/noImplicitAnyForIn.ts": {
+   "es5": 924190,
+   "mini": 605670
+  },
+  "upstream/nongenericConditionalNotPartiallyComputed.ts": {
+   "es5": 124712,
+   "mini": 116796
+  },
+  "upstream/parseEntityNameWithReservedWord.ts": {
+   "es5": 95809,
+   "mini": 88054
+  },
+  "upstream/objectLiteralArraySpecialization.ts": {
+   "es5": 422941,
+   "mini": 375659
+  },
+  "upstream/objectLiteralMemberWithModifiers1.ts": {
+   "es5": 105930,
+   "mini": 98146
+  },
+  "upstream/rectype.ts": {
+   "es5": 217480,
+   "mini": 209696
+  },
+  "upstream/prespecializedGenericMembers1.ts": {
+   "es5": 220258,
+   "mini": 212508
+  },
+  "upstream/scopeCheckClassProperty.ts": {
+   "es5": 127694,
+   "mini": 119944
+  },
+  "upstream/overloadAssignmentCompat.ts": {
+   "es5": 376877,
+   "mini": 351275
+  },
+  "upstream/signatureInstantiationWithRecursiveConstraints.ts": {
+   "es5": 242065,
+   "mini": 234315
+  },
+  "upstream/overrideBaseIntersectionMethod.ts": {
+   "es5": 780800,
+   "mini": 685178
+  },
+  "upstream/scopeCheckExtendedClassInsideStaticMethod1.ts": {
+   "es5": 248932,
+   "mini": 214519
+  },
+  "upstream/returnTypeTypeArguments.ts": {
+   "es5": 1387199,
+   "mini": 1379449
+  },
+  "upstream/singletonLabeledTuple.ts": {
+   "es5": 254676,
+   "mini": 246892
+  },
+  "upstream/spaceBeforeQuestionMarkInPropertyAssignment.ts": {
+   "es5": 98023,
+   "mini": 90243
+  },
+  "upstream/specializedLambdaTypeArguments.ts": {
+   "es5": 124367,
+   "mini": 116612
+  },
+  "upstream/staticGetter1.ts": {
+   "es5": 92358,
+   "mini": 84579
+  },
+  "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex.ts": {
+   "es5": 148294,
+   "mini": 140510
+  },
+  "upstream/staticInstanceResolution4.ts": {
+   "es5": 130049,
+   "mini": 107667
+  },
+  "upstream/superCallAssignResult.ts": {
+   "es5": 166291,
+   "mini": 156082
+  },
+  "upstream/superCallFromClassThatDerivesFromGenericType2.ts": {
+   "es5": 150943,
+   "mini": 143193
+  },
+  "upstream/thisInModule.ts": {
+   "es5": 101444,
+   "mini": 93664
+  },
+  "upstream/superHasMethodsFromMergedInterface.ts": {
+   "es5": 148425,
+   "mini": 140675
+  },
+  "upstream/superCallInStaticMethod.ts": {
+   "es5": 337692,
+   "mini": 329946
+  },
+  "upstream/superWithTypeArgument.ts": {
+   "es5": 93469,
+   "mini": 85685
+  },
+  "upstream/typeInferenceFixEarly.ts": {
+   "es5": 148298,
+   "mini": 140518
+  },
+  "upstream/typeArgumentConstraintResolution1.ts": {
+   "es5": 380679,
+   "mini": 294525
+  },
+  "upstream/thisInPropertyBoundDeclarations.ts": {
+   "es5": 781324,
+   "mini": 582452
+  },
+  "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6.ts": {
+   "es5": 511011,
+   "mini": 481443
+  },
+  "upstream/typeParameterConstrainedToOuterTypeParameter.ts": {
+   "es5": 292770,
+   "mini": 237264
+  },
+  "upstream/typePredicateTopLevelTypeParameter.ts": {
+   "es5": 395402,
+   "mini": 247345
+  },
+  "upstream/unusedModuleInModule.ts": {
+   "es5": 84587,
+   "mini": 76803
+  },
+  "upstream/unknownPropertiesAreAssignableToObjectUnion.ts": {
+   "es5": 177390,
+   "mini": 135493
+  },
+  "upstream/typeofUsedBeforeBlockScoped.ts": {
+   "es5": 165761,
+   "mini": 157986
+  },
+  "upstream/unusedMultipleParameters2InFunctionDeclaration.ts": {
+   "es5": 117416,
+   "mini": 109636
+  },
+  "upstream/varianceCantBeStrictWhileStructureIsnt.ts": {
+   "es5": 537023,
+   "mini": 529268
+  },
+  "upstream/voidAsOperator.ts": {
+   "es5": 103546,
+   "mini": 94651
+  },
+  "upstream/vardecl.ts": {
+   "es5": 1108992,
+   "mini": 1089609
+  },
+  "upstream/varianceReferences.ts": {
+   "es5": 906273,
+   "mini": 896030
+  },
+  "upstream/vueLikeDataAndPropsInference2.ts": {
+   "es5": 1170862,
+   "mini": 892713
   }
  }
 }
