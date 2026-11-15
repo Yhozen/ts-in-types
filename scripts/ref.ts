@@ -46,7 +46,7 @@ export interface RunOptions {
   jobs: number;
   mode: WorkerConfig["mode"];
   cap: number;
-  stats: boolean;
+  profile: boolean;
   onResult?: (job: Job, r: JobResult, done: number, total: number) => void;
 }
 
@@ -61,7 +61,7 @@ export async function runChecks(o: RunOptions): Promise<{ jobs: Job[]; results: 
   const results: JobResult[] = Array.from({ length: jobs.length });
   let next = 0;
   let done = 0;
-  const cfg: WorkerConfig = { progPath, mode: o.mode, cap: o.cap, stats: o.stats };
+  const cfg: WorkerConfig = { progPath, mode: o.mode, cap: o.cap, profile: o.profile };
   const url = new URL("./ref-worker.ts", import.meta.url);
   await Promise.all(
     Array.from({ length: Math.max(1, Math.min(o.jobs, jobs.length)) }, async () => {
@@ -118,7 +118,7 @@ async function main() {
     jobs: jobs ?? 6,
     mode,
     cap,
-    stats: false,
+    profile: false,
     onResult: (job, r, done, total) => {
       const want = readExpected(job.lib, job.input);
       const c = classify(r, want);
