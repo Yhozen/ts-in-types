@@ -11,7 +11,8 @@ import {
   runToEnd,
   type RunOut,
 } from "./engine.ts";
-import { argsFor, type Lib, libFile, libPath } from "./inputs.ts";
+import { join } from "node:path";
+import { argsFor, type Lib, libFile, libPath, root } from "./inputs.ts";
 
 export interface CheckOut extends RunOut {
   byFunc?: Record<string, number>;
@@ -47,12 +48,56 @@ export function checkFresh(
   return withStats(m, runToEnd(m, cap), stats);
 }
 
-/** Checks started from a boot image (filled in with the boot entries). */
+export const imagePath = (lib: Lib): string => join(root, "image", `${lib}.json`);
+export const imageMetaPath = (lib: Lib): string => join(root, "image", `${lib}.meta.json`);
+/** The boot image's warm-up check. */
+export const WARMUP = "const x: number = 'hello';\n";
+
+/**
+ * Builds a boot image in memory: package init, then the harness's `boot`
+ * (command line parsed, libs parsed and bound, the warm-up check), run to
+ * the end. Returns the machine (empty stack) and the warm-up's result.
+ */
+export function bootMachine(
+  E: Engine,
+  prog: Program,
+  lib: Lib,
+  cap = 20e9,
+): { m: Machine; warmup: RunOut } {
+  const m = new E.interp.Machine(prog);
+  const fid = harnessFunc(prog, "boot");
+  const files = goFiles(E, m, fid, { [libFile(lib)]: libSource(lib), "main.ts": WARMUP });
+  m.bootEntry(fid, [files, goStrings(E, argsFor(lib))]);
+  const warmup = runToEnd(m, cap);
+  return { m, warmup };
+}
+
+/** Checks started from a boot image: each restores the image afresh. */
 export class ImageRunner {
-  static load(_E: Engine, _prog: Program, _lib: Lib): ImageRunner {
-    throw new Error("boot images: not yet");
+  E: Engine;
+  prog: Program;
+  snap: any;
+  fid: number;
+  constructor(E: Engine, prog: Program, snap: any) {
+    this.E = E;
+    this.prog = prog;
+    this.snap = snap;
+    this.fid = harnessFunc(prog, "checkWarm");
   }
-  check(_main: string, _cap: number, _stats: boolean): CheckOut {
-    throw new Error("boot images: not yet");
+  static load(E: Engine, prog: Program, lib: Lib): ImageRunner {
+    return new ImageRunner(E, prog, JSON.parse(readFileSync(imagePath(lib), "utf8")));
+  }
+  /** A machine at the image point (output empty, op counts zeroed). */
+  machine(): Machine {
+    const m = this.E.snap.restore(this.prog, this.snap);
+    m.out = [];
+    m.err = [];
+    m.counts.fill(0);
+    return m;
+  }
+  check(main: string, cap: number, stats = false): CheckOut {
+    const m = this.machine();
+    m.callEntry(this.fid, [main]);
+    return withStats(m, runToEnd(m, cap), stats);
   }
 }

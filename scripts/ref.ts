@@ -16,7 +16,8 @@
 // stdout right), output+exit, trap (a trapped instruction or function),
 // panic (an unrecovered Go panic or fatal error), crash (the interpreter
 // threw), limit (op cap reached).
-import { mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { imagePath } from "./checks.ts";
 import { dirname, join } from "node:path";
 import { Worker } from "node:worker_threads";
 import { engineDir, ensureProg } from "./engine.ts";
@@ -101,6 +102,10 @@ async function main() {
   const cap = ci >= 0 ? Number(rest[ci + 1]) : 20e9;
   const quiet = rest.includes("--quiet");
   if (rest.includes("--rebuild-ir")) ensureProg(true);
+  if (mode === "image")
+    for (const lib of libs)
+      if (!existsSync(imagePath(lib)))
+        throw new Error(`no ${imagePath(lib)}: run node scripts/boot.ts first`);
   const out = join(root, ".run/ref", mode);
   rmSync(join(out, "fail"), { recursive: true, force: true });
   const t0 = performance.now();
