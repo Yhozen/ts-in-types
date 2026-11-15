@@ -2,20 +2,20 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 class Base {
-  n: Base | string;
-  fn() {
-    return 10;
-  }
+    n: Base | string;
+    fn() {
+        return 10;
+    }
 }
 class Derived extends Base {
-  n: Derived | string;
-  fn() {
-    return 10 as number | string;
-  }
+    n: Derived | string;
+    fn() {
+        return 10 as number | string;
+    }
 }
 class DerivedInterface implements Base {
-  n: DerivedInterface | string;
-  fn() {
-    return 10 as number | string;
-  }
+    n: DerivedInterface | string;
+    fn() {
+        return 10 as number | string;
+    }
 }

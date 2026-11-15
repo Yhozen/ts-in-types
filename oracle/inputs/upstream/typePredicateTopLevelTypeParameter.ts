@@ -6,14 +6,14 @@
 // Repro from #51980
 
 function getPermissions(user: string) {
-  if (user === "Jack") return "admin";
-  return undefined;
+    if (user === 'Jack') return 'admin';
+    return undefined;
 }
 
-const admins = ["Mike", "Joe"].map((e) => getPermissions(e));
+const admins = ['Mike', 'Joe'].map(e => getPermissions(e));
 
 function isDefined<T>(a: T | undefined): a is T {
-  return a !== undefined;
+    return a !== undefined;
 }
 
-const foundAdmins = admins.filter(isDefined); // "admin"[]
+const foundAdmins = admins.filter(isDefined);  // "admin"[]

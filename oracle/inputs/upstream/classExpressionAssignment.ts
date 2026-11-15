@@ -6,4 +6,4 @@ interface A {
 }
 
 // This is invalid
-const A: { new (): A } = class {};
+const A: {new(): A} = class {}

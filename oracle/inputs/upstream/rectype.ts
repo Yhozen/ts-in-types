@@ -2,17 +2,14 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace M {
-  interface I {
-    (i: I): I;
-  }
+    interface I { (i:I):I; }
 
-  export function f(p: I) {
-    return f;
-  }
+    export function f(p: I) { return f };
 
-  var i: I;
+    var i:I;
 
-  f(i);
-  f(f(i));
-  f(f(f(i)));
+    f(i);
+    f(f(i));
+    f((f(f(i))));
 }
+

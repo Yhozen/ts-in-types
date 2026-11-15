@@ -2,17 +2,23 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 //@module: commonjs
-export interface IKitty {}
+export interface IKitty {
+
+    }
 
 export class Cat<CatType extends IKitty> {
-  constructor() {}
+    constructor() {
+    
+    }
 }
 
 export class CatBag {
-  constructor(cats: { barry: Cat<IKitty> }) {}
+    constructor(cats: { barry: Cat<IKitty>; }) {
+        
+    }
 }
 var cat = new Cat<IKitty>();
 var catThing = {
-  barry: cat,
+    barry: cat
 };
 var catBag = new CatBag(catThing);

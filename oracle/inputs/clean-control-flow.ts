@@ -7,15 +7,7 @@ function classify(n: number): string {
     else out += i;
   }
   while (out.length > 100) out = out.substring(1);
-  do {
-    n--;
-  } while (n > 0);
-  try {
-    throw new Error("x");
-  } catch (e) {
-    out += String(e);
-  } finally {
-    n = 0;
-  }
+  do { n--; } while (n > 0);
+  try { throw new Error("x"); } catch (e) { out += String(e); } finally { n = 0; }
   return out;
 }

@@ -2,9 +2,9 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace A {
-  export namespace B {
-    export class C {}
-  }
+    export namespace B {
+        export class C { }
+    }
 }
 
 var c: A.B.C = new A.B.C();

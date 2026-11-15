@@ -2,7 +2,7 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace Test1 {
-  function foo<T extends { abc: number }>(x: T) {
-    let a: T.abc = x.abc;
-  }
+    function foo<T extends { abc: number }>(x: T) {
+        let a: T.abc = x.abc;
+    }
 }

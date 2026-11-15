@@ -1,6 +1,3 @@
-interface P {
-  name: string;
-  age: number;
-}
+interface P { name: string; age: number }
 type K = keyof P;
 const k: K = "nmae";

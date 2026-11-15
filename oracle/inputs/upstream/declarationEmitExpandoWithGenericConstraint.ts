@@ -4,13 +4,13 @@
 // @target: es2015
 // @declaration: true
 export interface Point {
-  readonly x: number;
-  readonly y: number;
+    readonly x: number;
+    readonly y: number;
 }
 
 export interface Rect<p extends Point> {
-  readonly a: p;
-  readonly b: p;
+    readonly a: p;
+    readonly b: p;
 }
 
 export const Point = (x: number, y: number): Point => ({ x, y });

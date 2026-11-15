@@ -3,7 +3,7 @@
 // @target: es2015
 // @declaration: true
 class C<T> {
-  public x: T;
+	public x: T;
 }
 
 var v1 = new C<string>();

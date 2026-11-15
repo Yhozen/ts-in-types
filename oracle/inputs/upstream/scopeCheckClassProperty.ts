@@ -8,5 +8,5 @@ class C {
   public x = new A().p; // should also be ok
 }
 class A {
-  public p = "";
+  public p = '';
 }

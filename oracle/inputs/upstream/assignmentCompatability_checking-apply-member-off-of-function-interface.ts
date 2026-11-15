@@ -2,31 +2,32 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 // @strict: false
-// 3.8.4 Assignment Compatibility
+// 3.8.4 Assignment Compatibility 
 
 interface Applicable {
-  apply(blah: any); // also works for 'apply'
+    apply(blah: any); // also works for 'apply'
 }
 
 var x: Applicable;
 
 // Should fail
-x = "";
-x = [""];
+x = '';
+x = [''];
 x = 4;
 x = {};
 
 // Should work
-function f() {}
+function f() { };
 x = f;
 
-function fn(c: Applicable) {}
+function fn(c: Applicable) { }
 
 // Should Fail
-fn("");
-fn([""]);
+fn('');
+fn(['']);
 fn(4);
 fn({});
 
+
 // Should work
-fn((a) => {});
+fn(a => { });

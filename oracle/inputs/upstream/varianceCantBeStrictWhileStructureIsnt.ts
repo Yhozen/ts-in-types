@@ -5,11 +5,11 @@
 // @strictFunctionTypes: false
 // under non-strict-function-types, all the below should work
 interface Foo<T> {
-  member: (cb: T) => void;
+    member: (cb: T) => void;
 }
 
 interface Bar<T> {
-  member: (cb: T) => void;
+    member: (cb: T) => void;
 }
 
 declare var a: Foo<string>;

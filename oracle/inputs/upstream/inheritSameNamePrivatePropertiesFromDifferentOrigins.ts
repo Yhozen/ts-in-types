@@ -2,14 +2,13 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 class C {
-  private x: number;
+    private x: number;
 }
 
 class C2 {
-  private x: number;
+    private x: number;
 }
 
-interface A extends C, C2 {
-  // error
-  y: string;
+interface A extends C, C2 { // error
+    y: string;
 }

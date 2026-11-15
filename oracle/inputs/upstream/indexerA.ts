@@ -2,12 +2,12 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 class JQueryElement {
-  id: string;
+    id:string;
 }
 
 class JQuery {
-  [n: number]: JQueryElement;
+    [n:number]:JQueryElement
 }
 
-var jq: JQuery = { 0: { id: "a" }, 1: { id: "b" } };
+var jq:JQuery={ 0: { id : "a" }, 1: { id : "b" } };
 jq[0].id;

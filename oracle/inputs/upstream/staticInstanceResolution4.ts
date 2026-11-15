@@ -2,7 +2,7 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 class A {
-  public foo() {}
+   public foo() {}
 }
 
 A.foo();

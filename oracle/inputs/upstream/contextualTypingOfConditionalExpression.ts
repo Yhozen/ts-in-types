@@ -5,13 +5,13 @@
 var x: (a: number) => void = true ? (a) => a.toExponential() : (b) => b.toFixed();
 
 class A {
-  foo: number;
+    foo: number;
 }
 class B extends A {
-  bar: number;
+    bar: number;
 }
 class C extends A {
-  baz: number;
+    baz: number;
 }
 
 var x2: (a: A) => void = true ? (a) => a.foo : (b) => b.foo;

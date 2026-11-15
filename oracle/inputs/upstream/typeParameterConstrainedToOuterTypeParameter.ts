@@ -3,11 +3,11 @@
 // @target: es2015
 // @strict: false
 interface A<T> {
-  <U extends T>(x: U[]);
+    <U extends T>(x: U[])
 }
 
 interface B<T> {
-  <U extends T>(x: U);
+    <U extends T>(x: U)
 }
 
 declare var a: A<string>;

@@ -2,7 +2,9 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace M {
-  class C {}
+    class C {
+    }
 
-  class D extends M.C {}
+    class D extends M.C {
+    }
 }

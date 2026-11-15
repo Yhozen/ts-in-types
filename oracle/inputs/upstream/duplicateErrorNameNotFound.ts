@@ -6,4 +6,6 @@
 
 type RoomInterfae = {};
 
-export type { RoomInterface };
+export type {
+    RoomInterface
+}

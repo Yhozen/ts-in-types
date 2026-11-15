@@ -4,5 +4,5 @@
 // @strict: false
 // @declaration: true
 interface X {
-  f?<T>();
+    f? <T>();
 }

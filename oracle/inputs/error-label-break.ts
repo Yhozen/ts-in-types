@@ -1,7 +1,5 @@
 function f() {
   break;
   continue;
-  outer: for (;;) {
-    break inner;
-  }
+  outer: for (;;) { break inner; }
 }

@@ -2,17 +2,17 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 declare class TableClass<S = any> {
-  _field: S;
+    _field: S;
 }
 
 export type Table = TableClass;
 
 function fn<T extends Table>(o: T) {
-  return o instanceof TableClass;
+    return o instanceof TableClass;
 }
 
 function fn2<T extends TableClass>(o: T) {
-  return o instanceof TableClass;
+    return o instanceof TableClass;
 }
 
 declare const o: Table;

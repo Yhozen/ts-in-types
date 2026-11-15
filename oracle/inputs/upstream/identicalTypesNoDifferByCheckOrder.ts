@@ -4,34 +4,32 @@
 // @strictNullChecks: true
 
 interface SomeProps {
-  x?: string;
-  y?: number;
-  renderAs?: FunctionComponent1<SomeProps>;
+    x?: string;
+    y?: number;
+    renderAs?: FunctionComponent1<SomeProps>
 }
 
 type SomePropsX = Required<Pick<SomeProps, "x">> & Omit<SomeProps, "x">;
 
 interface SomePropsClone {
-  x?: string;
-  y?: number;
-  renderAs?: FunctionComponent2<SomeProps>;
+    x?: string;
+    y?: number;
+    renderAs?: FunctionComponent2<SomeProps>
 }
 
 type SomePropsCloneX = Required<Pick<SomePropsClone, "x">> & Omit<SomePropsClone, "x">;
 
-type Validator<T> = { (): boolean; opt?: T };
-type WeakValidationMap<T> = {
-  [K in keyof T]?: null extends T[K] ? Validator<T[K] | null | undefined> : Validator<T[K]>;
-};
+type Validator<T> = {(): boolean, opt?: T};
+type WeakValidationMap<T> = {[K in keyof T]?: null extends T[K] ? Validator<T[K] | null | undefined> : Validator<T[K]>};
 
 interface FunctionComponent1<P> {
-  (props: P & { children?: unknown }): void;
-  propTypes?: WeakValidationMap<P>;
+    (props: P & { children?: unknown }): void;
+    propTypes?: WeakValidationMap<P>;
 }
 
 interface FunctionComponent2<P> {
-  (props: P & { children?: unknown }): void;
-  propTypes?: WeakValidationMap<P>;
+    (props: P & { children?: unknown }): void;
+    propTypes?: WeakValidationMap<P>;
 }
 
 function needsComponentOfSomeProps3(...x: SomePropsClone[]): void {}

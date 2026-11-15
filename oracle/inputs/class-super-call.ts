@@ -1,6 +1,4 @@
-class A {
-  constructor(x: number) {}
-}
+class A { constructor(x: number) {} }
 class B extends A {
   y = 1;
   constructor() {

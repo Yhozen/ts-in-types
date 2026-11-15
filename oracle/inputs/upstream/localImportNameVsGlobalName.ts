@@ -2,12 +2,7 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace Keyboard {
-  export enum Key {
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT,
-  }
+  export enum Key { UP, DOWN, LEFT, RIGHT }
 }
 
 namespace App {

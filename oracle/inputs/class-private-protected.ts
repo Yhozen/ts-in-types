@@ -4,10 +4,7 @@ class A {
   #c = 3;
 }
 class B extends A {
-  f() {
-    return this.a + this.b;
-  }
+  f() { return this.a + this.b; }
 }
 const x = new A();
-x.a;
-x.b;
+x.a; x.b;

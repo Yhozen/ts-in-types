@@ -2,6 +2,6 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 namespace myMod {
-  var x;
-  this.x = 5;
+    var x;
+    this.x = 5;
 }

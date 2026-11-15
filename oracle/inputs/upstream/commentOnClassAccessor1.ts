@@ -5,7 +5,5 @@ class C {
   /**
    * @type {number}
    */
-  get bar(): number {
-    return 1;
-  }
+  get bar(): number { return 1;}
 }

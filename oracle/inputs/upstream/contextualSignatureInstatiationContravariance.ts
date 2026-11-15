@@ -2,15 +2,9 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 // @strict: false
-interface Animal {
-  x;
-}
-interface Giraffe extends Animal {
-  y;
-}
-interface Elephant extends Animal {
-  y2;
-}
+interface Animal { x }
+interface Giraffe extends Animal { y }
+interface Elephant extends Animal { y2 }
 
 declare var f2: <T extends Animal>(x: T, y: T) => void;
 

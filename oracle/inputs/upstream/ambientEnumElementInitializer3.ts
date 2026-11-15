@@ -2,5 +2,5 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 declare enum E {
-  e = 3.3, // Decimal
+ e = 3.3 // Decimal
 }

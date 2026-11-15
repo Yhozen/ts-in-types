@@ -4,5 +4,5 @@
 // @declaration: true
 
 class BlockIntrinsics {
-  [s: string]: string;
+    [s: string]: string;
 }

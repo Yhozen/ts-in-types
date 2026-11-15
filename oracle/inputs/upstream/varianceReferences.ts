@@ -6,7 +6,8 @@
 
 type NumericConstraint<Value extends number> = Value;
 
-type VarianceConstrainedNumber<in out Value extends number> = NumericConstraint<Value>;
+type VarianceConstrainedNumber<in out Value extends number> =
+  NumericConstraint<Value>;
 
 declare let vcn1: VarianceConstrainedNumber<1>;
 declare let vcn12: VarianceConstrainedNumber<1 | 2>;

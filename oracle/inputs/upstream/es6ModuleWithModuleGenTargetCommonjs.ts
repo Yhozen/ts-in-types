@@ -2,10 +2,14 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: ES6
 // @module: commonjs
-export class A {
-  constructor() {}
+export class A
+{
+    constructor ()
+    {
+    }
 
-  public B() {
-    return 42;
-  }
+    public B()
+    {
+        return 42;
+    }
 }

@@ -3,5 +3,5 @@
 // @target: es2015
 // @declaration: true
 namespace M {
-  export var [a, b] = [1, 2];
+    export var [a, b] = [1, 2];
 }

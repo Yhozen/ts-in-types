@@ -2,11 +2,20 @@
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
 function minimalExample1() {
-  type Disc = { kind: "hddvd" } | { kind: "bluray" };
+    type Disc =
+        | { kind: "hddvd" }
+        | { kind: "bluray" }
 
-  function foo(x: Disc[]) {}
+    function foo(x: Disc[]) {
+    }
 
-  foo([{ kind: "bluray" }, { kind: "hdpvd" }]);
+    foo([
+        { kind: "bluray", },
+        { kind: "hdpvd", }
+    ]);
 
-  const ds: Disc[] = [{ kind: "bluray" }, { kind: "hdpvd" }];
+    const ds: Disc[] = [
+        { kind: "bluray", },
+        { kind: "hdpvd", }
+    ];
 }

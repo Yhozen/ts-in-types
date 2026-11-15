@@ -5,5 +5,5 @@
 //@noUnusedParameters:true
 
 namespace A {
-  namespace B {}
+    namespace B {}
 }

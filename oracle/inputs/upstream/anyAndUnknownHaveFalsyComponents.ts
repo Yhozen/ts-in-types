@@ -13,7 +13,7 @@ function foo1() {
     display: "block",
     ...(isTreeHeader1 && {
       display: "flex",
-    }),
+    })
   };
 }
 
@@ -27,6 +27,6 @@ function foo2() {
     display: "block",
     ...(isTreeHeader1 && {
       display: "flex",
-    }),
+    })
   };
 }

@@ -1,17 +1,17 @@
 // microsoft/TypeScript tests/cases/compiler/arrayDestructuringInSwitch1.ts at 5848bc5157b2 (Apache-2.0).
 // Its // @ directives are kept as comments; the oracle does not apply them.
 // @target: es2015
-export type Expression = BooleanLogicExpression | "true" | "false";
-export type BooleanLogicExpression = ["and", ...Expression[]] | ["not", Expression];
+export type Expression = BooleanLogicExpression | 'true' | 'false';
+export type BooleanLogicExpression = ['and', ...Expression[]] | ['not', Expression];
 
 export function evaluate(expression: Expression): boolean {
   if (Array.isArray(expression)) {
     const [operator, ...operands] = expression;
     switch (operator) {
-      case "and": {
+      case 'and': {
         return operands.every((child) => evaluate(child));
       }
-      case "not": {
+      case 'not': {
         return !evaluate(operands[0]);
       }
       default: {
@@ -19,6 +19,6 @@ export function evaluate(expression: Expression): boolean {
       }
     }
   } else {
-    return expression === "true";
+    return expression === 'true';
   }
 }

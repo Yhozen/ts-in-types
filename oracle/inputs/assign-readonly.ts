@@ -1,7 +1,4 @@
-interface R {
-  readonly a: number;
-  b: number;
-}
+interface R { readonly a: number; b: number }
 const r: R = { a: 1, b: 2 };
 r.a = 3;
 r.b = 4;

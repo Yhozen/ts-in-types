@@ -3,10 +3,12 @@
 // @target: es2015
 // @strict: true
 export type Equals<A1 extends any, A2 extends any> =
-  (<A>() => A extends A1 ? 1 : 0) extends <A>() => A extends A2 ? 1 : 0 ? 1 : 0;
+    (<A>() => A extends A1 ? 1 : 0) extends (<A>() => A extends A2 ? 1 : 0)
+    ? 1
+    : 0
 
 interface Foo<T> {
-  x: () => T;
+    x : () => T
 }
 
 declare const a: Foo<Date>;
