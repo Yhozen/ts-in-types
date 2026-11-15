@@ -35,22 +35,29 @@ for (let attempt = 0; ; attempt++) {
     `type S0 = TSStart<${lit(source)}, "${lib}">;`,
   ];
   for (let k = 1; k <= chunks; k++) lines.push(`type S${k} = TSStep<S${k - 1}>;`);
+  // stdout, stderr and the exit status in statements of their own: decoding
+  // a long output can take most of a statement's instantiation budget
   const outLine = lines.length + 1;
-  lines.push(`export const out: "probe" = null! as TSResult<S${chunks}>;`);
+  for (let i = 0; i < 3; i++)
+    lines.push(`export const out${i}: "probe" = null! as [TSResult<S${chunks}>[${i}]];`);
   writeProject(dir, lines.join("\n") + "\n");
   const t = await runTsrs(dir, 3600);
   const ds = diagnostics(t.out);
-  const d = ds.find((x) => x.line === outLine);
-  const m = d && /^Type '([\s\S]*)' is not assignable to type '"probe"'\.$/.exec(d.message);
+  const outs = [0, 1, 2].map((i) => ds.find((x) => x.line === outLine + i));
+  const vals = outs.map((d) => {
+    const m = d && /^Type '\[([\s\S]*)\]' is not assignable to type '"probe"'\.$/.exec(d.message);
+    return m ? parsePrinted(m[1]!) : undefined;
+  });
+  const ok = vals.every((v) => typeof v === "string" || typeof v === "number");
   const stats = `${(instCount(t.out) / 1e6).toFixed(1)}M instantiations, check ${/Check time:\s+([\d.]+)s/.exec(t.out)?.[1]} s, wall ${t.wall.toFixed(1)} s, peak ${(t.peak / 2 ** 30).toFixed(2)} GB, ${chunks} statements`;
-  const other = ds.filter((x) => x !== d);
-  if (!m || other.length > 0) {
+  const other = ds.filter((x) => !outs.includes(x));
+  if (!ok || other.length > 0) {
     console.error(
       `no result (${stats}): ${other.map((x) => `${x.code} ${x.message.slice(0, 200)}`).join("; ") || "the state is any or never"}`,
     );
     process.exit(2);
   }
-  const [out, err, exit] = parsePrinted(m[1]!) as [string, string, number];
+  const [out, err, exit] = vals as [string, string, number];
   if (exit === -1 && attempt < 3) {
     chunks *= 4;
     continue;

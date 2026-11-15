@@ -10,8 +10,9 @@ import type { TS } from "../src/index.ts";
 export type TypeError = TS<'let n: number = "forty-two";'>;
 
 // The spelling suggestion compares names by edit distance, in soft floats.
-// "main.ts(2,10): error TS2551: Property 'toUppercase' does not exist on type '\"hello\"'. Did you mean 'toUpperCase'?\n"
-export type DidYouMean = TS<'const greeting = "hello";\ngreeting.toUppercase();'>;
+// "main.ts(3,6): error TS2551: Property 'emial' does not exist on type 'User'. Did you mean 'email'?\n"
+export type DidYouMean =
+  TS<"interface User { name: string; email: string }\ndeclare const user: User;\nuser.emial;">;
 
 // "main.ts(2,7): error TS2741: Property 'age' is missing in type '{ name: string; }' but required in type 'User'.\n"
 export type MissingProperty =
