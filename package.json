@@ -13,7 +13,12 @@
     "oracle": "node scripts/oracle.ts",
     "ref": "node scripts/ref.ts",
     "boot": "node scripts/boot.ts",
-    "profile": "node scripts/profile.ts"
+    "profile": "node scripts/profile.ts",
+    "build": "node scripts/build.ts",
+    "keep": "node scripts/keep.ts",
+    "hover": "node scripts/hover.ts",
+    "gen:hover": "node scripts/gen-hover.ts",
+    "gate:types": "node scripts/types-gate.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

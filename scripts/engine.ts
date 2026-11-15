@@ -48,9 +48,12 @@ export function ensureProg(rebuild = false): string {
       throw new Error(
         `no go-in-types engine at ${engineDir} (init the submodule or set GO_IN_TYPES)`,
       );
+    // an engine worktree has no vendor/typescript of its own: the engine's
+    // scripts then fall back to $TSGO_DIR or the main checkout's submodule
     const tsc = join(engineDir, "vendor/typescript/tsc");
-    execFileSync("node", [join(engineDir, "overlay/gen.ts")], { stdio: "inherit" });
-    execFileSync("node", [join(engineDir, "scripts/tsgo-ir.ts"), "--tsgo-dir", tsc], {
+    const dirArg = existsSync(join(tsc, "go.mod")) ? ["--tsgo-dir", tsc] : [];
+    execFileSync("node", [join(engineDir, "overlay/gen.ts"), ...dirArg], { stdio: "inherit" });
+    execFileSync("node", [join(engineDir, "scripts/tsgo-ir.ts"), ...dirArg], {
       stdio: ["ignore", "inherit", "inherit"],
     });
   }

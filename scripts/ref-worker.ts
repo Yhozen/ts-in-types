@@ -18,6 +18,8 @@ export interface JobResult extends RunOut {
   id: number;
   ms: number;
   profile?: Omit<Profile, "stdout" | "stderr" | "exit" | "ops">;
+  /** image mode with `funcs`: the functions the check executed */
+  funcs?: string[];
 }
 export interface WorkerConfig {
   progPath: string;
@@ -26,6 +28,8 @@ export interface WorkerConfig {
   cap: number;
   /** Image mode only: profile each check (profile-stats.ts). */
   profile: boolean;
+  /** Image mode only: report the functions each check executed (scripts/keep.ts). */
+  funcs?: boolean;
 }
 
 const cfg = workerData as WorkerConfig;
@@ -45,6 +49,9 @@ parentPort!.on("message", (job: Job) => {
     if (cfg.profile) {
       const { ops, stdout, stderr, exit, ...profile } = profileCheck(img, main, cfg.cap);
       r = { ops, stdout, stderr, exit, profile, id: 0, ms: 0 };
+    } else if (cfg.funcs) {
+      const { byFunc, byKind: _, ...rest } = img.check(main, cfg.cap, true);
+      r = { ...rest, funcs: Object.keys(byFunc ?? {}), id: 0, ms: 0 };
     } else r = { ...img.check(main, cfg.cap), id: 0, ms: 0 };
   }
   parentPort!.postMessage({ ...r, id: job.id, ms: performance.now() - t0 } satisfies JobResult);
