@@ -147,13 +147,10 @@ chunks, 9–10M instantiations, ~1.5 s of checking and ~1.1 GB.
   instantiations, 1.2 s. It needs an image built with that engine
   (`GO_IN_TYPES=<strview checkout> vp run build`) until the submodule
   moves.
-- 16 gate checks fail when one chunk needs more than 5M instantiations.
-  12 of them passed before go-in-types started building saved registers
-  and call arguments with `R.TPush` (the stage 5 fix for TS2589 depth with
-  deferred tuples, which fixed 10 others here). In those chunks the state
-  costs ~5M and the peak doubles to ~2.6 GB, for example in
-  `structuredTypeRelatedToWorker` resuming with 11 live registers. The
-  other four are `extreme/` inputs.
+- 4 gate checks fail (docs/GATE.md): `extreme/template-cross-product`
+  (TS2589 count: converting a 40 KB union key to a string is one op of
+  more than 5M instantiations) and `extreme/deep-recursion` (timeout at
+  600 s; alone it passes in ~224 s with a ~17 GB peak), both libs.
 
 ## Scripts
 

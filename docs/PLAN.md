@@ -68,6 +68,22 @@ source, tiered gates, demo files, README. Done; it needs go-in-types branch
   `R.TPush` constructors fixed, and the same change made 12 other checks
   fail on count. The extremes `template-cross-product` and
   `deep-recursion` fail either way.
+- Gate after go-in-types `tpush` (`R.TPush` a spread instead of a
+  conditional; bulk heap copies of more than 4096 slots in pieces):
+  652 / 656 (1,384 s). The 12 count failures pass and the 10 depth fixes
+  hold. In intersectionApparentTypeCaching the failing chunk went from
+  more than 5M instantiations to 106k; in returnTypeTypeArguments
+  (bytes.growSlice of an 8 KB buffer in one op) to 383k. `deep-recursion`
+  now gets past its old failing chunk and times out at 600 s with two
+  jobs; alone (mini) it passes: 32,233 chunks, 2.5G instantiations,
+  190 s of checking, 16.9 GB peak.
+- Known limit: `extreme/template-cross-product` (a 10,000-member union)
+  fails with TS2589 count in one op. `getUnionKey` builds a ~40 KB key
+  (keyBuilder.hash, xxh3 `Sum128`) and `string(buf)` (`Sr.BytesToStr`)
+  converts all 40,009 bytes in one segment: more than 5M instantiations,
+  which no fuel weight can split. Fixing it needs a string conversion
+  that yields between steps (or a cheaper one per byte) in go-in-types'
+  string ops.
 - Known limit: a related location in `lib.es5.d.ts` (a spelling suggestion
   for a lib member) makes the scanner spend ~0.5M instantiations per
   character of the lib's trivia, because every `text[pos:]` is a new
