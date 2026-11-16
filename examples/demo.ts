@@ -14,6 +14,11 @@ export type TypeError = TS<'let n: number = "forty-two";'>;
 export type DidYouMean =
   TS<"interface User { name: string; email: string }\ndeclare const user: User;\nuser.emial;">;
 
+// The suggestion here is a lib member: tsc reads its position in the 230 KB
+// lib.es5.d.ts text, sliced through string views.
+// "main.ts(1,9): error TS2551: Property 'toUppercase' does not exist on type '\"hello\"'. Did you mean 'toUpperCase'?\n"
+export type DidYouMeanLib = TS<'"hello".toUppercase();'>;
+
 // "main.ts(2,7): error TS2741: Property 'age' is missing in type '{ name: string; }' but required in type 'User'.\n"
 export type MissingProperty =
   TS<'interface User { name: string; age: number }\nconst ada: User = { name: "Ada" };'>;

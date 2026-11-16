@@ -138,11 +138,15 @@ chunks, 9–10M instantiations, ~1.5 s of checking and ~1.1 GB.
 
 - A diagnostic whose related location is in `lib.es5.d.ts` (a spelling
   suggestion for a lib member, "declared here") makes the scanner skip the
-  lib's trivia, and every `text[pos:]` of the 230 KB lib text is a fresh
-  string whose length and index cost ~0.5M instantiations: a chunk runs out
-  of budget (TS2589). `"hello".toUppercase()` hits it; the demo's spelling
-  suggestion uses a type of its own. Fixing it needs string views
-  (offset + base) in go-in-types.
+  lib's trivia. With plain literal strings every `text[pos:]` of the 230 KB
+  lib text was a fresh string whose length and index cost ~0.5M
+  instantiations, and the chunk ran out of budget (TS2589). go-in-types'
+  string views (branch `strview`: a slice of 128+ bytes is
+  `[base, offset, length]` over the same literal) fix it:
+  `"hello".toUppercase()` (`DidYouMeanLib` in the demo) checks in 11.8M
+  instantiations, 1.2 s. It needs an image built with that engine
+  (`GO_IN_TYPES=<strview checkout> vp run build`) until the submodule
+  moves.
 - 16 gate checks fail when one chunk needs more than 5M instantiations.
   12 of them passed before go-in-types started building saved registers
   and call arguments with `R.TPush` (the stage 5 fix for TS2589 depth with
